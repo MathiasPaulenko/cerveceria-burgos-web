@@ -1,1 +1,1 @@
-export { FadeIn, StaggerContainer, StaggerItem } from "./FadeIn";
+export { FadeIn } from "./FadeIn";
