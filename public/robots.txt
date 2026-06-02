@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cerveceriaburgos.es/sitemap.xml
+Sitemap: https://mathiaspaulenko.github.io/cerveceria-burgos-web/sitemap.xml
