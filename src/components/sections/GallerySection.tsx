@@ -102,25 +102,27 @@ export function GallerySection() {
           ))}
         </FadeIn>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-          {paginatedImages.map((image) => (
-            <FadeIn key={image.id}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {paginatedImages.map((image, index) => (
+            <FadeIn key={image.id} delay={index * 0.05}>
               <motion.button
                 onClick={() => setSelectedImage(image)}
-                className="break-inside-avoid relative group cursor-pointer overflow-hidden rounded-2xl w-full text-left"
+                className="relative group cursor-pointer overflow-hidden rounded-2xl w-full text-left block h-full"
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <div className="shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.18)] transition-shadow duration-300 rounded-2xl overflow-hidden aspect-[4/3]">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                    <h3 className="text-white font-semibold">{image.title}</h3>
-                    <p className="text-gray-300 text-sm">{image.alt}</p>
+                <div className="shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.18)] transition-shadow duration-300 rounded-2xl overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                      <h3 className="text-white font-semibold">{image.title}</h3>
+                      <p className="text-gray-300 text-sm">{image.alt}</p>
+                    </div>
                   </div>
                 </div>
               </motion.button>
