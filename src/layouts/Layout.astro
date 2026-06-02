@@ -1,0 +1,98 @@
+---
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const siteUrl = 'https://cerveceriaburgos.es';
+const ogImage = `${siteUrl}/images/gallery/local-exterior-1.jpg`;
+
+const { 
+  title = "Cervecería Burgos | Cerveza y Tapas en Carabanchel, Madrid",
+  description = "Cervecería Burgos - Cervezas bien frías, tapas generosas y buen ambiente en Carabanchel, Madrid. Desde 2015. Calle Eugenia de Montijo, 80."
+} = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Cervecería Burgos",
+  "description": "Cervecería con cervezas bien frías, tapas generosas y terraza en Carabanchel, Madrid.",
+  "url": siteUrl,
+  "image": ogImage,
+  "telephone": "+34625047070",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Eugenia de Montijo, 80",
+    "addressLocality": "Madrid",
+    "postalCode": "28025",
+    "addressRegion": "Madrid",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.3786239,
+    "longitude": -3.7477972
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "06:00",
+      "closes": "00:00"
+    }
+  ],
+  "priceRange": "€",
+  "servesCuisine": "Tapas, Cerveza",
+  "acceptsReservations": "True"
+};
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#99120f" />
+    <link rel="canonical" href={siteUrl} />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <title>{title}</title>
+  </head>
+  <body class="antialiased">
+    <slot />
+    <ScrollToTop client:load />
+  </body>
+</html>
+
+<style>
+  @import "../styles/global.css";
+</style>

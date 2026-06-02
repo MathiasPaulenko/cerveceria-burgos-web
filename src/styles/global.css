@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Golden Hour Theme - Cervecería Burgos */
+    --color-primary: #f4a900;
+    --color-secondary: #c1666b;
+    --color-accent: #d4b896;
+    --color-dark: #4a403a;
+    --color-light: #faf8f5;
+    --color-cream: #f5f0e8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#faf8f5] text-[#4a403a] antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
