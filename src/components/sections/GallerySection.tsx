@@ -1,32 +1,33 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
 const galleryImages = [
   // ── EL LOCAL ──
-  { id: 1, src: `${base}images/gallery/local-exterior-1.jpg`, alt: "Fachada", title: "Fachada", category: "local" },
-  { id: 2, src: `${base}images/gallery/local-exterior-2.jpg`, alt: "Entrada", title: "Entrada", category: "local" },
-  { id: 3, src: `${base}images/gallery/local-terraza.jpg`, alt: "Terraza", title: "Terraza", category: "local" },
+  { id: 1, src: `${base}images/gallery/local-exterior-1.jpg`, alt: "Fachada principal de Cervecería Burgos con terraza en Carabanchel", title: "Fachada", category: "local" },
+  { id: 2, src: `${base}images/gallery/local-exterior-2.jpg`, alt: "Entrada del local iluminada por la noche", title: "Entrada", category: "local" },
+  { id: 3, src: `${base}images/gallery/local-terraza.jpg`, alt: "Terraza exterior con mesas para disfrutar al aire libre", title: "Terraza", category: "local" },
 
   // ── TAPAS ──
-  { id: 4, src: `${base}images/gallery/comida-tapa-1.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 5, src: `${base}images/gallery/comida-tapa-2.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 6, src: `${base}images/gallery/comida-tapa-3.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 7, src: `${base}images/gallery/comida-tapa-4.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 8, src: `${base}images/gallery/comida-tapa-5.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 9, src: `${base}images/gallery/comida-tapa-6.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 10, src: `${base}images/gallery/comida-tapa-7.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 11, src: `${base}images/gallery/comida-tapa-8.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 4, src: `${base}images/gallery/comida-tapa-1.jpg`, alt: "Ración de bravas caseras con salsa picante", title: "Bravas", category: "tapas" },
+  { id: 5, src: `${base}images/gallery/comida-tapa-2.jpg`, alt: "Tabla de embutidos ibéricos y quesos", title: "Tabla de embutidos", category: "tapas" },
+  { id: 6, src: `${base}images/gallery/comida-tapa-3.jpg`, alt: "Croquetas caseras cremosas", title: "Croquetas", category: "tapas" },
+  { id: 7, src: `${base}images/gallery/comida-tapa-4.jpg`, alt: "Tortilla española jugosa con cebolla", title: "Tortilla", category: "tapas" },
+  { id: 8, src: `${base}images/gallery/comida-tapa-5.jpg`, alt: "Pulpo a la gallega con patatas y pimentón", title: "Pulpo", category: "tapas" },
+  { id: 9, src: `${base}images/gallery/comida-tapa-6.jpg`, alt: "Patatas con alioli y guindilla", title: "Patatas alioli", category: "tapas" },
+  { id: 10, src: `${base}images/gallery/comida-tapa-7.jpg`, alt: "Gambas al ajillo en cazuela de barro", title: "Gambas al ajillo", category: "tapas" },
+  { id: 11, src: `${base}images/gallery/comida-tapa-8.jpg`, alt: "Ensaladilla rusa con aceitunas y atún", title: "Ensaladilla", category: "tapas" },
 
   // ── COMIDA / MENÚ ──
-  { id: 12, src: `${base}images/gallery/comida-menu-1.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
-  { id: 13, src: `${base}images/gallery/comida-menu-2.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
-  { id: 14, src: `${base}images/gallery/comida-menu-3.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
-  { id: 15, src: `${base}images/gallery/comida-menu-4.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
+  { id: 12, src: `${base}images/gallery/comida-menu-1.jpg`, alt: "Hamburguesa artesanal con queso derretido", title: "Hamburguesa", category: "comida" },
+  { id: 13, src: `${base}images/gallery/comida-menu-2.jpg`, alt: "Bocadillo de calamares a la andaluza", title: "Bocadillo de calamares", category: "comida" },
+  { id: 14, src: `${base}images/gallery/comida-menu-3.jpg`, alt: "Plato de carne a la brasa con guarnición", title: "Carne a la brasa", category: "comida" },
+  { id: 15, src: `${base}images/gallery/comida-menu-4.jpg`, alt: "Ensalada fresca con productos de temporada", title: "Ensalada", category: "comida" },
 ];
 
 const filterOptions = [
@@ -64,6 +65,28 @@ export function GallerySection() {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [currentPage, filter]);
+
+  // Keyboard navigation for lightbox
+  const navigateImage = useCallback((direction: "prev" | "next") => {
+    if (!selectedImage) return;
+    const currentIndex = filteredImages.findIndex((img) => img.id === selectedImage.id);
+    if (currentIndex === -1) return;
+    const newIndex = direction === "prev"
+      ? (currentIndex - 1 + filteredImages.length) % filteredImages.length
+      : (currentIndex + 1) % filteredImages.length;
+    setSelectedImage(filteredImages[newIndex]);
+  }, [selectedImage, filteredImages]);
+
+  useEffect(() => {
+    if (!selectedImage) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedImage(null);
+      if (e.key === "ArrowLeft") navigateImage("prev");
+      if (e.key === "ArrowRight") navigateImage("next");
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage, navigateImage]);
 
   return (
     <section id="galeria" className="py-24 bg-[#FBF5DD]">
@@ -150,16 +173,37 @@ export function GallerySection() {
 
       {selectedImage && (
         <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
-          <div className="relative max-w-4xl w-full">
+          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
             <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
             <div className="mt-4 text-center">
               <h3 className="text-white text-xl font-semibold">{selectedImage.title}</h3>
               <p className="text-gray-400">{selectedImage.alt}</p>
             </div>
-            <button onClick={() => setSelectedImage(null)} className="absolute top-4 right-4 text-white hover:text-[#99120f] transition-colors">
+            {/* Close button */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-[#99120f] transition-colors"
+              aria-label="Cerrar imagen"
+            >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
+            </button>
+            {/* Prev button */}
+            <button
+              onClick={() => navigateImage("prev")}
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#99120f] transition-colors p-2 bg-black/50 rounded-full"
+              aria-label="Imagen anterior"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            {/* Next button */}
+            <button
+              onClick={() => navigateImage("next")}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#99120f] transition-colors p-2 bg-black/50 rounded-full"
+              aria-label="Imagen siguiente"
+            >
+              <ChevronRight className="w-8 h-8" />
             </button>
           </div>
         </div>
