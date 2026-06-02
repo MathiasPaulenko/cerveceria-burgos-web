@@ -4,27 +4,29 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
 const galleryImages = [
   // ── EL LOCAL ──
-  { id: 1, src: "images/gallery/local-exterior-1.jpg", alt: "Fachada", title: "Fachada", category: "local" },
-  { id: 2, src: "images/gallery/local-exterior-2.jpg", alt: "Entrada", title: "Entrada", category: "local" },
-  { id: 3, src: "images/gallery/local-terraza.jpg", alt: "Terraza", title: "Terraza", category: "local" },
+  { id: 1, src: `${base}images/gallery/local-exterior-1.jpg`, alt: "Fachada", title: "Fachada", category: "local" },
+  { id: 2, src: `${base}images/gallery/local-exterior-2.jpg`, alt: "Entrada", title: "Entrada", category: "local" },
+  { id: 3, src: `${base}images/gallery/local-terraza.jpg`, alt: "Terraza", title: "Terraza", category: "local" },
 
   // ── TAPAS ──
-  { id: 4, src: "images/gallery/comida-tapa-1.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 5, src: "images/gallery/comida-tapa-2.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 6, src: "images/gallery/comida-tapa-3.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 7, src: "images/gallery/comida-tapa-4.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 8, src: "images/gallery/comida-tapa-5.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 9, src: "images/gallery/comida-tapa-6.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 10, src: "images/gallery/comida-tapa-7.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
-  { id: 11, src: "images/gallery/comida-tapa-8.jpg", alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 4, src: `${base}images/gallery/comida-tapa-1.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 5, src: `${base}images/gallery/comida-tapa-2.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 6, src: `${base}images/gallery/comida-tapa-3.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 7, src: `${base}images/gallery/comida-tapa-4.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 8, src: `${base}images/gallery/comida-tapa-5.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 9, src: `${base}images/gallery/comida-tapa-6.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 10, src: `${base}images/gallery/comida-tapa-7.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
+  { id: 11, src: `${base}images/gallery/comida-tapa-8.jpg`, alt: "Tapas", title: "Tapas", category: "tapas" },
 
   // ── COMIDA / MENÚ ──
-  { id: 12, src: "images/gallery/comida-menu-1.jpg", alt: "Del menú", title: "Del menú", category: "comida" },
-  { id: 13, src: "images/gallery/comida-menu-2.jpg", alt: "Del menú", title: "Del menú", category: "comida" },
-  { id: 14, src: "images/gallery/comida-menu-3.jpg", alt: "Del menú", title: "Del menú", category: "comida" },
-  { id: 15, src: "images/gallery/comida-menu-4.jpg", alt: "Del menú", title: "Del menú", category: "comida" },
+  { id: 12, src: `${base}images/gallery/comida-menu-1.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
+  { id: 13, src: `${base}images/gallery/comida-menu-2.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
+  { id: 14, src: `${base}images/gallery/comida-menu-3.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
+  { id: 15, src: `${base}images/gallery/comida-menu-4.jpg`, alt: "Del menú", title: "Del menú", category: "comida" },
 ];
 
 const filterOptions = [
