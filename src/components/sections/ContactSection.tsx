@@ -105,20 +105,26 @@ export function ContactSection() {
 
               {/* Parking card */}
               <motion.div
-                className="bg-[#FACB6E] p-6 rounded-xl border-l-4 border-[#99120f] cursor-default"
-                whileHover={{ scale: 1.01 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#151418]/5 flex items-start gap-4 cursor-default"
+                whileHover={{
+                  y: -4,
+                  boxShadow: "0 12px 24px rgba(0,0,0,0.08)",
+                  borderColor: "rgba(153, 18, 15, 0.15)",
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <div className="flex items-start gap-3">
-                  <div className="p-2 bg-[#99120f]/10 rounded-lg shrink-0">
-                    <Car className="w-5 h-5 text-[#99120f]" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-[#151418]">¿Vienes en coche?</h3>
-                    <p className="text-[#A06029] text-sm mt-1">
-                      Parking disponible en <span className="font-semibold text-[#151418]">Garaje Quintana</span> (345m)
-                    </p>
-                  </div>
+                <motion.div
+                  className="p-3 bg-[#99120f]/10 rounded-lg shrink-0"
+                  whileHover={{ scale: 1.15, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 400 }}
+                >
+                  <Car className="w-6 h-6 text-[#99120f]" />
+                </motion.div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-[#151418] mb-1">¿Vienes en coche?</h3>
+                  <p className="text-[#A06029] text-sm">
+                    Parking disponible en <span className="font-semibold text-[#151418]">Garaje Quintana</span> (345m)
+                  </p>
                 </div>
               </motion.div>
             </div>
