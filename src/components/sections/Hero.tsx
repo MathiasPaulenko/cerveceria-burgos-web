@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Beer, UtensilsCrossed, HeartHandshake, TreePine } from "lucide-react";
 
 export function Hero() {
   return (
@@ -171,23 +171,25 @@ export function Hero() {
           className="flex flex-wrap justify-center gap-3 sm:gap-4"
         >
           {[
-            { icon: "🍺", label: "Cañas bien frías" },
-            { icon: "🍤", label: "Tapas generosas" },
-            { icon: "👋", label: "Buen Servicio" },
-            { icon: "🌿", label: "Terraza" },
-          ].map((item, i) => (
-            <motion.span 
+            { Icon: Beer, label: "Cañas bien frías" },
+            { Icon: UtensilsCrossed, label: "Tapas generosas" },
+            { Icon: HeartHandshake, label: "Buen Servicio" },
+            { Icon: TreePine, label: "Terraza" },
+          ].map((item) => (
+            <motion.span
               key={item.label}
               className="inline-flex items-center gap-1.5 px-4 py-2 text-sm text-[#FBF5DD]/80 bg-[#FBF5DD]/5 border border-[#FBF5DD]/10 rounded-full backdrop-blur-sm cursor-default"
-              whileHover={{ 
-                scale: 1.08, 
+              whileHover={{
+                scale: 1.08,
                 backgroundColor: "rgba(251, 245, 221, 0.12)",
                 borderColor: "rgba(153, 18, 15, 0.4)",
                 y: -2
               }}
               transition={{ type: "spring", stiffness: 400, damping: 15 }}
             >
-              <motion.span whileHover={{ scale: 1.3, rotate: 10 }} transition={{ duration: 0.2 }}>{item.icon}</motion.span>
+              <motion.span whileHover={{ scale: 1.3, rotate: 10 }} transition={{ duration: 0.2 }}>
+                <item.Icon className="w-4 h-4 text-[#FACB6E]" />
+              </motion.span>
               <span>{item.label}</span>
             </motion.span>
           ))}

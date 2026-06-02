@@ -59,13 +59,6 @@ export function GallerySection() {
     setCurrentPage(1);
   };
 
-  useEffect(() => {
-    const el = document.getElementById("galeria");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, [currentPage, filter]);
-
   // Keyboard navigation for lightbox
   const navigateImage = useCallback((direction: "prev" | "next") => {
     if (!selectedImage) return;
