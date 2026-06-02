@@ -29,7 +29,7 @@ const infoCards = [
 
 export function ContactSection() {
   return (
-    <section id="contacto" className="py-24 bg-[#FBF5DD]">
+    <section id="contacto" className="py-24 bg-[#040000]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <motion.span
@@ -37,13 +37,13 @@ export function ContactSection() {
             whileHover={{ scale: 1.05 }}
           >Contacto</motion.span>
           <motion.h2
-            className="mt-3 text-4xl lg:text-5xl font-bold text-[#151418]"
+            className="mt-3 text-4xl lg:text-5xl font-bold text-[#FBF5DD]"
             whileHover={{ x: 4 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             Hablemos
           </motion.h2>
-          <p className="mt-4 text-lg text-[#A06029] max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-[#FBF5DD]/70 max-w-2xl mx-auto">
             En el corazón de Carabanchel, a un paso del metro Eugenia de Montijo
           </p>
         </FadeIn>
@@ -141,7 +141,7 @@ export function ContactSection() {
 
         {/* Socials */}
         <FadeIn delay={0.3} className="mt-16 text-center">
-          <p className="text-sm text-[#A06029] mb-4">Síguenos en redes</p>
+          <p className="text-sm text-[#FBF5DD]/70 mb-4">Síguenos en redes</p>
           <div className="flex justify-center gap-4">
             <motion.a
               href="https://instagram.com/cerveceriaburgos"
