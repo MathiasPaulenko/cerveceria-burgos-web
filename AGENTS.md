@@ -6,9 +6,9 @@ Instructions for AI coding agents working on the Cervecería Burgos landing page
 
 ## Project Overview
 
-Single-page static website for a Spanish tavern (cervecería) in Carabanchel, Madrid. Built with Astro (SSG) + React islands. Deployed to GitHub Pages at `https://mathiaspaulenko.github.io/cerveceria-burgos-web/`.
+Single-page static website for a Spanish tavern (cervecería) in Carabanchel, Madrid. Built with Astro (SSG) + React islands. Deployed to GitHub Pages with custom domain at `https://cerveceriaburgos.es`.
 
-When custom domain `cerveceriaburgos.es` is connected, revert `base` path in `astro.config.mjs`.
+If reverting to GitHub Pages subpath, add `base: '/cerveceria-burgos-web'` in `astro.config.mjs`.
 
 ---
 
@@ -136,17 +136,18 @@ The `GallerySection.tsx` array must match actual files present in this directory
 
 ## Deployment
 
-### GitHub Pages (current)
-- `site`: `https://mathiaspaulenko.github.io`
-- `base`: `/cerveceria-burgos-web`
+### Custom Domain (current)
+- `site`: `https://cerveceriaburgos.es`
+- No `base` path needed
 - Workflow: `.github/workflows/deploy.yml`
+- DNS: A records → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+- `public/CNAME` contains `cerveceriaburgos.es`
 
-### Custom Domain (future)
-When connecting `cerveceriaburgos.es`:
-1. Remove `base` from `astro.config.mjs`
-2. Update `site` to `https://cerveceriaburgos.es`
-3. Update `siteUrl` in `Layout.astro`
-4. Update URLs in `sitemap.xml` and `robots.txt`
+### GitHub Pages subpath (fallback)
+If reverting to `mathiaspaulenko.github.io/cerveceria-burgos-web`:
+1. Add `base: '/cerveceria-burgos-web'` to `astro.config.mjs`
+2. Update `site` to `https://mathiaspaulenko.github.io`
+3. Update URLs accordingly
 
 ---
 
