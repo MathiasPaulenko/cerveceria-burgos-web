@@ -5,8 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mathiaspaulenko.github.io',
-  base: '/cerveceria-burgos-web',
+  site: 'https://cerveceriaburgos.es',
   integrations: [
     react(),
     tailwind({
