@@ -3,34 +3,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-// Pre-generated static values to avoid hydration mismatch
-const bubbles = Array.from({ length: 25 }, (_, i) => {
-  const seed = i * 37;
-  const pseudoRandom = (n: number) => ((seed + n * 17) % 100) / 100;
-  return {
-    id: `bubble-${i}`,
-    size: pseudoRandom(1) * 16 + 8,
-    left: pseudoRandom(2) * 100,
-    duration: pseudoRandom(3) * 8 + 6,
-    delay: pseudoRandom(4) * 10,
-    isGold: pseudoRandom(5) > 0.5,
-    xOffset: (pseudoRandom(6) - 0.5) * 40,
-  };
-});
-
-const stars = Array.from({ length: 12 }, (_, i) => {
-  const seed = i * 53;
-  const pseudoRandom = (n: number) => ((seed + n * 23) % 100) / 100;
-  return {
-    id: `star-${i}`,
-    left: pseudoRandom(1) * 100,
-    bottom: pseudoRandom(2) * 90,
-    size: pseudoRandom(3) * 4 + 3,
-    duration: pseudoRandom(4) * 2 + 1,
-    delay: pseudoRandom(5) * 4,
-  };
-});
-
 export function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -40,51 +12,63 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#040000] via-[#0f0808] to-[#1a1515]" />
 
         {/* Rising beer bubbles - big and visible */}
-        {bubbles.map((b) => (
-          <motion.div
-            key={b.id}
-            className={`absolute rounded-full ${b.isGold ? 'bg-[#FACB6E]' : 'bg-[#FBF5DD]'}`}
-            style={{
-              width: b.size,
-              height: b.size,
-              left: `${b.left}%`,
-              bottom: -30,
-              filter: `blur(${b.size * 0.2}px)`,
-              boxShadow: b.isGold ? `0 0 ${b.size * 2}px ${b.size * 0.5}px rgba(250,203,110,0.4)` : `0 0 ${b.size}px ${b.size * 0.5}px rgba(251,245,221,0.3)`,
-            }}
-            animate={{
-              y: [0, -1100],
-              x: [0, b.xOffset, 0],
-              opacity: [0, b.isGold ? 0.9 : 0.6, 0.3, 0]
-            }}
-            transition={{ duration: b.duration, repeat: Infinity, delay: b.delay, ease: "easeOut" }}
-          />
-        ))}
+        {Array.from({ length: 25 }).map((_, i) => {
+          const size = Math.random() * 16 + 8;
+          const left = Math.random() * 100;
+          const duration = Math.random() * 8 + 6;
+          const delay = Math.random() * 10;
+          const isGold = Math.random() > 0.5;
+          return (
+            <motion.div
+              key={`bubble-${i}`}
+              className={`absolute rounded-full ${isGold ? 'bg-[#FACB6E]' : 'bg-[#FBF5DD]'}`}
+              style={{
+                width: size,
+                height: size,
+                left: `${left}%`,
+                bottom: -30,
+                filter: `blur(${size * 0.2}px)`,
+                boxShadow: isGold ? `0 0 ${size * 2}px ${size * 0.5}px rgba(250,203,110,0.4)` : `0 0 ${size}px ${size * 0.5}px rgba(251,245,221,0.3)`,
+              }}
+              animate={{ 
+                y: [0, -1100], 
+                x: [0, (Math.random() - 0.5) * 40, 0],
+                opacity: [0, isGold ? 0.9 : 0.6, 0.3, 0] 
+              }}
+              transition={{ duration, repeat: Infinity, delay, ease: "easeOut" }}
+            />
+          );
+        })}
 
         {/* Golden stars */}
-        {stars.map((s) => (
-          <motion.div
-            key={s.id}
-            className="absolute rounded-full bg-[#FACB6E]"
-            style={{
-              width: s.size,
-              height: s.size,
-              left: `${s.left}%`,
-              bottom: `${s.bottom}%`,
-              boxShadow: `0 0 ${s.size * 4}px ${s.size}px rgba(250,203,110,0.6)`,
-            }}
-            animate={{
-              opacity: [0.3, 1, 0.3],
-              scale: [1, 1.3, 1]
-            }}
-            transition={{
-              duration: s.duration,
-              repeat: Infinity,
-              delay: s.delay,
-              ease: "easeInOut"
-            }}
-          />
-        ))}
+        {Array.from({ length: 12 }).map((_, i) => {
+          const left = Math.random() * 100;
+          const bottom = Math.random() * 90;
+          const size = Math.random() * 4 + 3;
+          return (
+            <motion.div
+              key={`star-${i}`}
+              className="absolute rounded-full bg-[#FACB6E]"
+              style={{
+                width: size,
+                height: size,
+                left: `${left}%`,
+                bottom: `${bottom}%`,
+                boxShadow: `0 0 ${size * 4}px ${size}px rgba(250,203,110,0.6)`,
+              }}
+              animate={{ 
+                opacity: [0.3, 1, 0.3],
+                scale: [1, 1.3, 1]
+              }}
+              transition={{ 
+                duration: Math.random() * 2 + 1, 
+                repeat: Infinity, 
+                delay: Math.random() * 4,
+                ease: "easeInOut"
+              }}
+            />
+          );
+        })}
 
         {/* Subtle beer foam wave at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-24 opacity-[0.08]">
