@@ -29,7 +29,7 @@ const infoCards = [
 
 export function ContactSection() {
   return (
-    <section id="contacto" className="py-24 bg-[#FACB6E]">
+    <section id="contacto" className="py-24 bg-[#FEF3C7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <motion.span
