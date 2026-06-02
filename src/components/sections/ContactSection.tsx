@@ -105,7 +105,7 @@ export function ContactSection() {
 
               {/* Parking card */}
               <motion.div
-                className="bg-[#F9E3A7]/40 p-6 rounded-xl border-l-4 border-[#99120f] cursor-default"
+                className="bg-[#FACB6E] p-6 rounded-xl border-l-4 border-[#99120f] cursor-default"
                 whileHover={{ scale: 1.01 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
