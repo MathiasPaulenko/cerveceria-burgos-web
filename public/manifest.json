@@ -2,16 +2,16 @@
   "name": "Cervecería Burgos",
   "short_name": "Cervecería Burgos",
   "description": "Cervezas bien frías, tapas generosas y buen ambiente en Carabanchel, Madrid.",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#FBF5DD",
   "theme_color": "#99120f",
   "orientation": "portrait",
-  "scope": "/",
+  "scope": ".",
   "lang": "es",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
