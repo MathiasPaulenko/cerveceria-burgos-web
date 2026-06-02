@@ -25,7 +25,6 @@ pnpm-debug.log*
 
 # IDE
 .vscode/
-.agents/
 
 # docs
 docs/
