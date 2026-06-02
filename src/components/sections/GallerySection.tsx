@@ -94,7 +94,7 @@ export function GallerySection() {
             <button
               key={key}
               onClick={() => handleFilterChange(key)}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#99120f] focus-visible:ring-offset-2 focus-visible:ring-offset-[#FBF5DD] ${
                 filter === key ? "bg-[#99120f] text-[#FBF5DD] shadow-md" : "bg-white text-[#151418] hover:bg-[#99120f]/10"
               }`}>
               {label}
