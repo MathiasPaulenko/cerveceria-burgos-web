@@ -170,6 +170,19 @@ cerveceria-burgos-web/
 | **GitHub Pages** | [GitHub, Inc.](https://pages.github.com/) |
 | **AI Assistance** | Design & code assistance by [Cascade](https://www.codeium.com/cascade) |
 
+### 🧠 Windsurf / Cascade Skills Used
+
+| Skill | Author / Source |
+|-------|-----------------|
+| **frontend-design** | [Codeium / Cascade](https://www.codeium.com/cascade) |
+| **theme-factory** | [Codeium / Cascade](https://www.codeium.com/cascade) |
+| **brand-guidelines** | [Anthropic](https://www.anthropic.com/) (official brand colors & typography) |
+| **shadcn** | [shadcn/ui](https://ui.shadcn.com/) |
+| **astro** | [Codeium / Cascade](https://www.codeium.com/cascade) |
+| **vercel-react-best-practices** | [Vercel](https://vercel.com/) |
+| **framer-motion-animator** | [Codeium / Cascade](https://www.codeium.com/cascade) |
+| **web-artifacts-builder** | [Codeium / Cascade](https://www.codeium.com/cascade) |
+
 ---
 
 ## 📄 License
