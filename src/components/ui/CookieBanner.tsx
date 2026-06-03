@@ -110,7 +110,7 @@ export function CookieBanner() {
 
 function loadGtag() {
   if (typeof window === "undefined") return;
-  const id = (window as unknown as Record<string, string>).__GA_ID__ || "G-XXXXXXXXXX";
+  const id = (window as unknown as Record<string, string>).__GA_ID__ || "G-KLCJN1G2SE";
   if ((window as unknown as { gtag?: unknown }).gtag) return;
   const script = document.createElement("script");
   script.async = true;
