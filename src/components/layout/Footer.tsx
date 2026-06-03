@@ -34,6 +34,9 @@ export function Footer() {
           </div>
 
           <p className="text-xs text-[#FBF5DD]/30">© {new Date().getFullYear()} Cervecería Burgos</p>
+          <p className="text-[10px] text-[#FBF5DD]/20">
+            Diseño y desarrollo por <a href="mailto:mathias.paulenko@outlook.com" className="hover:text-[#FACB6E] transition-colors">Mathias Paulenko</a>
+          </p>
         </div>
       </div>
     </footer>
