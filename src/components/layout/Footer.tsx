@@ -3,7 +3,7 @@
 import { InstagramIcon, FacebookIcon } from "@/components/icons/SocialIcons";
 import { Logo } from "@/components/icons/Logo";
 import { useTranslation } from "@/i18n/useTranslation";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock, ExternalLink } from "lucide-react";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -16,67 +16,94 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[#040000] text-[#FBF5DD] border-t border-[#FBF5DD]/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
-          {/* Brand */}
-          <div className="space-y-5">
+    <footer className="relative overflow-hidden bg-[#040000] text-[#FBF5DD]">
+      {/* Decorative top line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FACB6E]/60 to-transparent" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
+        {/* Top row: Brand + CTA */}
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 pb-16 border-b border-[#FBF5DD]/10">
+          <div className="space-y-5 max-w-md">
             <a href="#inicio" className="inline-flex items-center">
-              <Logo className="h-10 w-auto" variant="light" />
+              <Logo className="h-12 w-auto" variant="light" />
             </a>
-            <p className="text-[#FBF5DD]/60 text-sm leading-relaxed max-w-xs">
+            <p className="text-[#FBF5DD]/60 text-lg leading-relaxed">
               {t.footer.tagline}
             </p>
-            <div className="flex gap-2">
+            <div className="flex items-center gap-4">
               <a href="https://instagram.com/cerveceriaburgos" target="_blank" rel="noopener noreferrer"
-                className="p-2.5 bg-[#FBF5DD]/5 rounded-lg hover:bg-[#99120f] transition-colors" aria-label="Instagram">
-                <InstagramIcon className="w-5 h-5" />
+                className="group flex items-center gap-2 text-sm text-[#FBF5DD]/60 hover:text-[#FACB6E] transition-colors">
+                <span className="p-2 bg-[#FBF5DD]/5 rounded-lg group-hover:bg-[#FACB6E]/10 transition-colors">
+                  <InstagramIcon className="w-4 h-4" />
+                </span>
+                Instagram
               </a>
               <a href="https://facebook.com/cerveceriaburgos" target="_blank" rel="noopener noreferrer"
-                className="p-2.5 bg-[#FBF5DD]/5 rounded-lg hover:bg-[#99120f] transition-colors" aria-label="Facebook">
-                <FacebookIcon className="w-5 h-5" />
-              </a>
-              <a href="https://wa.me/34625047070" target="_blank" rel="noopener noreferrer"
-                className="p-2.5 bg-[#FBF5DD]/5 rounded-lg hover:bg-[#99120f] transition-colors" aria-label="WhatsApp">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982 1.001-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
+                className="group flex items-center gap-2 text-sm text-[#FBF5DD]/60 hover:text-[#FACB6E] transition-colors">
+                <span className="p-2 bg-[#FBF5DD]/5 rounded-lg group-hover:bg-[#FACB6E]/10 transition-colors">
+                  <FacebookIcon className="w-4 h-4" />
+                </span>
+                Facebook
               </a>
             </div>
           </div>
 
-          {/* Contact */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#FACB6E]">
-              {t.footer.contactTitle}
-            </h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2.5 text-sm text-[#FBF5DD]/70">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#99120f]" />
-                <span>Calle Eugenia de Montijo, 80<br />28025 Madrid</span>
-              </li>
-              <li>
-                <a href="tel:+34625047070" className="flex items-center gap-2.5 text-sm text-[#FBF5DD]/70 hover:text-[#FBF5DD] transition-colors">
-                  <Phone className="w-4 h-4 shrink-0 text-[#99120f]" />
-                  <span>+34 625 047 070</span>
-                </a>
-              </li>
-              <li className="flex items-start gap-2.5 text-sm text-[#FBF5DD]/70">
-                <Clock className="w-4 h-4 mt-0.5 shrink-0 text-[#99120f]" />
-                <span>Lunes – Sábado<br />06:00 – 00:00</span>
-              </li>
-            </ul>
+          <a href="tel:+34625047070"
+            className="flex items-center gap-3 px-8 py-4 bg-[#99120f] hover:bg-[#99120f]/90 rounded-2xl transition-all shadow-lg shadow-[#99120f]/20">
+            <Phone className="w-5 h-5" />
+            <div className="text-left">
+              <span className="block text-xs text-[#FBF5DD]/70 uppercase tracking-wide">Reserva por teléfono</span>
+              <span className="block text-lg font-semibold">+34 625 047 070</span>
+            </div>
+          </a>
+        </div>
+
+        {/* Info cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-16">
+          <div className="group p-6 rounded-2xl bg-[#FBF5DD]/[0.03] border border-[#FBF5DD]/10 hover:border-[#FACB6E]/30 transition-colors">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="p-2.5 bg-[#99120f]/20 rounded-xl text-[#99120f]">
+                <MapPin className="w-5 h-5" />
+              </span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#FACB6E]">{t.footer.contactTitle}</span>
+            </div>
+            <p className="text-[#FBF5DD]/80 text-sm leading-relaxed">
+              Calle Eugenia de Montijo, 80<br />
+              28025 Madrid (Carabanchel)
+            </p>
+            <a href="https://maps.google.com/?q=Cervecería+Burgos" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 mt-3 text-xs text-[#99120f] hover:text-[#FACB6E] transition-colors">
+              Ver en Google Maps <ExternalLink className="w-3 h-3" />
+            </a>
           </div>
 
-          {/* Legal */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#FACB6E]">
-              {t.footer.legalTitle}
-            </h3>
-            <ul className="space-y-3">
+          <div className="group p-6 rounded-2xl bg-[#FBF5DD]/[0.03] border border-[#FBF5DD]/10 hover:border-[#FACB6E]/30 transition-colors">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="p-2.5 bg-[#99120f]/20 rounded-xl text-[#99120f]">
+                <Clock className="w-5 h-5" />
+              </span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#FACB6E]">{t.footer.hoursLabel}</span>
+            </div>
+            <p className="text-[#FBF5DD]/80 text-sm leading-relaxed">
+              <span className="text-[#FBF5DD] font-medium">Lunes – Sábado</span><br />
+              06:00 – 00:00
+            </p>
+            <p className="text-xs text-[#FBF5DD]/40 mt-2">Cenas y copas</p>
+          </div>
+
+          <div className="group p-6 rounded-2xl bg-[#FBF5DD]/[0.03] border border-[#FBF5DD]/10 hover:border-[#FACB6E]/30 transition-colors">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="p-2.5 bg-[#99120f]/20 rounded-xl text-[#99120f]">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#FACB6E]">{t.footer.legalTitle}</span>
+            </div>
+            <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-[#FBF5DD]/70 hover:text-[#FBF5DD] transition-colors text-sm">
+                  <a href={link.href} className="text-sm text-[#FBF5DD]/70 hover:text-[#FACB6E] transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -88,13 +115,13 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-[#FBF5DD]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-[#FBF5DD]/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p className="text-xs text-[#FBF5DD]/30">
             {t.footer.copyright.replace("{year}", year)}
           </p>
-          <p className="text-xs text-[#FBF5DD]/30">
+          <p className="text-xs text-[#FBF5DD]/20">
             <span dangerouslySetInnerHTML={{
-              __html: t.footer.developer.replace("Mathias Paulenko", '<a href="mailto:mathias.paulenko@outlook.com" class="hover:text-[#FBF5DD]/60 transition-colors">Mathias Paulenko</a>')
+              __html: t.footer.developer.replace("Mathias Paulenko", '<a href="mailto:mathias.paulenko@outlook.com" class="hover:text-[#FBF5DD]/50 transition-colors">Mathias Paulenko</a>')
             }} />
           </p>
         </div>
