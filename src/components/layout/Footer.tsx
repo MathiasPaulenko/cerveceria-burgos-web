@@ -36,15 +36,15 @@ export function Footer() {
           </div>
 
           <p className="text-xs text-[#FBF5DD]/30">{t.footer.copyright.replace("{year}", String(new Date().getFullYear()))}</p>
-          <div className="flex items-center gap-2 text-[10px] text-[#FBF5DD]/20">
-            <a href="/aviso-legal" className="hover:text-[#FACB6E] transition-colors">{t.footer.legal}</a>
-            <span>·</span>
-            <a href="/cookies" className="hover:text-[#FACB6E] transition-colors">{t.footer.cookies}</a>
-            <span>·</span>
-            <a href="/privacidad" className="hover:text-[#FACB6E] transition-colors">{t.footer.privacy}</a>
-            <span>·</span>
+          <div className="flex items-center gap-2 text-[11px] text-[#FBF5DD]/70">
+            <a href="/aviso-legal" className="hover:text-[#FBF5DD] transition-colors">{t.footer.legal}</a>
+            <span className="text-[#FBF5DD]/40">·</span>
+            <a href="/cookies" className="hover:text-[#FBF5DD] transition-colors">{t.footer.cookies}</a>
+            <span className="text-[#FBF5DD]/40">·</span>
+            <a href="/privacidad" className="hover:text-[#FBF5DD] transition-colors">{t.footer.privacy}</a>
+            <span className="text-[#FBF5DD]/40">·</span>
             <span dangerouslySetInnerHTML={{
-              __html: t.footer.developer.replace("Mathias Paulenko", '<a href="mailto:mathias.paulenko@outlook.com" class="hover:text-[#FACB6E] transition-colors">Mathias Paulenko</a>')
+              __html: t.footer.developer.replace("Mathias Paulenko", '<a href="mailto:mathias.paulenko@outlook.com" class="hover:text-[#FBF5DD] transition-colors">Mathias Paulenko</a>')
             }} />
           </div>
         </div>

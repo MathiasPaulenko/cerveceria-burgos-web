@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/icons/Logo";
 import { useTranslation } from "@/i18n/useTranslation";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 
 export function Header() {
   const { t, lang, setLanguage } = useTranslation();
@@ -74,13 +75,11 @@ export function Header() {
             })}
           </nav>
           <div className="flex items-center gap-2">
-            <button
-              onClick={() => setLanguage(lang === "es" ? "en" : "es")}
-              className="hidden lg:flex items-center gap-1 px-3 py-1.5 text-sm font-medium rounded-lg bg-[#99120f]/10 text-[#99120f] hover:bg-[#99120f]/20 transition-colors"
-              aria-label={lang === "es" ? "Switch to English" : "Cambiar a Español"}
-            >
-              {lang === "es" ? "ES → EN" : "EN → ES"}
-            </button>
+            <LanguageToggle
+              lang={lang}
+              onChange={setLanguage}
+              className="hidden lg:flex"
+            />
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 text-[#151418]">
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -109,15 +108,18 @@ export function Header() {
                   </a>
                 );
               })}
-              <button
-                onClick={() => {
-                  setLanguage(lang === "es" ? "en" : "es");
-                  setIsMenuOpen(false);
-                }}
-                className="w-full text-left py-3 px-4 rounded-lg font-medium text-[#99120f] bg-[#99120f]/10"
-              >
-                {lang === "es" ? "ES → EN" : "EN → ES"}
-              </button>
+              <div className="flex items-center justify-between py-3 px-4 rounded-lg bg-[#99120f]/10">
+                <span className="font-medium text-[#99120f]">
+                  {lang === "es" ? "Idioma" : "Language"}
+                </span>
+                <LanguageToggle
+                  lang={lang}
+                  onChange={(newLang) => {
+                    setLanguage(newLang);
+                    setIsMenuOpen(false);
+                  }}
+                />
+              </div>
             </nav>
           </motion.div>
         )}
