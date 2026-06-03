@@ -10,9 +10,30 @@ interface Props {
   className?: string;
 }
 
+function SpainFlag({ className = "" }: { readonly className?: string }) {
+  return (
+    <svg viewBox="0 0 24 18" className={className} aria-hidden="true">
+      <rect width="24" height="18" fill="#AA151B" />
+      <rect y="4.5" width="24" height="9" fill="#F1BF00" />
+    </svg>
+  );
+}
+
+function UkFlag({ className = "" }: { readonly className?: string }) {
+  return (
+    <svg viewBox="0 0 24 18" className={className} aria-hidden="true">
+      <rect width="24" height="18" fill="#012169" />
+      <path d="M0 0 L24 18 M24 0 L0 18" stroke="#fff" strokeWidth="2" />
+      <path d="M12 0 V18 M0 9 H24" stroke="#fff" strokeWidth="3" />
+      <path d="M12 0 V18 M0 9 H24" stroke="#C8102E" strokeWidth="1.8" />
+      <path d="M0 0 L24 18 M24 0 L0 18" stroke="#C8102E" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
 const options = [
-  { code: "es" as const, label: "Español", flag: "🇪🇸" },
-  { code: "en" as const, label: "English", flag: "🇬🇧" },
+  { code: "es" as const, label: "Español", Flag: SpainFlag },
+  { code: "en" as const, label: "English", Flag: UkFlag },
 ];
 
 export function LanguageToggle({ lang, onChange, className = "" }: Props) {
@@ -36,7 +57,7 @@ export function LanguageToggle({ lang, onChange, className = "" }: Props) {
         className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#99120f]/10 hover:bg-[#99120f]/20 transition-colors text-[#99120f] font-medium text-sm"
         aria-label="Cambiar idioma"
       >
-        <span className="text-base leading-none">{active.flag}</span>
+        <active.Flag className="w-5 h-4 rounded-sm shadow-sm" />
         <span className="uppercase text-xs tracking-wide">{active.code}</span>
         <ChevronDown
           className={`w-3.5 h-3.5 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
@@ -67,7 +88,7 @@ export function LanguageToggle({ lang, onChange, className = "" }: Props) {
                         : "text-[#151418] hover:bg-[#99120f]/5"
                     }`}
                   >
-                    <span className="text-lg leading-none">{option.flag}</span>
+                    <option.Flag className="w-5 h-4 rounded-sm shadow-sm" />
                     <span className="text-sm font-medium flex-1">{option.label}</span>
                     {selected && <Check className="w-4 h-4" />}
                   </button>
