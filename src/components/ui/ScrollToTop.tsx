@@ -3,8 +3,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function ScrollToTop() {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   const shouldReduceMotion = useReducedMotion();
 
@@ -23,7 +25,7 @@ export function ScrollToTop() {
       <button
         onClick={scrollUp}
         className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[#99120f] text-[#FBF5DD] shadow-lg hover:bg-[#7a0e0c] transition-colors"
-        aria-label="Volver arriba"
+        aria-label={t.scrollToTop}
       >
         <ArrowUp className="w-5 h-5" />
       </button>
@@ -40,7 +42,7 @@ export function ScrollToTop() {
           exit={{ opacity: 0, scale: 0.8 }}
           transition={{ duration: 0.2 }}
           className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[#99120f] text-[#FBF5DD] shadow-lg hover:bg-[#7a0e0c] transition-colors"
-          aria-label="Volver arriba"
+          aria-label={t.scrollToTop}
         >
           <ArrowUp className="w-5 h-5" />
         </motion.button>

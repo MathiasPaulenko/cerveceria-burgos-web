@@ -143,7 +143,7 @@ export function ContactSection() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6071.037765998359!2d-3.7477972!3d40.3786239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418828d989354d%3A0x55d490f2d207688!2sCervecer%C3%ADa%20Burgos!5e0!3m2!1ses!2ses!4v1717345678901"
                 width="100%" height="100%" style={{ border: 0, minHeight: "400px" }} allowFullScreen loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade" title="Ubicación" className="rounded-xl" />
+                referrerPolicy="no-referrer-when-downgrade" title={t.contact.cards.address.title} className="rounded-xl" />
             </motion.div>
           </FadeIn>
         </div>

@@ -4,7 +4,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Beer, Wine, GlassWater, Utensils, Beef } from "lucide-react";
-import cartaData from "@/data/carta.json";
+import cartaDataEs from "@/data/carta.json";
+import cartaDataEn from "@/data/carta_en.json";
 import { useTranslation } from "@/i18n/useTranslation";
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
@@ -12,8 +13,10 @@ const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = 
 };
 
 export function MenuSection() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [activeTab, setActiveTab] = useState("cervezas");
+
+  const cartaData = lang === "en" ? cartaDataEn : cartaDataEs;
 
   const tabs = [
     { id: "cervezas", label: t.menu.tabs?.cervezas || "Cervezas" },
@@ -107,7 +110,7 @@ export function MenuSection() {
                             {item.nombre}
                           </h4>
                           {item.destacado && (
-                            <span className="px-2 py-0.5 bg-[#99120f]/10 text-[#99120f] text-xs rounded-full">Recomendado</span>
+                            <span className="px-2 py-0.5 bg-[#99120f]/10 text-[#99120f] text-xs rounded-full">{t.menu.recommended || "Recomendado"}</span>
                           )}
                         </div>
                         <p className="text-sm text-[#A06029] mt-1">{item.descripcion}</p>
@@ -115,7 +118,7 @@ export function MenuSection() {
                           <p className="text-xs text-[#99120f] mt-1 font-medium">{(item as {nota?: string}).nota}</p>
                         )}
                         {item.alergenos && item.alergenos.length > 0 && (
-                          <p className="text-xs text-[#A06029]/50 mt-1">Alérgenos: {item.alergenos.join(", ")}</p>
+                          <p className="text-xs text-[#A06029]/50 mt-1">{t.menu.allergens || "Alérgenos"}: {item.alergenos.join(", ")}</p>
                         )}
                       </div>
                       <div className="text-right shrink-0">
@@ -123,11 +126,11 @@ export function MenuSection() {
                           <>
                             <span className="font-bold text-[#99120f] text-lg">{item.precio.toFixed(2)}€</span>
                             {(item as {precio_terraza?: number}).precio_terraza && (
-                              <p className="text-xs text-[#A06029]/60">Tza: {(item as {precio_terraza?: number}).precio_terraza?.toFixed(2)}€</p>
+                              <p className="text-xs text-[#A06029]/60">{t.menu.terraceAbbr || "Tza"}: {(item as {precio_terraza?: number}).precio_terraza?.toFixed(2)}€</p>
                             )}
                           </>
                         ) : (
-                          <span className="text-sm text-[#99120f] font-medium">{(item as {nota?: string}).nota || "Incluido"}</span>
+                          <span className="text-sm text-[#99120f] font-medium">{(item as {nota?: string}).nota || t.menu.included || "Incluido"}</span>
                         )}
                       </div>
                     </motion.div>
@@ -149,8 +152,8 @@ export function MenuSection() {
                 <svg className="w-5 h-5 text-[#99120f]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" /></svg>
               </div>
               <div>
-                <h4 className="font-bold text-[#151418]">Notas Importantes</h4>
-                <p className="text-xs text-[#A06029]">Antes de pedir, échale un vistazo</p>
+                <h4 className="font-bold text-[#151418]">{t.menu.notesTitle || "Notas Importantes"}</h4>
+                <p className="text-xs text-[#A06029]">{t.menu.notesSubtitle || "Antes de pedir, échale un vistazo"}</p>
               </div>
             </div>
             <ul className="text-sm text-[#151418]/80 space-y-2 ml-1">
@@ -164,7 +167,7 @@ export function MenuSection() {
             <div className="mt-4 pt-3 border-t border-[#99120f]/15 flex items-center gap-2">
               <svg className="w-3 h-3 text-[#99120f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               <p className="text-xs text-[#A06029] font-medium">
-                Actualizado el {cartaData.ultima_actualizacion}
+                {t.menu.updated || "Actualizado el"} {cartaData.ultima_actualizacion}
               </p>
             </div>
           </motion.div>

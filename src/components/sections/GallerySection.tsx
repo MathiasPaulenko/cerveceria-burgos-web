@@ -8,33 +8,33 @@ import { useTranslation } from "@/i18n/useTranslation";
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
-const galleryImages = [
-  // ── EL LOCAL ──
-  { id: 1, src: `${base}images/gallery/local-exterior-1.jpg`, alt: "Fachada principal de Cervecería Burgos con terraza en Carabanchel", title: "Fachada", category: "local" },
-  { id: 2, src: `${base}images/gallery/local-exterior-2.jpg`, alt: "Entrada del local iluminada por la noche", title: "Entrada", category: "local" },
-  { id: 3, src: `${base}images/gallery/local-terraza.jpg`, alt: "Terraza exterior con mesas para disfrutar al aire libre", title: "Terraza", category: "local" },
-
-  // ── TAPAS ──
-  { id: 4, src: `${base}images/gallery/comida-tapa-1.jpg`, alt: "Ración de bravas caseras con salsa picante", title: "Bravas", category: "tapas" },
-  { id: 5, src: `${base}images/gallery/comida-tapa-2.jpg`, alt: "Tabla de embutidos ibéricos y quesos", title: "Tabla de embutidos", category: "tapas" },
-  { id: 6, src: `${base}images/gallery/comida-tapa-3.jpg`, alt: "Croquetas caseras cremosas", title: "Croquetas", category: "tapas" },
-  { id: 7, src: `${base}images/gallery/comida-tapa-4.jpg`, alt: "Tortilla española jugosa con cebolla", title: "Tortilla", category: "tapas" },
-  { id: 8, src: `${base}images/gallery/comida-tapa-5.jpg`, alt: "Pulpo a la gallega con patatas y pimentón", title: "Pulpo", category: "tapas" },
-  { id: 9, src: `${base}images/gallery/comida-tapa-6.jpg`, alt: "Patatas con alioli y guindilla", title: "Patatas alioli", category: "tapas" },
-  { id: 10, src: `${base}images/gallery/comida-tapa-7.jpg`, alt: "Gambas al ajillo en cazuela de barro", title: "Gambas al ajillo", category: "tapas" },
-  { id: 11, src: `${base}images/gallery/comida-tapa-8.jpg`, alt: "Ensaladilla rusa con aceitunas y atún", title: "Ensaladilla", category: "tapas" },
-
-  // ── COMIDA / MENÚ ──
-  { id: 12, src: `${base}images/gallery/comida-menu-1.jpg`, alt: "Hamburguesa artesanal con queso derretido", title: "Hamburguesa", category: "comida" },
-  { id: 13, src: `${base}images/gallery/comida-menu-2.jpg`, alt: "Bocadillo de calamares a la andaluza", title: "Bocadillo de calamares", category: "comida" },
-  { id: 14, src: `${base}images/gallery/comida-menu-3.jpg`, alt: "Plato de carne a la brasa con guarnición", title: "Carne a la brasa", category: "comida" },
-  { id: 15, src: `${base}images/gallery/comida-menu-4.jpg`, alt: "Ensalada fresca con productos de temporada", title: "Ensalada", category: "comida" },
+const galleryImageData = [
+  { id: 1, src: `${base}images/gallery/local-exterior-1.jpg`, category: "local" },
+  { id: 2, src: `${base}images/gallery/local-exterior-2.jpg`, category: "local" },
+  { id: 3, src: `${base}images/gallery/local-terraza.jpg`, category: "local" },
+  { id: 4, src: `${base}images/gallery/comida-tapa-1.jpg`, category: "tapas" },
+  { id: 5, src: `${base}images/gallery/comida-tapa-2.jpg`, category: "tapas" },
+  { id: 6, src: `${base}images/gallery/comida-tapa-3.jpg`, category: "tapas" },
+  { id: 7, src: `${base}images/gallery/comida-tapa-4.jpg`, category: "tapas" },
+  { id: 8, src: `${base}images/gallery/comida-tapa-5.jpg`, category: "tapas" },
+  { id: 9, src: `${base}images/gallery/comida-tapa-6.jpg`, category: "tapas" },
+  { id: 10, src: `${base}images/gallery/comida-tapa-7.jpg`, category: "tapas" },
+  { id: 11, src: `${base}images/gallery/comida-tapa-8.jpg`, category: "tapas" },
+  { id: 12, src: `${base}images/gallery/comida-menu-1.jpg`, category: "comida" },
+  { id: 13, src: `${base}images/gallery/comida-menu-2.jpg`, category: "comida" },
+  { id: 14, src: `${base}images/gallery/comida-menu-3.jpg`, category: "comida" },
+  { id: 15, src: `${base}images/gallery/comida-menu-4.jpg`, category: "comida" },
 ];
 
 const ITEMS_PER_PAGE = 6;
 
 export function GallerySection() {
   const { t } = useTranslation();
+  const galleryImages = galleryImageData.map((img, i) => ({
+    ...img,
+    alt: t.gallery.images[i]?.alt ?? "",
+    title: t.gallery.images[i]?.title ?? "",
+  }));
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
   const [filter, setFilter] = useState<string>("all");
   const [currentPage, setCurrentPage] = useState(1);

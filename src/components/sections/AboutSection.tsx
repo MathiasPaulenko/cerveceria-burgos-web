@@ -9,9 +9,9 @@ export function AboutSection() {
   const { t } = useTranslation();
 
   const features = [
-    { icon: Clock, title: t.about.features?.schedule?.title || "Horario", description: "Lunes a Sábado: 06:00 - 00:00", subtext: t.about.features?.schedule?.subtext || "Cenas y copas" },
-    { icon: MapPin, title: t.about.features?.location?.title || "Ubicación", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
-    { icon: Users, title: t.about.features?.terrace?.title || "Terraza", description: t.about.features?.terrace?.desc || "Terraza exterior popular", subtext: t.about.features?.terrace?.subtext || "Llega con antelación los fines de semana" },
+    { icon: Clock, title: t.about.features?.schedule?.title || "Horario", description: t.about.features?.schedule?.description || "Lunes a Sábado: 06:00 - 00:00", subtext: t.about.features?.schedule?.subtext || "Cenas y copas" },
+    { icon: MapPin, title: t.about.features?.location?.title || "Ubicación", description: t.about.features?.location?.description || "Calle Eugenia de Montijo, 80", subtext: t.about.features?.location?.subtext || "28025 Madrid (Carabanchel)" },
+    { icon: Users, title: t.about.features?.terrace?.title || "Terraza", description: t.about.features?.terrace?.description || "Terraza exterior popular", subtext: t.about.features?.terrace?.subtext || "Llega con antelación los fines de semana" },
   ];
 
   return (
