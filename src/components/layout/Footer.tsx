@@ -9,14 +9,6 @@ export function Footer() {
   const { t } = useTranslation();
   const year = String(new Date().getFullYear());
 
-  const navLinks = [
-    { label: t.nav.inicio, href: "#inicio" },
-    { label: t.nav.carta, href: "#carta" },
-    { label: t.nav.nosotros, href: "#nosotros" },
-    { label: t.nav.galeria, href: "#galeria" },
-    { label: t.nav.contacto, href: "#contacto" },
-  ];
-
   const legalLinks = [
     { label: t.footer.legal, href: "/aviso-legal" },
     { label: t.footer.cookies, href: "/cookies" },
@@ -26,7 +18,7 @@ export function Footer() {
   return (
     <footer className="bg-[#040000] text-[#FBF5DD] border-t border-[#FBF5DD]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="space-y-5">
             <a href="#inicio" className="inline-flex items-center">
@@ -51,22 +43,6 @@ export function Footer() {
                 </svg>
               </a>
             </div>
-          </div>
-
-          {/* Navigation */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#FACB6E]">
-              {t.footer.navTitle}
-            </h3>
-            <ul className="space-y-3">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href} className="text-[#FBF5DD]/70 hover:text-[#FBF5DD] transition-colors text-sm">
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Contact */}
