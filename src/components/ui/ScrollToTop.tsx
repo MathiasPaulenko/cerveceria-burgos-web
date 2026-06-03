@@ -1,11 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 
 export function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 600);
@@ -14,8 +15,20 @@ export function ScrollToTop() {
   }, []);
 
   const scrollUp = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: shouldReduceMotion ? "auto" : "smooth" });
   };
+
+  if (shouldReduceMotion) {
+    return visible ? (
+      <button
+        onClick={scrollUp}
+        className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[#99120f] text-[#FBF5DD] shadow-lg hover:bg-[#7a0e0c] transition-colors"
+        aria-label="Volver arriba"
+      >
+        <ArrowUp className="w-5 h-5" />
+      </button>
+    ) : null;
+  }
 
   return (
     <AnimatePresence>

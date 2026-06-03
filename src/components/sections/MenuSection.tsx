@@ -5,21 +5,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Beer, Wine, GlassWater, Utensils, Beef } from "lucide-react";
 import cartaData from "@/data/carta.json";
+import { useTranslation } from "@/i18n/useTranslation";
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
   Beer, Wine, GlassWater, Utensils, Beef,
 };
 
-const tabs = [
-  { id: "cervezas", label: "Cervezas" },
-  { id: "mojitos", label: "Mojitos" },
-  { id: "margaritas", label: "Margaritas" },
-  { id: "tapas", label: "Tapas" },
-  { id: "raciones", label: "Raciones" },
-];
-
 export function MenuSection() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("cervezas");
+
+  const tabs = [
+    { id: "cervezas", label: t.menu.tabs?.cervezas || "Cervezas" },
+    { id: "mojitos", label: t.menu.tabs?.mojitos || "Mojitos" },
+    { id: "margaritas", label: t.menu.tabs?.margaritas || "Margaritas" },
+    { id: "tapas", label: t.menu.tabs?.tapas || "Tapas" },
+    { id: "raciones", label: t.menu.tabs?.raciones || "Raciones" },
+  ];
 
   const activeCategory = cartaData.categorias.find(cat => cat.id === activeTab);
   const IconComponent = activeCategory ? (iconMap[activeCategory.icono] || Wine) : Wine;
@@ -28,12 +30,12 @@ export function MenuSection() {
     <section id="carta" className="py-24 bg-[#FBF5DD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-12">
-          <span className="text-[#99120f] font-medium tracking-wide uppercase text-sm">Nuestra Carta</span>
+          <span className="text-[#99120f] font-medium tracking-wide uppercase text-sm">{t.menu.title}</span>
           <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-[#151418]">
-            Cervezas, Tapas y <span className="text-[#99120f]">Cócteles</span>
+            {t.menu.highlight}
           </h2>
           <p className="mt-4 text-lg text-[#A06029] max-w-2xl mx-auto">
-            Cervezas bien frías, tapas generosas y cócteles con personalidad
+            {t.menu.subtitle}
           </p>
         </FadeIn>
 

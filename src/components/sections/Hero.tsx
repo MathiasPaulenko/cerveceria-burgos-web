@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown, Beer, UtensilsCrossed, HeartHandshake, TreePine } from "lucide-react";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function Hero() {
+  const { t } = useTranslation();
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated rich dark background */}
@@ -115,7 +117,7 @@ export function Hero() {
             whileHover={{ scale: 1.05, backgroundColor: "rgba(153, 18, 15, 0.35)", borderColor: "rgba(153, 18, 15, 0.5)" }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Carabanchel, Madrid · Desde 2015
+            {t.hero.location}
           </motion.span>
         </motion.div>
         <motion.div 
@@ -152,7 +154,7 @@ export function Hero() {
           transition={{ delay: 0.25, duration: 0.8 }}
           className="mt-6 text-lg sm:text-xl text-[#FBF5DD]/70 max-w-xl mx-auto font-light tracking-wide cursor-default"
         >
-          Buena cerveza, buena gente, buen momento
+          {t.hero.tagline}
         </motion.p>
 
         {/* Divider */}
@@ -171,10 +173,10 @@ export function Hero() {
           className="flex flex-wrap justify-center gap-3 sm:gap-4"
         >
           {[
-            { Icon: Beer, label: "Cañas bien frías" },
-            { Icon: UtensilsCrossed, label: "Tapas generosas" },
-            { Icon: HeartHandshake, label: "Buen Servicio" },
-            { Icon: TreePine, label: "Terraza" },
+            { Icon: Beer, label: t.hero.badges.beer },
+            { Icon: UtensilsCrossed, label: t.hero.badges.tapas },
+            { Icon: HeartHandshake, label: t.hero.badges.service },
+            { Icon: TreePine, label: t.hero.badges.terrace },
           ].map((item) => (
             <motion.span
               key={item.label}
@@ -200,7 +202,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <motion.a href="#carta" animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}
           className="flex flex-col items-center text-[#FBF5DD]/50 hover:text-[#99120f] transition-colors">
-          <span className="text-sm mb-2">Descubre más</span>
+          <span className="text-sm mb-2">{t.hero.scrollDown}</span>
           <ChevronDown className="w-6 h-6" />
         </motion.a>
       </motion.div>

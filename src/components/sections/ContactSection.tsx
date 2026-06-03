@@ -4,30 +4,33 @@ import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { MapPin, Clock, Phone, Navigation, Car } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "@/components/icons/SocialIcons";
-
-const infoCards = [
-  {
-    icon: MapPin,
-    title: "Dirección",
-    lines: ["Calle Eugenia de Montijo, 80", "28025 Madrid (Carabanchel)"],
-    extra: "Metro: Eugenia de Montijo (L11) - 696m",
-    link: { href: "https://maps.google.com/?q=Cervecería+Burgos", text: "Cómo llegar", icon: Navigation },
-  },
-  {
-    icon: Clock,
-    title: "Horario",
-    lines: ["Lunes a Sábado"],
-    highlight: "06:00 - 00:00",
-    extra: "Cenas y copas",
-  },
-  {
-    icon: Phone,
-    title: "Teléfono",
-    phones: ["+34 625 047 070", "+34 674 482 243"],
-  },
-];
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function ContactSection() {
+  const { t } = useTranslation();
+
+  const infoCards = [
+    {
+      icon: MapPin,
+      title: t.contact.cards.address.title,
+      lines: t.contact.cards.address.lines,
+      extra: t.contact.cards.address.extra,
+      link: { href: "https://maps.google.com/?q=Cervecería+Burgos", text: t.contact.cards.address.link, icon: Navigation },
+    },
+    {
+      icon: Clock,
+      title: t.contact.cards.schedule.title,
+      lines: t.contact.cards.schedule.lines,
+      highlight: t.contact.cards.schedule.highlight,
+      extra: t.contact.cards.schedule.extra,
+    },
+    {
+      icon: Phone,
+      title: t.contact.cards.phone.title,
+      phones: ["+34 625 047 070", "+34 674 482 243"],
+    },
+  ];
+
   return (
     <section id="contacto" className="py-24 bg-[#FEF3C7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,16 +38,16 @@ export function ContactSection() {
           <motion.span
             className="text-[#99120f] font-medium tracking-wide uppercase text-sm inline-block"
             whileHover={{ scale: 1.05 }}
-          >Contacto</motion.span>
+          >{t.contact.label}</motion.span>
           <motion.h2
             className="mt-3 text-4xl lg:text-5xl font-bold text-[#151418]"
             whileHover={{ x: 4 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Hablemos
+            {t.contact.title}
           </motion.h2>
           <p className="mt-4 text-lg text-[#A06029] max-w-2xl mx-auto">
-            En el corazón de Carabanchel, a un paso del metro Eugenia de Montijo
+            {t.contact.subtitle}
           </p>
         </FadeIn>
 
@@ -121,9 +124,9 @@ export function ContactSection() {
                   <Car className="w-6 h-6 text-[#99120f]" />
                 </motion.div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-[#151418] mb-1">¿Vienes en coche?</h3>
+                  <h3 className="font-semibold text-[#151418] mb-1">{t.contact.cards.parking.title}</h3>
                   <p className="text-[#A06029] text-sm">
-                    Parking disponible en <span className="font-semibold text-[#151418]">Garaje Quintana</span> (345m)
+                    {t.contact.cards.parking.desc.replace("{garage}", "Garaje Quintana")}
                   </p>
                 </div>
               </motion.div>
@@ -147,7 +150,7 @@ export function ContactSection() {
 
         {/* Socials */}
         <FadeIn delay={0.3} className="mt-16 text-center">
-          <p className="text-sm text-[#A06029] mb-4">Síguenos en redes</p>
+          <p className="text-sm text-[#A06029] mb-4">{t.contact.socials}</p>
           <div className="flex justify-center gap-4">
             <motion.a
               href="https://instagram.com/cerveceriaburgos"

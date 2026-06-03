@@ -4,18 +4,20 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/icons/Logo";
-
-const navItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Carta", href: "#carta" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Galería", href: "#galeria" },
-  { label: "Contacto", href: "#contacto" },
-];
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function Header() {
+  const { t, lang, setLanguage } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("#inicio");
+
+  const navItems = [
+    { label: t.nav.inicio, href: "#inicio" },
+    { label: t.nav.carta, href: "#carta" },
+    { label: t.nav.nosotros, href: "#nosotros" },
+    { label: t.nav.galeria, href: "#galeria" },
+    { label: t.nav.contacto, href: "#contacto" },
+  ];
 
   useEffect(() => {
     const sections = navItems.map((item) => item.href.replace("#", ""));
@@ -71,9 +73,18 @@ export function Header() {
               );
             })}
           </nav>
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 text-[#151418]">
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setLanguage(lang === "es" ? "en" : "es")}
+              className="hidden lg:flex items-center gap-1 px-3 py-1.5 text-sm font-medium rounded-lg bg-[#99120f]/10 text-[#99120f] hover:bg-[#99120f]/20 transition-colors"
+              aria-label={lang === "es" ? "Switch to English" : "Cambiar a Español"}
+            >
+              {lang === "es" ? "ES → EN" : "EN → ES"}
+            </button>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 text-[#151418]">
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
       <AnimatePresence>
@@ -98,6 +109,15 @@ export function Header() {
                   </a>
                 );
               })}
+              <button
+                onClick={() => {
+                  setLanguage(lang === "es" ? "en" : "es");
+                  setIsMenuOpen(false);
+                }}
+                className="w-full text-left py-3 px-4 rounded-lg font-medium text-[#99120f] bg-[#99120f]/10"
+              >
+                {lang === "es" ? "ES → EN" : "EN → ES"}
+              </button>
             </nav>
           </motion.div>
         )}

@@ -2,8 +2,10 @@
 
 import { InstagramIcon, FacebookIcon } from "@/components/icons/SocialIcons";
 import { Logo } from "@/components/icons/Logo";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-[#151418] text-[#FBF5DD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -13,7 +15,7 @@ export function Footer() {
           </a>
 
           <p className="text-[#FBF5DD]/60 max-w-sm text-sm">
-            Buena cerveza, buena gente, buen momento.
+            {t.footer.tagline}
           </p>
 
           <div className="flex gap-3">
@@ -33,10 +35,14 @@ export function Footer() {
             </a>
           </div>
 
-          <p className="text-xs text-[#FBF5DD]/30">© {new Date().getFullYear()} Cervecería Burgos</p>
-          <p className="text-[10px] text-[#FBF5DD]/20">
-            Diseño y desarrollo por <a href="mailto:mathias.paulenko@outlook.com" className="hover:text-[#FACB6E] transition-colors">Mathias Paulenko</a>
-          </p>
+          <p className="text-xs text-[#FBF5DD]/30">{t.footer.copyright.replace("{year}", String(new Date().getFullYear()))}</p>
+          <div className="flex items-center gap-2 text-[10px] text-[#FBF5DD]/20">
+            <a href="/privacidad" className="hover:text-[#FACB6E] transition-colors">Privacidad</a>
+            <span>·</span>
+            <span dangerouslySetInnerHTML={{
+              __html: t.footer.developer.replace("Mathias Paulenko", '<a href="mailto:mathias.paulenko@outlook.com" class="hover:text-[#FACB6E] transition-colors">Mathias Paulenko</a>')
+            }} />
+          </div>
         </div>
       </div>
     </footer>

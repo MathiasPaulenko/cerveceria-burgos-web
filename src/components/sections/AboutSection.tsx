@@ -3,38 +3,37 @@
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Clock, MapPin, Users } from "lucide-react";
-
-const features = [
-  { icon: Clock, title: "Horario", description: "Lunes a Sábado: 06:00 - 00:00", subtext: "Cenas y copas" },
-  { icon: MapPin, title: "Ubicación", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
-  { icon: Users, title: "Terraza", description: "Terraza exterior popular", subtext: "Llega con antelación los fines de semana" },
-];
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function AboutSection() {
+  const { t } = useTranslation();
+
+  const features = [
+    { icon: Clock, title: t.about.features?.schedule?.title || "Horario", description: "Lunes a Sábado: 06:00 - 00:00", subtext: t.about.features?.schedule?.subtext || "Cenas y copas" },
+    { icon: MapPin, title: t.about.features?.location?.title || "Ubicación", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
+    { icon: Users, title: t.about.features?.terrace?.title || "Terraza", description: t.about.features?.terrace?.desc || "Terraza exterior popular", subtext: t.about.features?.terrace?.subtext || "Llega con antelación los fines de semana" },
+  ];
+
   return (
     <section id="nosotros" className="py-24 bg-[#F9E3A7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           <FadeIn direction="left" className="flex flex-col h-full">
             <div className="flex-1 flex flex-col justify-center">
-              <motion.span 
+              <motion.span
                 className="text-[#99120f] font-medium tracking-wide uppercase text-sm inline-block"
                 whileHover={{ scale: 1.05 }}
-              >Desde 2015 en Carabanchel</motion.span>
-              <motion.h2 
+              >{t.about.label}</motion.span>
+              <motion.h2
                 className="mt-4 text-4xl lg:text-5xl font-bold text-[#151418] leading-tight"
                 whileHover={{ x: 4 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                El Rincón del Barrio <span className="text-[#99120f]">Con Buen Rollo</span>
+                {t.about.title} <span className="text-[#99120f]">{t.about.highlight}</span>
               </motion.h2>
               <div className="mt-6 space-y-4 text-[#A06029] text-lg leading-relaxed">
-                {[
-                  "En Cervecería Burgos encontrarás buena cerveza servida en vaso grande y con tapa generosa.",
-                  "Cervezas bien frías, tapas para compartir y una terraza que invita a quedarse.",
-                  "Ven con hambre y gana de disfrutar: aquí se come bien, se paga bien y se vuelve con frecuencia."
-                ].map((text, i) => (
-                  <motion.p 
+                {t.about.paragraphs?.map((text: string, i: number) => (
+                  <motion.p
                     key={i}
                     className={i === 2 ? "font-medium text-[#151418]" : ""}
                     whileHover={{ x: 6, color: "#151418" }}
@@ -42,7 +41,19 @@ export function AboutSection() {
                   >
                     {text}
                   </motion.p>
-                ))}
+                )) || (
+                  <>
+                    <motion.p whileHover={{ x: 6, color: "#151418" }} transition={{ type: "spring", stiffness: 400, damping: 20 }}>
+                      En Cervecería Burgos encontrarás buena cerveza servida en vaso grande y con tapa generosa.
+                    </motion.p>
+                    <motion.p whileHover={{ x: 6, color: "#151418" }} transition={{ type: "spring", stiffness: 400, damping: 20 }}>
+                      Cervezas bien frías, tapas para compartir y una terraza que invita a quedarse.
+                    </motion.p>
+                    <motion.p className="font-medium text-[#151418]" whileHover={{ x: 6, color: "#151418" }} transition={{ type: "spring", stiffness: 400, damping: 20 }}>
+                      Ven con hambre y gana de disfrutar: aquí se come bien, se paga bien y se vuelve con frecuencia.
+                    </motion.p>
+                  </>
+                )}
               </div>
             </div>
           </FadeIn>
@@ -50,17 +61,17 @@ export function AboutSection() {
           <FadeIn direction="right" delay={0.2} className="flex flex-col h-full">
             <div className="space-y-6 flex-1 flex flex-col justify-center">
               {features.map((feature) => (
-                <motion.div 
-                  key={feature.title} 
+                <motion.div
+                  key={feature.title}
                   className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#151418]/5 cursor-default"
-                  whileHover={{ 
-                    y: -4, 
+                  whileHover={{
+                    y: -4,
                     boxShadow: "0 12px 24px rgba(0,0,0,0.08)",
                     borderColor: "rgba(153, 18, 15, 0.2)"
                   }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
-                  <motion.div 
+                  <motion.div
                     className="p-3 bg-[#99120f]/10 rounded-lg shrink-0"
                     whileHover={{ scale: 1.15, rotate: 5 }}
                     transition={{ type: "spring", stiffness: 400 }}
@@ -74,7 +85,6 @@ export function AboutSection() {
                   </div>
                 </motion.div>
               ))}
-
             </div>
           </FadeIn>
         </div>
