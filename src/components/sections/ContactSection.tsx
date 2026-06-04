@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { MapPin, Clock, Phone, Navigation, Car } from "lucide-react";
-import { InstagramIcon, FacebookIcon } from "@/components/icons/SocialIcons";
 import { useTranslation } from "@/i18n/useTranslation";
 
 export function ContactSection() {
@@ -52,7 +51,6 @@ export function ContactSection() {
         </FadeIn>
 
         <div className="grid lg:grid-cols-5 gap-8">
-          {/* Info cards + Map */}
           <FadeIn direction="left" className="lg:col-span-2">
             <div className="space-y-6">
               {infoCards.map((card) => (
@@ -106,7 +104,6 @@ export function ContactSection() {
                 </motion.div>
               ))}
 
-              {/* Parking card */}
               <motion.div
                 className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#151418]/5 flex items-start gap-4 cursor-default"
                 whileHover={{
@@ -134,7 +131,6 @@ export function ContactSection() {
             </div>
           </FadeIn>
 
-          {/* Map */}
           <FadeIn direction="right" delay={0.2} className="lg:col-span-3">
             <motion.div
               className="h-full min-h-[400px] rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#151418]/5"

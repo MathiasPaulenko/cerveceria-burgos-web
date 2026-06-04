@@ -12,24 +12,20 @@ export function Footer() {
   return (
     <footer className="bg-[#151418] text-[#FBF5DD] border-t border-[#FBF5DD]/10">
       <div className="max-w-4xl mx-auto px-6 py-10 text-center">
-        {/* Logo */}
         <a href="#inicio" className="inline-block mb-4">
           <Logo className="h-8 w-auto mx-auto" variant="light" />
         </a>
 
-        {/* Tagline */}
         <p className="text-sm text-[#FBF5DD]/50 mb-6">
           {t.footer.tagline}
         </p>
 
-        {/* Phone CTA */}
         <a href="tel:+34625047070"
           className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#99120f] hover:bg-[#99120f]/90 rounded-full text-sm font-medium transition-colors mb-8">
           <Phone className="w-4 h-4" />
           +34 625 047 070
         </a>
 
-        {/* 3 columns centered */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10 text-sm">
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-[#FACB6E] mb-3">

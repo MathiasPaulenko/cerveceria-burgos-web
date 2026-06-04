@@ -9,12 +9,9 @@ export function Hero() {
   const { t } = useTranslation();
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated rich dark background */}
       <div className="absolute inset-0 bg-[#040000] overflow-hidden">
-        {/* Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#040000] via-[#0f0808] to-[#1a1515]" />
 
-        {/* Rising beer bubbles - big and visible */}
         {Array.from({ length: 25 }).map((_, i) => {
           const size = Math.random() * 16 + 8;
           const left = Math.random() * 100;
@@ -43,7 +40,6 @@ export function Hero() {
           );
         })}
 
-        {/* Golden stars */}
         {Array.from({ length: 12 }).map((_, i) => {
           const left = Math.random() * 100;
           const bottom = Math.random() * 90;
@@ -73,14 +69,12 @@ export function Hero() {
           );
         })}
 
-        {/* Subtle beer foam wave at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-24 opacity-[0.08]">
           <svg viewBox="0 0 1440 120" className="w-full h-full" preserveAspectRatio="none">
             <path fill="#FBF5DD" d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" />
           </svg>
         </div>
 
-        {/* Floating tapas/cerveza icons (very subtle) */}
         <motion.div
           className="absolute top-[20%] left-[10%] opacity-[0.04]"
           animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
@@ -100,7 +94,6 @@ export function Hero() {
           </svg>
         </motion.div>
 
-        {/* Dot pattern */}
         <div className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage: `radial-gradient(circle, #FBF5DD 1px, transparent 1px)`,
@@ -108,7 +101,6 @@ export function Hero() {
           }}
         />
 
-        {/* Bottom vignette */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#040000] to-transparent" />
       </div>
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
@@ -148,7 +140,6 @@ export function Hero() {
           </motion.span>
         </motion.div>
 
-        {/* Tagline */}
         <motion.p 
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -158,7 +149,6 @@ export function Hero() {
           {t.hero.tagline}
         </motion.p>
 
-        {/* Divider */}
         <motion.div 
           initial={{ scaleX: 0 }} 
           animate={{ scaleX: 1 }} 
@@ -166,7 +156,6 @@ export function Hero() {
           className="w-24 h-px bg-[#99120f]/50 mx-auto mt-8 mb-8"
         />
 
-        {/* Feature badges */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -198,7 +187,6 @@ export function Hero() {
           ))}
         </motion.div>
 
-        {/* Social icons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

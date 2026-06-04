@@ -45,7 +45,6 @@ export function CocktailSection() {
           </p>
         </FadeIn>
 
-        {/* Tabs */}
         <FadeIn delay={0.1} className="mb-12">
           <div className="flex flex-wrap justify-center gap-2 sm:gap-0 sm:border-b sm:border-[#FBF5DD]/10">
             {tabs.map((tab) => (
@@ -73,7 +72,6 @@ export function CocktailSection() {
           </div>
         </FadeIn>
 
-        {/* Content */}
         <AnimatePresence mode="wait">
           {activeCategory && (
             <motion.div
@@ -102,7 +100,6 @@ export function CocktailSection() {
                     className="bg-[#151418]/60 rounded-xl p-4 border border-[#FBF5DD]/5 hover:border-[#FACB6E]/30 transition-colors group"
                   >
                     <div className="flex items-center gap-4">
-                      {/* Thumbnail */}
                       <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 bg-gradient-to-br from-[#99120f]/30 to-[#FACB6E]/20 flex items-center justify-center">
                         <img
                           src={`/images/cocktails/${item.id}.webp`}
@@ -114,7 +111,6 @@ export function CocktailSection() {
                         <Martini className="w-7 h-7 text-[#FACB6E]/60 z-0" />
                       </div>
 
-                      {/* Content */}
                       <div className="flex-1 min-w-0">
                         <h4 className="font-semibold text-[#FBF5DD] group-hover:text-[#FACB6E] transition-colors truncate">
                           {item.nombre}
@@ -124,7 +120,6 @@ export function CocktailSection() {
                         )}
                       </div>
 
-                      {/* Price */}
                       <div className="text-right shrink-0 self-center">
                         <span className="text-lg font-bold text-[#FACB6E]">
                           {item.precio.toFixed(2).replace('.', ',')} €
@@ -138,7 +133,6 @@ export function CocktailSection() {
           )}
         </AnimatePresence>
 
-        {/* Notes */}
         <FadeIn delay={0.3} className="mt-12 text-center">
           <motion.div
             className="bg-[#F9E3A7]/10 rounded-xl p-6 max-w-3xl mx-auto border-l-4 border-[#FACB6E]"

@@ -44,7 +44,6 @@ export function MenuSection() {
           </p>
         </FadeIn>
 
-        {/* Tabs */}
         <FadeIn delay={0.1} className="mb-12">
           <div className="flex flex-wrap justify-center gap-2 sm:gap-0 sm:border-b sm:border-[#151418]/10">
             {tabs.map((tab) => (
@@ -72,7 +71,6 @@ export function MenuSection() {
           </div>
         </FadeIn>
 
-        {/* Tab Content - Full Width */}
         <AnimatePresence mode="wait">
           {activeCategory && (
             <motion.div
@@ -84,7 +82,6 @@ export function MenuSection() {
               className="max-w-4xl mx-auto"
             >
               <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-[#151418]/5">
-                {/* Category Header */}
                 <div className="flex items-center gap-4 mb-8 pb-6 border-b border-[#151418]/5">
                   <div className="p-4 bg-[#99120f]/10 rounded-xl">
                     <IconComponent className="w-8 h-8 text-[#99120f]" />
@@ -97,7 +94,6 @@ export function MenuSection() {
                   </div>
                 </div>
 
-                {/* Items - Full Width List */}
                 <div className="space-y-3">
                   {activeCategory.items.filter(item => item.disponible).map((item) => (
                     <motion.div 

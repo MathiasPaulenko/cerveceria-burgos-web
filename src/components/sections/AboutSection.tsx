@@ -58,7 +58,6 @@ export function AboutSection() {
                 )}
               </div>
 
-              {/* Extra content to balance height with right cards */}
               <motion.div
                 className="mt-8 p-6 bg-white/60 rounded-xl border border-[#151418]/5"
                 whileHover={{ scale: 1.01 }}

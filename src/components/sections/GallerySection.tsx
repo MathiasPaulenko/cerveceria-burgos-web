@@ -226,7 +226,6 @@ export function GallerySection() {
                       loadedImages={loadedImages}
                       setLoadedImages={setLoadedImages}
                     />
-                    {/* Title overlay hidden for now */}
                   </div>
                 </div>
               </motion.button>
@@ -234,7 +233,6 @@ export function GallerySection() {
           ))}
         </div>
 
-        {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center gap-2 mt-12">
             <button
@@ -280,8 +278,6 @@ export function GallerySection() {
         >
           <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
             <img src={selectedImage.src} alt={selectedImage.alt} decoding="async" className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
-            {/* Lightbox title/description hidden for now */}
-            {/* Close button */}
             <button
               ref={closeButtonRef}
               onClick={() => setSelectedImage(null)}
@@ -292,7 +288,6 @@ export function GallerySection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            {/* Prev button */}
             <button
               onClick={() => navigateImage("prev")}
               className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#99120f] transition-colors p-2 bg-black/50 rounded-full"
@@ -300,7 +295,6 @@ export function GallerySection() {
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
-            {/* Next button */}
             <button
               onClick={() => navigateImage("next")}
               className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#99120f] transition-colors p-2 bg-black/50 rounded-full"
