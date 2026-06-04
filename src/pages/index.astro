@@ -3,8 +3,9 @@ import Layout from "@/layouts/Layout.astro";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { MenuSection } from "@/components/sections/MenuSection";
-import { AboutContactSection } from "@/components/sections/AboutContactSection";
+import { AboutSection } from "@/components/sections/AboutSection";
 import { GallerySection } from "@/components/sections/GallerySection";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/layout/Footer";
 ---
 
@@ -13,8 +14,9 @@ import { Footer } from "@/components/layout/Footer";
   <main>
     <Hero client:load />
     <MenuSection client:visible />
+    <AboutSection client:visible />
     <GallerySection client:visible />
-    <AboutContactSection client:visible />
+    <ContactSection client:visible />
   </main>
   <Footer client:visible />
 </Layout>
