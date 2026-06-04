@@ -4,12 +4,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie } from "lucide-react";
+import { HamburgerIcon } from "@/components/icons/HamburgerIcon";
 import cartaDataEs from "@/data/carta.json";
 import cartaDataEn from "@/data/carta_en.json";
 import { useTranslation } from "@/i18n/useTranslation";
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
-  Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie,
+  Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie, HamburgerIcon,
 };
 
 export function MenuSection() {

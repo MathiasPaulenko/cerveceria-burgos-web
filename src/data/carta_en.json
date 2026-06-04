@@ -5,7 +5,7 @@
     {
       "id": "raciones",
       "nombre": "Sharing Plates",
-      "icono": "ChefHat",
+      "icono": "Soup",
       "descripcion": "Half portion available on most products",
       "items": [
         {
@@ -639,7 +639,7 @@
     {
       "id": "hamburguesas",
       "nombre": "Burgers",
-      "icono": "Sandwich",
+      "icono": "HamburgerIcon",
       "descripcion": "Todas con carne 200gr y patatas fritas",
       "items": [
         {
@@ -747,7 +747,7 @@
     {
       "id": "platos_combinados",
       "nombre": "Combo Plates",
-      "icono": "Soup",
+      "icono": "ChefHat",
       "items": [
         {
           "id": "combo_lomo_patatas",
@@ -894,7 +894,7 @@
     {
       "id": "sandwich",
       "nombre": "Sandwiches",
-      "icono": "UtensilsCrossed",
+      "icono": "Sandwich",
       "items": [
         {
           "id": "sandwich_mixto",
