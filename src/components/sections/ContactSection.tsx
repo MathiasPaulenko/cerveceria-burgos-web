@@ -51,9 +51,9 @@ export function ContactSection() {
           </p>
         </FadeIn>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-5 gap-8">
           {/* Info cards + Map */}
-          <FadeIn direction="left">
+          <FadeIn direction="left" className="lg:col-span-2">
             <div className="space-y-6">
               {infoCards.map((card) => (
                 <motion.div
@@ -134,7 +134,7 @@ export function ContactSection() {
           </FadeIn>
 
           {/* Map */}
-          <FadeIn direction="right" delay={0.2}>
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-3">
             <motion.div
               className="h-full min-h-[400px] rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#151418]/5"
               whileHover={{ scale: 1.01 }}
