@@ -155,7 +155,6 @@ export function GallerySection() {
     setCurrentPage(1);
   };
 
-  // Keyboard navigation for lightbox
   const navigateImage = useCallback((direction: "prev" | "next") => {
     if (!selectedImage) return;
     const currentIndex = filteredImages.findIndex((img) => img.id === selectedImage.id);
