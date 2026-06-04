@@ -45,7 +45,7 @@
         {
           "id": "croquetas_jamon",
           "nombre": "Ham Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 8,
           "tipo": "comida",
           "alergenos": [
@@ -60,7 +60,7 @@
         {
           "id": "croquetas_rabo",
           "nombre": "Oxtail Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [
@@ -75,7 +75,7 @@
         {
           "id": "croquetas_espinaca",
           "nombre": "Spinach and Goat Cheese Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 8,
           "tipo": "comida",
           "alergenos": [
@@ -90,7 +90,7 @@
         {
           "id": "croquetas_boletus",
           "nombre": "Boletus Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [
@@ -105,7 +105,7 @@
         {
           "id": "croquetas_chorizo",
           "nombre": "Chorizo and Egg Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 8,
           "tipo": "comida",
           "alergenos": [
@@ -120,7 +120,7 @@
         {
           "id": "croquetas_gambas",
           "nombre": "Garlic Shrimp Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 9.5,
           "tipo": "comida",
           "alergenos": [
@@ -136,7 +136,7 @@
         {
           "id": "croquetas_cochinillo",
           "nombre": "Suckling Pig Croquettes",
-          "descripcion": "8 uds.",
+          "descripcion": "8 pcs.",
           "precio": 9.5,
           "tipo": "comida",
           "alergenos": [
@@ -151,7 +151,7 @@
         {
           "id": "surtido_croquetas",
           "nombre": "Assorted Croquettes",
-          "descripcion": "2 de jamon, 2 chorizo y huevo, 2 de boletus, 2 de rabo de vacuno y 2 de gambas al ajillo",
+          "descripcion": "2 ham, 2 chorizo and egg, 2 boletus, 2 oxtail and 2 garlic shrimp",
           "precio": 10,
           "tipo": "comida",
           "alergenos": [
@@ -188,7 +188,7 @@
         {
           "id": "patatas_burgos",
           "nombre": "Burgos Potatoes",
-          "descripcion": "Patatas con salsa del chef",
+          "descripcion": "Potatoes with chef's sauce",
           "precio": 8,
           "tipo": "comida",
           "alergenos": [],
@@ -199,7 +199,7 @@
         {
           "id": "patatas_mixtas",
           "nombre": "Mixed Potatoes",
-          "descripcion": "Salsa brava y burgos",
+          "descripcion": "Brava and Burgos sauce",
           "precio": 8,
           "tipo": "comida",
           "alergenos": [],
@@ -272,7 +272,7 @@
         {
           "id": "fingers_pollo",
           "nombre": "Chicken Fingers",
-          "descripcion": "Con salsa barbacoa",
+          "descripcion": "With BBQ sauce",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [],
@@ -282,7 +282,7 @@
         {
           "id": "tiras_pollo_cajun",
           "nombre": "Cajun Chicken Strips",
-          "descripcion": "Pollo marinado con rebozado cajun acompanado de salsa mostaza y miel",
+          "descripcion": "Marinated chicken with cajun breading served with mustard and honey sauce",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [],
@@ -292,7 +292,7 @@
         {
           "id": "crocanti_gouda",
           "nombre": "Crispy Gouda Cheese",
-          "descripcion": "100% queso gouda con empanado de cereales acompanado de mermelada de arandanos",
+          "descripcion": "100% gouda cheese with cereal coating served with blueberry jam",
           "precio": 8.5,
           "tipo": "comida",
           "alergenos": [],
@@ -302,7 +302,7 @@
         {
           "id": "cheddar_bites",
           "nombre": "Cheddar Bites with Jalapenos",
-          "descripcion": "Bolitas de queso cheddar con jalapenos acompanado de salsa barbacoa",
+          "descripcion": "Cheddar cheese balls with jalapeños served with BBQ sauce",
           "precio": 8.5,
           "tipo": "comida",
           "alergenos": [],
@@ -312,7 +312,7 @@
         {
           "id": "bienmesabe",
           "nombre": "Bienmesabe",
-          "descripcion": "Cazon adobado",
+          "descripcion": "Marinated dogfish",
           "precio": 11,
           "tipo": "comida",
           "alergenos": [],
@@ -430,7 +430,7 @@
         {
           "id": "patatas_rancheras",
           "nombre": "Ranch Potatoes",
-          "descripcion": "Patatas fritas con nuestra salsa ranchera a base de yogurt y cilantro, beicon crujiente, queso fundido y cebolla crispi",
+          "descripcion": "Fries with our ranch sauce based on yogurt and cilantro, crispy bacon, melted cheese and crispy onion",
           "precio": 12,
           "tipo": "comida",
           "alergenos": [],
@@ -440,7 +440,7 @@
         {
           "id": "patatas_pulled_pork",
           "nombre": "Pulled Pork Cheese Potatoes",
-          "descripcion": "Patatas fritas con salsa ranchera, carne de cerdo deshilachada con salsa BBQ, queso gratinado y jalapenos",
+          "descripcion": "Fries with ranch sauce, pulled pork with BBQ sauce, gratinated cheese and jalapeños",
           "precio": 14,
           "tipo": "comida",
           "alergenos": [],
@@ -450,7 +450,7 @@
         {
           "id": "salchipapas",
           "nombre": "Sausage and Fries",
-          "descripcion": "Con salsa ketchup y mayonesa",
+          "descripcion": "With ketchup and mayonnaise",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [],
@@ -460,7 +460,7 @@
         {
           "id": "provoleta_beicon",
           "nombre": "Provoleta with Bacon and Jalapenos",
-          "descripcion": "Queso provolone al horno con tomate natural, beicon a la plancha y jalapenos",
+          "descripcion": "Baked provolone cheese with fresh tomato, grilled bacon and jalapeños",
           "precio": 10.5,
           "tipo": "comida",
           "alergenos": [],
@@ -470,7 +470,7 @@
         {
           "id": "provolone_horno",
           "nombre": "Baked Provolone",
-          "descripcion": "Queso provolone al horno con tomate natural",
+          "descripcion": "Baked provolone cheese with fresh tomato",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [],
@@ -527,7 +527,7 @@
         {
           "id": "costillar_bbq",
           "nombre": "Pork Ribs in BBQ Sauce",
-          "descripcion": "Con patatas",
+          "descripcion": "With potatoes",
           "precio": 19,
           "tipo": "comida",
           "alergenos": [],
@@ -537,7 +537,7 @@
         {
           "id": "carrillada",
           "nombre": "Braised Pork Cheeks in Juice",
-          "descripcion": "Con patatas",
+          "descripcion": "With potatoes",
           "precio": 13,
           "tipo": "comida",
           "alergenos": [],
@@ -617,7 +617,7 @@
         {
           "id": "chivito",
           "nombre": "Uruguayan Chivito",
-          "descripcion": "Plato de ternera con lechuga, tomate, cebolla, jamon cocido, beicon, queso, pimiento verde frito y huevo frito acompanado de patatas fritas y salsa chimichurri casera",
+          "descripcion": "Beef dish with lettuce, tomato, onion, cooked ham, bacon, cheese, fried green pepper and fried egg served with fries and homemade chimichurri sauce",
           "precio": 18,
           "tipo": "comida",
           "alergenos": [],
@@ -627,7 +627,7 @@
         {
           "id": "milanesa",
           "nombre": "Neapolitan Milanese",
-          "descripcion": "Escalope de ternera con salsa napolitana casera con lechuga, tomate, cebolla, jamon cocido, queso y huevo frito acompanado de patatas fritas",
+          "descripcion": "Beef escalope with homemade Neapolitan sauce with lettuce, tomato, onion, cooked ham, cheese and fried egg served with fries",
           "precio": 18,
           "tipo": "comida",
           "alergenos": [],
@@ -640,12 +640,12 @@
       "id": "hamburguesas",
       "nombre": "Burgers",
       "icono": "HamburgerIcon",
-      "descripcion": "Todas con carne 200gr y patatas fritas",
+      "descripcion": "All with 200gr beef and fries",
       "items": [
         {
           "id": "hamburguesa_normal",
           "nombre": "Standard Burger",
-          "descripcion": "Rucula, tomate, cebolla y carne 200 gr con patatas fritas",
+          "descripcion": "Arugula, tomato, onion and 200gr beef with fries",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [],
@@ -655,7 +655,7 @@
         {
           "id": "hamburguesa_completa",
           "nombre": "Complete Burger",
-          "descripcion": "Rucula, tomate, cebolla, carne 200 gr, queso y beicon con patatas fritas",
+          "descripcion": "Arugula, tomato, onion, 200gr beef, cheese and bacon with fries",
           "precio": 10.5,
           "tipo": "comida",
           "alergenos": [],
@@ -665,7 +665,7 @@
         {
           "id": "hamburguesa_burgos",
           "nombre": "Burgos Burger",
-          "descripcion": "Rucula, tomate, cebolla, carne 200 gr, queso, jamon york, beicon y huevo con patatas fritas",
+          "descripcion": "Arugula, tomato, onion, 200gr beef, cheese, cooked ham, bacon and egg with fries",
           "precio": 12.5,
           "tipo": "comida",
           "alergenos": [],
@@ -675,7 +675,7 @@
         {
           "id": "hamburguesa_pollo",
           "nombre": "Chicken Cutlet Burger",
-          "descripcion": "Rucula, tomate, cebolla, escalope de pollo, queso y beicon con patatas fritas",
+          "descripcion": "Arugula, tomato, onion, chicken cutlet, cheese and bacon with fries",
           "precio": 10.5,
           "tipo": "comida",
           "alergenos": [],
@@ -685,7 +685,7 @@
         {
           "id": "hamburguesa_pollo_burgos",
           "nombre": "Burgos Chicken Cutlet Burger",
-          "descripcion": "Rucula, tomate, cebolla, escalope de pollo, queso, jamon york, beicon, huevo y patatas fritas",
+          "descripcion": "Arugula, tomato, onion, chicken cutlet, cheese, cooked ham, bacon, egg and fries",
           "precio": 12.5,
           "tipo": "comida",
           "alergenos": [],
@@ -695,7 +695,7 @@
         {
           "id": "hamburguesa_cabrita",
           "nombre": "La Cabrita Burger",
-          "descripcion": "Rucula, tomate, carne 200 gr, beicon, rulo de queso de cabra, cebolla caramelizada y patatas fritas",
+          "descripcion": "Arugula, tomato, 200gr beef, bacon, goat cheese roll, caramelized onion and fries",
           "precio": 12.5,
           "tipo": "comida",
           "alergenos": [],
@@ -705,7 +705,7 @@
         {
           "id": "hamburguesa_pastrami",
           "nombre": "Pastrami Burger",
-          "descripcion": "Salsa ranchera, tomate, carne 200gr 100% vacuno, queso cheddar, pastrami, rucula y salsa sriracha",
+          "descripcion": "Ranch sauce, tomato, 200gr 100% beef, cheddar cheese, pastrami, arugula and sriracha sauce",
           "precio": 15,
           "tipo": "comida",
           "alergenos": [],
@@ -715,7 +715,7 @@
         {
           "id": "hamburguesa_pulled_pork",
           "nombre": "Pulled Pork Burger",
-          "descripcion": "Salsa ranchera, tomate, carne 200gr 100% vacuno, queso cheddar, pepinillos, pulled pork",
+          "descripcion": "Ranch sauce, tomato, 200gr 100% beef, cheddar cheese, pickles, pulled pork",
           "precio": 15,
           "tipo": "comida",
           "alergenos": [],
@@ -725,7 +725,7 @@
         {
           "id": "hamburguesa_burrata",
           "nombre": "Burrata Burger",
-          "descripcion": "Mayonesa de albahaca, tomate, carne 200gr 100% vacuno, bacon, rucula, burrata fresca",
+          "descripcion": "Basil mayonnaise, tomato, 200gr 100% beef, bacon, arugula, fresh burrata",
           "precio": 15,
           "tipo": "comida",
           "alergenos": [],
@@ -899,7 +899,7 @@
         {
           "id": "sandwich_mixto",
           "nombre": "Mixed Sandwich",
-          "descripcion": "Jamon york y queso",
+          "descripcion": "Cooked ham and cheese",
           "precio": 2.9,
           "tipo": "comida",
           "alergenos": [],
@@ -939,7 +939,7 @@
         {
           "id": "sandwich_burgos",
           "nombre": "Burgos Sandwich",
-          "descripcion": "Lechuga, tomate, jamon york, queso, beicon y huevo frito con patatas fritas",
+          "descripcion": "Lettuce, tomato, cooked ham, cheese, bacon and fried egg with fries",
           "precio": 7,
           "tipo": "comida",
           "alergenos": [],
@@ -949,7 +949,7 @@
         {
           "id": "sandwich_pollo",
           "nombre": "Chicken Sandwich",
-          "descripcion": "Lechuga, tomate, filete de pollo a la plancha, jamon york, queso, beicon y huevo frito con patatas fritas",
+          "descripcion": "Lettuce, tomato, grilled chicken fillet, cooked ham, cheese, bacon and fried egg with fries",
           "precio": 9,
           "tipo": "comida",
           "alergenos": [],
@@ -959,7 +959,7 @@
         {
           "id": "sandwich_vegetal",
           "nombre": "Vegetable Sandwich",
-          "descripcion": "Lechuga, tomate, cebolla, atun, pimiento piquillo y huevo frito",
+          "descripcion": "Lettuce, tomato, onion, tuna, piquillo pepper and fried egg",
           "precio": 7,
           "tipo": "comida",
           "alergenos": [],
@@ -972,7 +972,7 @@
       "id": "bocadillos",
       "nombre": "Sandwiches & Montados",
       "icono": "Cookie",
-      "descripcion": "Precio Bocadillo / Montado",
+      "descripcion": "Sandwich / Montado Price",
       "items": [
         {
           "id": "boc_chistorra",
@@ -1127,7 +1127,7 @@
         {
           "id": "boc_choripan",
           "nombre": "Choripan",
-          "descripcion": "Bocadillo de chorizo criollo con chimichurri casero, mayonesa, lechuga y tomate",
+          "descripcion": "Sandwich with criollo chorizo, homemade chimichurri, mayonnaise, lettuce and tomato",
           "precio": 8.5,
           "tipo": "comida",
           "alergenos": [],
@@ -1137,7 +1137,7 @@
         {
           "id": "boc_tamarito",
           "nombre": "Tamarito",
-          "descripcion": "Bocadillo de escalope de pollo con lechuga, tomate y mayonesa",
+          "descripcion": "Chicken cutlet sandwich with lettuce, tomato and mayonnaise",
           "precio": 7,
           "tipo": "comida",
           "alergenos": [],

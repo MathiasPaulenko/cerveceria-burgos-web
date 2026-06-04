@@ -115,6 +115,34 @@ const schema = {
     
     <title>{title}</title>
     <script is:inline>
+      (function() {
+        var lang = localStorage.getItem('lang') || (navigator.language.split('-')[0] === 'en' ? 'en' : 'es');
+        if (lang === 'en') {
+          var t = document.title;
+          var map = {
+            'Aviso Legal | Cervecería Burgos': 'Legal Notice | Cervecería Burgos',
+            'Política de Cookies | Cervecería Burgos': 'Cookie Policy | Cervecería Burgos',
+            'Política de Privacidad | Cervecería Burgos': 'Privacy Policy | Cervecería Burgos',
+            '404 | Cervecería Burgos': '404 | Cervecería Burgos',
+            'Cervecería Burgos | Cerveza y Tapas en Carabanchel, Madrid': 'Cervecería Burgos | Beer and Tapas in Carabanchel, Madrid'
+          };
+          if (map[t]) document.title = map[t];
+          var desc = document.querySelector('meta[name="description"]');
+          if (desc) desc.setAttribute('content', 'Cervecería Burgos - Ice-cold beers, generous tapas and great atmosphere in Carabanchel, Madrid. Since 2015. Calle Eugenia de Montijo, 80.');
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle && map[t]) ogTitle.setAttribute('content', map[t]);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', 'Cervecería Burgos - Ice-cold beers, generous tapas and great atmosphere in Carabanchel, Madrid. Since 2015.');
+          var ogLocale = document.querySelector('meta[property="og:locale"]');
+          if (ogLocale) ogLocale.setAttribute('content', 'en_GB');
+          var twitterTitle = document.querySelector('meta[name="twitter:title"]');
+          if (twitterTitle && map[t]) twitterTitle.setAttribute('content', map[t]);
+          var twitterDesc = document.querySelector('meta[name="twitter:description"]');
+          if (twitterDesc) twitterDesc.setAttribute('content', 'Cervecería Burgos - Ice-cold beers, generous tapas and great atmosphere in Carabanchel, Madrid. Since 2015.');
+        }
+      })();
+    </script>
+    <script is:inline>
       window.__GA_ID__ = 'G-KLCJN1G2SE';
     </script>
   </head>
