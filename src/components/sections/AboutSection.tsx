@@ -56,6 +56,29 @@ export function AboutSection() {
                   </>
                 )}
               </div>
+
+              {/* Extra content to balance height with right cards */}
+              <motion.div
+                className="mt-8 p-6 bg-white/60 rounded-xl border border-[#151418]/5"
+                whileHover={{ scale: 1.01 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
+                <p className="text-[#151418] font-semibold mb-2">¿Por qué volver?</p>
+                <ul className="space-y-2 text-[#A06029]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#99120f] mt-1">•</span>
+                    <span>Carta amplia con opciones para todos los gustos y bolsillos</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#99120f] mt-1">•</span>
+                    <span>Atención cercana y familiar, siempre con una sonrisa</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#99120f] mt-1">•</span>
+                    <span>Ideal para grupos, parejas o una caña rápida después del trabajo</span>
+                  </li>
+                </ul>
+              </motion.div>
             </div>
           </FadeIn>
 
