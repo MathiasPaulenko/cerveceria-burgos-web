@@ -67,7 +67,7 @@ export function AboutSection() {
                 <ul className="space-y-2 text-[#A06029]">
                   <li className="flex items-start gap-2">
                     <span className="text-[#99120f] mt-1">•</span>
-                    <span>Carta amplia con opciones para todos los gustos y bolsillos</span>
+                    <span>Cada día una tapa diferente con tu consumición: siempre hay una sorpresa para acompañar tu caña</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#99120f] mt-1">•</span>
