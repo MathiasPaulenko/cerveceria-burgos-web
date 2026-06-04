@@ -12,7 +12,7 @@ export function AboutSection() {
     { icon: Star, title: "Desde 2015", description: "Más de 10 años dejando huella en Carabanchel", subtext: "Un punto de encuentro para vecinos y visitantes" },
     { icon: Wheat, title: "Ingredientes frescos", description: "Recetas caseras y productos de calidad", subtext: "Tapas generosas y sabores de toda la vida" },
     { icon: Heart, title: "Buen ambiente", description: "Un espacio acogedor para disfrutar con amigos", subtext: "Cerveza bien fría y momentos para recordar" },
-    { icon: Users, title: "Terraza popular", description: "Terraza exterior muy concurrida", subtext: "Llega con antelación los fines de semana" },
+    { icon: Users, title: "Terraza popular", description: "Terraza exterior muy concurrida, abierta durante todo el año", subtext: "Llega con antelación los fines de semana" },
   ];
 
   return (
