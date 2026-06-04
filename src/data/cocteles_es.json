@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "ultima_actualizacion": "04-06-2026",
+  "categorias": [
+    {
+      "id": "mojitos",
+      "nombre": "Mojitos",
+      "icono": "Martini",
+      "items": [
+        { "id": "mojito_tradicional", "nombre": "Mojito tradicional", "descripcion": "Menta, lima, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_fresa", "nombre": "Mojito de fresa", "descripcion": "Menta, lima, fresas, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_maracuya", "nombre": "Mojito de maracuyá", "descripcion": "Menta, lima, maracuyá, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_mango", "nombre": "Mojito de mango", "descripcion": "Menta, lima, mango, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_guayaba", "nombre": "Mojito de guayaba", "descripcion": "Menta, lima, guayaba, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_mandarina", "nombre": "Mojito de mandarina", "descripcion": "Menta, lima, mandarina, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_arandanos", "nombre": "Mojito de arándanos", "descripcion": "Menta, lima, arándanos, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_cherry", "nombre": "Mojito de cherry", "descripcion": "Menta, lima, cerezas, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_coco", "nombre": "Mojito de coco", "descripcion": "Menta, lima, coco, ron y gaseosa", "precio": 9 },
+        { "id": "mojito_pina", "nombre": "Mojito de piña", "descripcion": "Menta, ron, lima, puré de piña y soda", "precio": 9 },
+        { "id": "mojito_frutos_bosque", "nombre": "Mojito de frutos del bosque", "descripcion": "Menta, ron, lima, puré de frutos del bosque y soda", "precio": 9 },
+        { "id": "mojito_melocoton", "nombre": "Mojito de Melocotón", "descripcion": "Menta fresca, limas, azúcar moreno, ron, puré de melocotón, casera y melocotón fresco", "precio": 9 },
+        { "id": "mojito_jagermeister", "nombre": "Mojito de Jagermeister", "descripcion": "Menta fresca, limas, azúcar moreno, Jagermeister y casera", "precio": 9 }
+      ]
+    },
+    {
+      "id": "daiquiri",
+      "nombre": "Daiquiri",
+      "icono": "Martini",
+      "items": [
+        { "id": "daiquiri_fresa", "nombre": "Daiquiri de fresa", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_mango", "nombre": "Daiquiri de mango", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_frutos_bosque", "nombre": "Daiquiri de frutos del bosque", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_maracuya", "nombre": "Daiquiri de maracuyá", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_guayaba", "nombre": "Daiquiri de guayaba", "descripcion": "", "precio": 9 }
+      ]
+    },
+    {
+      "id": "margaritas",
+      "nombre": "Margaritas",
+      "icono": "Martini",
+      "items": [
+        { "id": "margarita_tradicional", "nombre": "Margarita tradicional", "descripcion": "Tequila, triple seco, lima y sirope de azúcar", "precio": 8.5 },
+        { "id": "margarita_fresa", "nombre": "Margarita de fresa", "descripcion": "Tequila, triple seco, lima, fresas y sirope de caña", "precio": 8.5 },
+        { "id": "margarita_maracuya", "nombre": "Margarita de maracuyá", "descripcion": "Tequila, triple seco, lima, sirope de caña y puré de maracuyá", "precio": 9 },
+        { "id": "margarita_mango_vainilla", "nombre": "Margarita de mango y vainilla", "descripcion": "Tequila, triple seco, sirope de mango, zumo de lima, puré de mango y sirope de vainilla", "precio": 9 },
+        { "id": "margarita_mango_picante", "nombre": "Margarita de mango picante", "descripcion": "Tequila, sirope de mango picante, puré de mango, puré de guayaba y trajín", "precio": 9.5 },
+        { "id": "margarita_guayaba", "nombre": "Margarita de guayaba", "descripcion": "Tequila, triple seco, lima, sirope de caña y puré de guayaba", "precio": 9 },
+        { "id": "margarita_melocoton_miel", "nombre": "Margarita de melocotón y miel", "descripcion": "Tequila, cointreau, lima, miel y puré de melocotón", "precio": 9 }
+      ]
+    },
+    {
+      "id": "caipirina",
+      "nombre": "Caipiriña",
+      "icono": "Martini",
+      "items": [
+        { "id": "caipirina", "nombre": "Caipiriña", "descripcion": "Azúcar moreno, lima y cachaca", "precio": 9 },
+        { "id": "caipirina_fresa", "nombre": "Caipiriña de fresa", "descripcion": "Azúcar moreno, lima, cachaca y fresas", "precio": 9 },
+        { "id": "caipirina_maracuya", "nombre": "Caipiriña de maracuyá", "descripcion": "Azúcar moreno, lima, cachaca y maracuyá", "precio": 9 },
+        { "id": "caipirina_jabuticaba", "nombre": "Caipiriña jabuticaba", "descripcion": "Cachaca, puré de jabuticaba y lima", "precio": 9 }
+      ]
+    },
+    {
+      "id": "spritz",
+      "nombre": "Spritz",
+      "icono": "Martini",
+      "items": [
+        { "id": "aperol_spritz", "nombre": "Aperol Spritz", "descripcion": "Aperol, prosecco y soda", "precio": 8.5 },
+        { "id": "rose_spritz", "nombre": "Rose Spritz", "descripcion": "Ginebra rosa, prosecco, limoncello, puré de fresas y soda", "precio": 8.5 },
+        { "id": "hugo_spritz", "nombre": "Hugo Spritz", "descripcion": "St. Germain, lima, prosecco y soda", "precio": 8.5 },
+        { "id": "limoncello_spritz", "nombre": "Limoncello Spritz", "descripcion": "Limoncello, prosecco y soda", "precio": 8.5 },
+        { "id": "fruta_pasion_spritz", "nombre": "Fruta de la pasión Spritz", "descripcion": "Puré de fruta de la pasión, prosecco, soda y ginebra morada", "precio": 8.5 }
+      ]
+    },
+    {
+      "id": "especiales",
+      "nombre": "Especiales",
+      "icono": "Martini",
+      "items": [
+        { "id": "pina_colada", "nombre": "Piña colada", "descripcion": "Amareto, limoncello, puré de coco, puré de piña y zumo de piña", "precio": 9 },
+        { "id": "burgos", "nombre": "Burgos", "descripcion": "Ginebra, puré de maracuyá, sirope de mango y lima", "precio": 9 },
+        { "id": "la_uruguayita", "nombre": "La Uruguayita", "descripcion": "Vodka, blue curaçao, lima y sprite", "precio": 9 },
+        { "id": "san_francisco", "nombre": "San Francisco", "descripcion": "Tequila, zumo de naranja, zumo de melocotón, zumo de piña, lima y granadina", "precio": 9 },
+        { "id": "bloody_mary", "nombre": "Bloody Mary", "descripcion": "Vodka, zumo de tomate, lima, sal, pimienta, tabasco y salsa perrins", "precio": 8.7 },
+        { "id": "no_jito", "nombre": "No-jito", "descripcion": "Limoncello, lima, sirope de mandarina, menta y cerveza", "precio": 9 },
+        { "id": "sex_on_the_beach", "nombre": "Sex on the Beach", "descripcion": "Vodka, licor de melocotón, zumo de naranja y zumo de arándanos", "precio": 9 },
+        { "id": "mexican_fizz", "nombre": "Mexican Fizz", "descripcion": "Tequila, lima, sirope de agave azul, sirope de frambuesas y soda", "precio": 8.5 },
+        { "id": "cosmopolitan", "nombre": "Cosmopolitan", "descripcion": "Vodka, sirope de naranja, lima y zumo de arándanos", "precio": 8.5 },
+        { "id": "mai_tai", "nombre": "Mai-tai", "descripcion": "Ron, sirope de mandarina, sirope de orgeat, lima y azúcar de caña", "precio": 8.5 },
+        { "id": "negroni", "nombre": "Negroni", "descripcion": "Ginebra, sirope de mandarina y vermouth rojo", "precio": 8.5 },
+        { "id": "pantera_rosa", "nombre": "Pantera Rosa", "descripcion": "Ron, leche condensada, granadina, zumo de piña y algodón de azúcar", "precio": 9 },
+        { "id": "pisco", "nombre": "Pisco", "descripcion": "Pisco acholado, sirope de caña, lima, clara de huevo y gotas de amargo", "precio": 9 },
+        { "id": "maracuya_sour", "nombre": "Maracuyá Sour", "descripcion": "Pisco acholado, sirope de caña, lima, puré de maracuyá, clara de huevo y gotas de bitter de frambuesa", "precio": 9 },
+        { "id": "te_verde_yuzu", "nombre": "Té verde yuzu Spritz", "descripcion": "Ron, puré de yuzu, sirope de vainilla de Madagascar, té verde matcha y soda", "precio": 9 },
+        { "id": "black_rose", "nombre": "Black Rose", "descripcion": "Ron, licor de café, lima, zumo de piña, sirope de caña, colorante alimentario, purpurina alimentaria y flor comestible", "precio": 9 },
+        { "id": "coco_loco", "nombre": "Coco loco", "descripcion": "Vodka, tequila, ron, leche de coco, sirope de coco y puré de coco", "precio": 9.5 },
+        { "id": "espresso_martini", "nombre": "Espresso Martini", "descripcion": "Vodka, licor de café, espresso, sirope de caña y granos de café", "precio": 8.5 },
+        { "id": "summer_colada", "nombre": "Summer Colada", "descripcion": "Vodka, sirope de coco, zumo de piña, lima, puré de mango, clara de huevo y bitter de melocotón", "precio": 9.5 },
+        { "id": "saturday_night", "nombre": "Saturday Night Fever", "descripcion": "Ron, zumo de piña, zumo de naranja, crema de coco y puré de coco", "precio": 9.5 },
+        { "id": "moscow_mule", "nombre": "Moscow Mule", "descripcion": "Vodka, sirope de vainilla de Madagascar, lima, bitter de ruibarbo y ginger beer", "precio": 10 },
+        { "id": "beso_blanco", "nombre": "Beso Blanco", "descripcion": "Ron, puré de coco, crema de coco, lima y sirope de caña", "precio": 8.5 },
+        { "id": "espumosita", "nombre": "Espumosita", "descripcion": "Sangría de maracuyá (puré de maracuyá, cointreau, licor de maracuyá, vino blanco, casera y espuma de lima)", "precio": 5 },
+        { "id": "pasion_burbon", "nombre": "Pasión por el Bourbon", "descripcion": "Bourbon, vino dulce, sirope de Madagascar, zumo de lima, pulpa de maracuyá y clara de huevo", "precio": 10 },
+        { "id": "estacion_tropical", "nombre": "Estación Tropical", "descripcion": "Ginebra, Aperol, puré de maracuyá, zumo de piña y sprite", "precio": 10 },
+        { "id": "mandarina_ginger", "nombre": "Mandarina Ginger Fizz", "descripcion": "Ginebra, puré de mandarina, zumo de lima y ginger beer", "precio": 10 },
+        { "id": "porn_star", "nombre": "Porn Star Martini", "descripcion": "Licor de frutas de la pasión, sirope de vainilla, concentrado de ranch de lima, vodka de vainilla y puré de maracuyá", "precio": 10 },
+        { "id": "amatista", "nombre": "Amatista", "descripcion": "Ginebra Empress 1908, St. Germain, sirope de violetas, zumo de lima y purpurina comestible", "precio": 9 },
+        { "id": "ginger_rogers", "nombre": "Ginger Rogers", "descripcion": "Tequila, miel, zumo de lima, jengibre y bitter de ruibarbo", "precio": 9.5 },
+        { "id": "la_furet", "nombre": "La Furet Enchantée", "descripcion": "Vermouth, sirope de vainilla, zumo de lima, menta, frambuesas, fresas, moras, espumoso y bitter de frambuesa", "precio": 9.5 },
+        { "id": "verano_cruel", "nombre": "Verano Cruel", "descripcion": "Vodka, licor de mango, sirope simple, jugo de lima y fresas", "precio": 9.5 },
+        { "id": "arantinga", "nombre": "Arantinga", "descripcion": "Ron, licor de mandarina, campari, lima, zumo de piña, sirope simple y bitter de naranja", "precio": 9.5 }
+      ]
+    },
+    {
+      "id": "caipiroska",
+      "nombre": "Caipiroska",
+      "icono": "Martini",
+      "items": [
+        { "id": "caipiroska", "nombre": "Caipiroska", "descripcion": "Vodka, lima y azúcar moreno", "precio": 9 },
+        { "id": "caipiroska_sandia", "nombre": "Caipiroska de sandía y canela", "descripcion": "Vodka, lima, azúcar moreno, puré de sandía y sirope de canela", "precio": 9 }
+      ]
+    },
+    {
+      "id": "sin_alcohol",
+      "nombre": "Sin Alcohol",
+      "icono": "Martini",
+      "items": [
+        { "id": "pura_seduccion", "nombre": "Pura Seducción", "descripcion": "Sirope de vainilla, granadina, zumo de lima y soda rosa", "precio": 10 },
+        { "id": "mojigato", "nombre": "Mojigato", "descripcion": "Menta, zumo de lima, zumo de piña, sirope de vainilla y maracuyá", "precio": 10 },
+        { "id": "exoticolada", "nombre": "Exoticolada", "descripcion": "Sirope de vainilla, jugo de piña, puré de maracuyá, lima y crema de coco", "precio": 9.5 }
+      ]
+    }
+  ],
+  "notas": [
+    "Precios actualizados a junio 2026",
+    "Los precios pueden haber cambiado y no estar reflejados en esta página web",
+    "Suplemento en terraza: 0,20 €"
+  ]
+}

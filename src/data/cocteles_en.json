@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "ultima_actualizacion": "04-06-2026",
+  "categorias": [
+    {
+      "id": "mojitos",
+      "nombre": "Mojitos",
+      "icono": "Martini",
+      "items": [
+        { "id": "mojito_tradicional", "nombre": "Traditional Mojito", "descripcion": "Mint, lime, rum and soda", "precio": 9 },
+        { "id": "mojito_fresa", "nombre": "Strawberry Mojito", "descripcion": "Mint, lime, strawberries, rum and soda", "precio": 9 },
+        { "id": "mojito_maracuya", "nombre": "Passion Fruit Mojito", "descripcion": "Mint, lime, passion fruit, rum and soda", "precio": 9 },
+        { "id": "mojito_mango", "nombre": "Mango Mojito", "descripcion": "Mint, lime, mango, rum and soda", "precio": 9 },
+        { "id": "mojito_guayaba", "nombre": "Guava Mojito", "descripcion": "Mint, lime, guava, rum and soda", "precio": 9 },
+        { "id": "mojito_mandarina", "nombre": "Tangerine Mojito", "descripcion": "Mint, lime, tangerine, rum and soda", "precio": 9 },
+        { "id": "mojito_arandanos", "nombre": "Blueberry Mojito", "descripcion": "Mint, lime, blueberries, rum and soda", "precio": 9 },
+        { "id": "mojito_cherry", "nombre": "Cherry Mojito", "descripcion": "Mint, lime, cherries, rum and soda", "precio": 9 },
+        { "id": "mojito_coco", "nombre": "Coconut Mojito", "descripcion": "Mint, lime, coconut, rum and soda", "precio": 9 },
+        { "id": "mojito_pina", "nombre": "Pineapple Mojito", "descripcion": "Mint, rum, lime, pineapple puree and soda", "precio": 9 },
+        { "id": "mojito_frutos_bosque", "nombre": "Forest Fruit Mojito", "descripcion": "Mint, rum, lime, forest fruit puree and soda", "precio": 9 },
+        { "id": "mojito_melocoton", "nombre": "Peach Mojito", "descripcion": "Fresh mint, limes, brown sugar, rum, peach puree, lemonade and fresh peach", "precio": 9 },
+        { "id": "mojito_jagermeister", "nombre": "Jagermeister Mojito", "descripcion": "Fresh mint, limes, brown sugar, Jagermeister and lemonade", "precio": 9 }
+      ]
+    },
+    {
+      "id": "daiquiri",
+      "nombre": "Daiquiri",
+      "icono": "Martini",
+      "items": [
+        { "id": "daiquiri_fresa", "nombre": "Strawberry Daiquiri", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_mango", "nombre": "Mango Daiquiri", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_frutos_bosque", "nombre": "Forest Fruit Daiquiri", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_maracuya", "nombre": "Passion Fruit Daiquiri", "descripcion": "", "precio": 9 },
+        { "id": "daiquiri_guayaba", "nombre": "Guava Daiquiri", "descripcion": "", "precio": 9 }
+      ]
+    },
+    {
+      "id": "margaritas",
+      "nombre": "Margaritas",
+      "icono": "Martini",
+      "items": [
+        { "id": "margarita_tradicional", "nombre": "Traditional Margarita", "descripcion": "Tequila, triple sec, lime and sugar syrup", "precio": 8.5 },
+        { "id": "margarita_fresa", "nombre": "Strawberry Margarita", "descripcion": "Tequila, triple sec, lime, strawberries and cane syrup", "precio": 8.5 },
+        { "id": "margarita_maracuya", "nombre": "Passion Fruit Margarita", "descripcion": "Tequila, triple sec, lime, cane syrup and passion fruit puree", "precio": 9 },
+        { "id": "margarita_mango_vainilla", "nombre": "Mango & Vanilla Margarita", "descripcion": "Tequila, triple sec, mango syrup, lime juice, mango puree and vanilla syrup", "precio": 9 },
+        { "id": "margarita_mango_picante", "nombre": "Spicy Mango Margarita", "descripcion": "Tequila, spicy mango syrup, mango puree, guava puree and tajin", "precio": 9.5 },
+        { "id": "margarita_guayaba", "nombre": "Guava Margarita", "descripcion": "Tequila, triple sec, lime, cane syrup and guava puree", "precio": 9 },
+        { "id": "margarita_melocoton_miel", "nombre": "Peach & Honey Margarita", "descripcion": "Tequila, cointreau, lime, honey and peach puree", "precio": 9 }
+      ]
+    },
+    {
+      "id": "caipirina",
+      "nombre": "Caipirinha",
+      "icono": "Martini",
+      "items": [
+        { "id": "caipirina", "nombre": "Caipirinha", "descripcion": "Brown sugar, lime and cachaça", "precio": 9 },
+        { "id": "caipirina_fresa", "nombre": "Strawberry Caipirinha", "descripcion": "Brown sugar, lime, cachaça and strawberries", "precio": 9 },
+        { "id": "caipirina_maracuya", "nombre": "Passion Fruit Caipirinha", "descripcion": "Brown sugar, lime, cachaça and passion fruit", "precio": 9 },
+        { "id": "caipirina_jabuticaba", "nombre": "Jabuticaba Caipirinha", "descripcion": "Cachaça, jabuticaba puree and lime", "precio": 9 }
+      ]
+    },
+    {
+      "id": "spritz",
+      "nombre": "Spritz",
+      "icono": "Martini",
+      "items": [
+        { "id": "aperol_spritz", "nombre": "Aperol Spritz", "descripcion": "Aperol, prosecco and soda", "precio": 8.5 },
+        { "id": "rose_spritz", "nombre": "Rose Spritz", "descripcion": "Pink gin, prosecco, limoncello, strawberry puree and soda", "precio": 8.5 },
+        { "id": "hugo_spritz", "nombre": "Hugo Spritz", "descripcion": "St. Germain, lime, prosecco and soda", "precio": 8.5 },
+        { "id": "limoncello_spritz", "nombre": "Limoncello Spritz", "descripcion": "Limoncello, prosecco and soda", "precio": 8.5 },
+        { "id": "fruta_pasion_spritz", "nombre": "Passion Fruit Spritz", "descripcion": "Passion fruit puree, prosecco, soda and purple gin", "precio": 8.5 }
+      ]
+    },
+    {
+      "id": "especiales",
+      "nombre": "Specials",
+      "icono": "Martini",
+      "items": [
+        { "id": "pina_colada", "nombre": "Piña Colada", "descripcion": "Amaretto, limoncello, coconut puree, pineapple puree and pineapple juice", "precio": 9 },
+        { "id": "burgos", "nombre": "Burgos", "descripcion": "Gin, passion fruit puree, mango syrup and lime", "precio": 9 },
+        { "id": "la_uruguayita", "nombre": "La Uruguayita", "descripcion": "Vodka, blue curaçao, lime and sprite", "precio": 9 },
+        { "id": "san_francisco", "nombre": "San Francisco", "descripcion": "Tequila, orange juice, peach juice, pineapple juice, lime and grenadine", "precio": 9 },
+        { "id": "bloody_mary", "nombre": "Bloody Mary", "descripcion": "Vodka, tomato juice, lime, salt, pepper, tabasco and worcestershire sauce", "precio": 8.7 },
+        { "id": "no_jito", "nombre": "No-jito", "descripcion": "Limoncello, lime, tangerine syrup, mint and beer", "precio": 9 },
+        { "id": "sex_on_the_beach", "nombre": "Sex on the Beach", "descripcion": "Vodka, peach liqueur, orange juice and cranberry juice", "precio": 9 },
+        { "id": "mexican_fizz", "nombre": "Mexican Fizz", "descripcion": "Tequila, lime, blue agave syrup, raspberry syrup and soda", "precio": 8.5 },
+        { "id": "cosmopolitan", "nombre": "Cosmopolitan", "descripcion": "Vodka, orange syrup, lime and cranberry juice", "precio": 8.5 },
+        { "id": "mai_tai", "nombre": "Mai-tai", "descripcion": "Rum, tangerine syrup, orgeat syrup, lime and cane sugar", "precio": 8.5 },
+        { "id": "negroni", "nombre": "Negroni", "descripcion": "Gin, tangerine syrup and red vermouth", "precio": 8.5 },
+        { "id": "pantera_rosa", "nombre": "Pink Panther", "descripcion": "Rum, condensed milk, grenadine, pineapple juice and cotton candy", "precio": 9 },
+        { "id": "pisco", "nombre": "Pisco", "descripcion": "Pisco acholado, cane syrup, lime, egg white and bitters drops", "precio": 9 },
+        { "id": "maracuya_sour", "nombre": "Passion Fruit Sour", "descripcion": "Pisco acholado, cane syrup, lime, passion fruit puree, egg white and raspberry bitter drops", "precio": 9 },
+        { "id": "te_verde_yuzu", "nombre": "Green Tea Yuzu Spritz", "descripcion": "Rum, yuzu puree, Madagascar vanilla syrup, matcha green tea and soda", "precio": 9 },
+        { "id": "black_rose", "nombre": "Black Rose", "descripcion": "Rum, coffee liqueur, lime, pineapple juice, cane syrup, food coloring, edible glitter and edible flower", "precio": 9 },
+        { "id": "coco_loco", "nombre": "Coco Loco", "descripcion": "Vodka, tequila, rum, coconut milk, coconut syrup and coconut puree", "precio": 9.5 },
+        { "id": "espresso_martini", "nombre": "Espresso Martini", "descripcion": "Vodka, coffee liqueur, espresso, cane syrup and coffee beans", "precio": 8.5 },
+        { "id": "summer_colada", "nombre": "Summer Colada", "descripcion": "Vodka, coconut syrup, pineapple juice, lime, mango puree, egg white and peach bitter", "precio": 9.5 },
+        { "id": "saturday_night", "nombre": "Saturday Night Fever", "descripcion": "Rum, pineapple juice, orange juice, coconut cream and coconut puree", "precio": 9.5 },
+        { "id": "moscow_mule", "nombre": "Moscow Mule", "descripcion": "Vodka, Madagascar vanilla syrup, lime, rhubarb bitter and ginger beer", "precio": 10 },
+        { "id": "beso_blanco", "nombre": "White Kiss", "descripcion": "Rum, coconut puree, coconut cream, lime and cane syrup", "precio": 8.5 },
+        { "id": "espumosita", "nombre": "Espumosita", "descripcion": "Passion fruit sangria (passion fruit puree, cointreau, passion fruit liqueur, white wine, lemonade and lime foam)", "precio": 5 },
+        { "id": "pasion_burbon", "nombre": "Passion for Bourbon", "descripcion": "Bourbon, sweet wine, Madagascar syrup, lime juice, passion fruit pulp and egg white", "precio": 10 },
+        { "id": "estacion_tropical", "nombre": "Tropical Station", "descripcion": "Gin, Aperol, passion fruit puree, pineapple juice and sprite", "precio": 10 },
+        { "id": "mandarina_ginger", "nombre": "Tangerine Ginger Fizz", "descripcion": "Gin, tangerine puree, lime juice and ginger beer", "precio": 10 },
+        { "id": "porn_star", "nombre": "Porn Star Martini", "descripcion": "Passion fruit liqueur, vanilla syrup, lime ranch concentrate, vanilla vodka and passion fruit puree", "precio": 10 },
+        { "id": "amatista", "nombre": "Amethyst", "descripcion": "Empress 1908 gin, St. Germain, violet syrup, lime juice and edible glitter", "precio": 9 },
+        { "id": "ginger_rogers", "nombre": "Ginger Rogers", "descripcion": "Tequila, honey, lime juice, ginger and rhubarb bitter", "precio": 9.5 },
+        { "id": "la_furet", "nombre": "La Furet Enchantée", "descripcion": "Vermouth, vanilla syrup, lime juice, mint, raspberries, strawberries, blackberries, sparkling wine and raspberry bitter", "precio": 9.5 },
+        { "id": "verano_cruel", "nombre": "Cruel Summer", "descripcion": "Vodka, mango liqueur, simple syrup, lime juice and strawberries", "precio": 9.5 },
+        { "id": "arantinga", "nombre": "Arantinga", "descripcion": "Rum, tangerine liqueur, campari, lime, pineapple juice, simple syrup and orange bitter", "precio": 9.5 }
+      ]
+    },
+    {
+      "id": "caipiroska",
+      "nombre": "Caipiroska",
+      "icono": "Martini",
+      "items": [
+        { "id": "caipiroska", "nombre": "Caipiroska", "descripcion": "Vodka, lime and brown sugar", "precio": 9 },
+        { "id": "caipiroska_sandia", "nombre": "Watermelon & Cinnamon Caipiroska", "descripcion": "Vodka, lime, brown sugar, watermelon puree and cinnamon syrup", "precio": 9 }
+      ]
+    },
+    {
+      "id": "sin_alcohol",
+      "nombre": "Non-Alcoholic",
+      "icono": "Martini",
+      "items": [
+        { "id": "pura_seduccion", "nombre": "Pure Seduction", "descripcion": "Vanilla syrup, grenadine, lime juice and pink soda", "precio": 10 },
+        { "id": "mojigato", "nombre": "Mojigato", "descripcion": "Mint, lime juice, pineapple juice, vanilla syrup and passion fruit", "precio": 10 },
+        { "id": "exoticolada", "nombre": "Exoticolada", "descripcion": "Vanilla syrup, pineapple juice, passion fruit puree, lime and coconut cream", "precio": 9.5 }
+      ]
+    }
+  ],
+  "notas": [
+    "Prices updated June 2026",
+    "Prices may have changed and not be reflected on this website",
+    "Terrace surcharge: 0.20 €"
+  ]
+}
