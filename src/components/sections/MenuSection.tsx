@@ -3,26 +3,22 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { Beer, Wine, GlassWater, Utensils, Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie } from "lucide-react";
+import { Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie } from "lucide-react";
 import cartaDataEs from "@/data/carta.json";
 import cartaDataEn from "@/data/carta_en.json";
 import { useTranslation } from "@/i18n/useTranslation";
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
-  Beer, Wine, GlassWater, Utensils, Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie,
+  Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie,
 };
 
 export function MenuSection() {
   const { t, lang } = useTranslation();
-  const [activeTab, setActiveTab] = useState("cervezas");
+  const [activeTab, setActiveTab] = useState("raciones");
 
   const cartaData = lang === "en" ? cartaDataEn : cartaDataEs;
 
   const tabs = [
-    { id: "cervezas", label: t.menu.tabs?.cervezas || "Cervezas" },
-    { id: "vinos", label: t.menu.tabs?.vinos || "Vinos" },
-    { id: "mojitos", label: t.menu.tabs?.mojitos || "Mojitos" },
-    { id: "margaritas", label: t.menu.tabs?.margaritas || "Margaritas" },
     { id: "raciones", label: t.menu.tabs?.raciones || "Raciones" },
     { id: "carnes", label: t.menu.tabs?.carnes || "Carnes" },
     { id: "hamburguesas", label: t.menu.tabs?.hamburguesas || "Hamburguesas" },
@@ -32,7 +28,7 @@ export function MenuSection() {
   ];
 
   const activeCategory = cartaData.categorias.find(cat => cat.id === activeTab);
-  const IconComponent = activeCategory ? (iconMap[activeCategory.icono] || Wine) : Wine;
+  const IconComponent = activeCategory ? (iconMap[activeCategory.icono] || Beef) : Beef;
 
   return (
     <section id="carta" className="py-24 bg-[#FBF5DD]">

@@ -23,12 +23,8 @@ export const translations = {
     menu: {
       title: "Nuestra",
       highlight: "Carta",
-      subtitle: "Cervezas artesanales, tapas caseras y platos de siempre",
+      subtitle: "Tapas caseras y platos de siempre",
       tabs: {
-        cervezas: "Cervezas",
-        vinos: "Vinos",
-        mojitos: "Mojitos",
-        margaritas: "Margaritas",
         raciones: "Raciones",
         carnes: "Carnes",
         hamburguesas: "Hamburguesas",
@@ -285,12 +281,8 @@ export const translations = {
     menu: {
       title: "Our",
       highlight: "Menu",
-      subtitle: "Craft beers, homemade tapas and classic dishes",
+      subtitle: "Homemade tapas and classic dishes",
       tabs: {
-        cervezas: "Beers",
-        vinos: "Wines",
-        mojitos: "Mojitos",
-        margaritas: "Margaritas",
         raciones: "Raciones",
         carnes: "Meats",
         hamburguesas: "Burgers",
