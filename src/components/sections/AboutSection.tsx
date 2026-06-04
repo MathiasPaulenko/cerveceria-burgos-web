@@ -15,7 +15,7 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="nosotros" className="py-24 bg-[#F9E3A7]">
+    <section id="nosotros" className="py-24 bg-[#FBF5DD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           <FadeIn direction="left" className="flex flex-col h-full">

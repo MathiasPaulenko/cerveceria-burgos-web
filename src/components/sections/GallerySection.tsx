@@ -185,7 +185,7 @@ export function GallerySection() {
   }, [selectedImage, navigateImage]);
 
   return (
-    <section id="galeria" className="py-24 bg-[#FBF5DD]">
+    <section id="galeria" className="py-24 bg-[#F9E3A7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-12">
           <span className="text-[#99120f] font-medium tracking-wide uppercase text-sm">{t.gallery.label}</span>
