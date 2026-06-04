@@ -16,8 +16,8 @@ export function Header() {
     { label: t.nav.inicio, href: "#inicio" },
     { label: t.nav.carta, href: "#carta" },
     { label: t.nav.cocteles, href: "#cocteles" },
-    { label: t.nav.nosotros, href: "#nosotros" },
     { label: t.nav.galeria, href: "#galeria" },
+    { label: t.nav.nosotros, href: "#nosotros" },
     { label: t.nav.contacto, href: "#contacto" },
   ];
 
