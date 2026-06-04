@@ -64,7 +64,7 @@ export function Footer() {
             </h4>
             <p className="text-[#FBF5DD]/60 leading-relaxed">
               <span className="text-[#FBF5DD]">{t.footer.hoursDays || "Lun – Sáb"}</span><br />
-              {t.footer.hoursTime || "06:00 – 00:00"}
+              {t.footer.hoursTime || "07:30 – 00:00"}
             </p>
           </div>
 

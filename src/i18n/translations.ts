@@ -57,7 +57,7 @@ export const translations = {
         { title: "Tradición", desc: "Más de 8 años dejando huella en el barrio" },
       ],
       features: {
-        schedule: { title: "Horario", description: "Lunes a Sábado: 06:00 - 00:00", subtext: "Cenas y copas" },
+        schedule: { title: "Horario", description: "Lunes a Sábado: 07:30 - 00:00", subtext: "Cenas y copas" },
         location: { title: "Ubicación", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
         terrace: { title: "Terraza", description: "Terraza exterior popular", subtext: "Llega con antelación los fines de semana" },
       },
@@ -177,7 +177,7 @@ export const translations = {
         schedule: {
           title: "Horario",
           lines: ["Lunes a Sábado"],
-          highlight: "06:00 - 00:00",
+          highlight: "07:30 - 00:00",
           extra: "Cenas y copas",
         },
         phone: {
@@ -205,7 +205,7 @@ export const translations = {
       hoursLabel: "Horario",
       addressLines: ["Calle Eugenia de Montijo, 80", "28025 Madrid"],
       hoursDays: "Lun – Sáb",
-      hoursTime: "06:00 – 00:00",
+      hoursTime: "07:30 – 00:00",
     },
     scrollToTop: "Volver arriba",
     legal: {
@@ -334,7 +334,7 @@ export const translations = {
         { title: "Tradition", desc: "Over 8 years making our mark on the neighborhood" },
       ],
       features: {
-        schedule: { title: "Hours", description: "Monday to Saturday: 06:00 - 00:00", subtext: "Dinner and drinks" },
+        schedule: { title: "Hours", description: "Monday to Saturday: 07:30 - 00:00", subtext: "Dinner and drinks" },
         location: { title: "Location", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
         terrace: { title: "Terrace", description: "Popular outdoor terrace", subtext: "Arrive early on weekends" },
       },
@@ -454,7 +454,7 @@ export const translations = {
         schedule: {
           title: "Hours",
           lines: ["Monday to Saturday"],
-          highlight: "06:00 - 00:00",
+          highlight: "07:30 - 00:00",
           extra: "Dinner and drinks",
         },
         phone: {
@@ -482,7 +482,7 @@ export const translations = {
       hoursLabel: "Hours",
       addressLines: ["Calle Eugenia de Montijo, 80", "28025 Madrid"],
       hoursDays: "Mon – Sat",
-      hoursTime: "06:00 – 00:00",
+      hoursTime: "07:30 – 00:00",
     },
     scrollToTop: "Back to top",
     legal: {
