@@ -1173,23 +1173,13 @@
           "alergenos": [],
           "disponible": true,
           "destacado": false
-        },
-        {
-          "id": "suplemento_terraza",
-          "nombre": "Terrace Surcharge",
-          "descripcion": "",
-          "precio": 0.2,
-          "tipo": "comida",
-          "alergenos": [],
-          "disponible": true,
-          "destacado": false
         }
       ]
     }
   ],
   "notas": [
-    "Prices may change without notice",
+    "Prices updated June 2026",
     "Please ask staff about allergens",
-    "Some products have terrace surcharge"
+    "Terrace surcharge: 0.20 €"
   ]
 }

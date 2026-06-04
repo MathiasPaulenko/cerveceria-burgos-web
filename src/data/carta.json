@@ -1173,23 +1173,13 @@
           "alergenos": [],
           "disponible": true,
           "destacado": false
-        },
-        {
-          "id": "suplemento_terraza",
-          "nombre": "Suplemento en Terraza",
-          "descripcion": "",
-          "precio": 0.2,
-          "tipo": "comida",
-          "alergenos": [],
-          "disponible": true,
-          "destacado": false
         }
       ]
     }
   ],
   "notas": [
-    "Los precios pueden variar sin previo aviso",
+    "Precios actualizados a junio 2026",
     "Consulte alergenos con el personal",
-    "Algunos productos tienen suplemento en terraza"
+    "Suplemento en terraza: 0,20 €"
   ]
 }
