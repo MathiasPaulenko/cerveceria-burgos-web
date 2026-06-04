@@ -3,13 +3,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { Beer, Wine, GlassWater, Utensils, Beef } from "lucide-react";
+import { Beer, Wine, GlassWater, Utensils, Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie } from "lucide-react";
 import cartaDataEs from "@/data/carta.json";
 import cartaDataEn from "@/data/carta_en.json";
 import { useTranslation } from "@/i18n/useTranslation";
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
-  Beer, Wine, GlassWater, Utensils, Beef,
+  Beer, Wine, GlassWater, Utensils, Beef, ChefHat, Sandwich, Soup, UtensilsCrossed, Cookie,
 };
 
 export function MenuSection() {
@@ -20,10 +20,15 @@ export function MenuSection() {
 
   const tabs = [
     { id: "cervezas", label: t.menu.tabs?.cervezas || "Cervezas" },
+    { id: "vinos", label: t.menu.tabs?.vinos || "Vinos" },
     { id: "mojitos", label: t.menu.tabs?.mojitos || "Mojitos" },
     { id: "margaritas", label: t.menu.tabs?.margaritas || "Margaritas" },
-    { id: "tapas", label: t.menu.tabs?.tapas || "Tapas" },
     { id: "raciones", label: t.menu.tabs?.raciones || "Raciones" },
+    { id: "carnes", label: t.menu.tabs?.carnes || "Carnes" },
+    { id: "hamburguesas", label: t.menu.tabs?.hamburguesas || "Hamburguesas" },
+    { id: "platos_combinados", label: t.menu.tabs?.platos_combinados || "Combinados" },
+    { id: "sandwich", label: t.menu.tabs?.sandwich || "Sandwich" },
+    { id: "bocadillos", label: t.menu.tabs?.bocadillos || "Bocadillos" },
   ];
 
   const activeCategory = cartaData.categorias.find(cat => cat.id === activeTab);
@@ -125,6 +130,9 @@ export function MenuSection() {
                         {item.precio > 0 ? (
                           <>
                             <span className="font-bold text-[#99120f] text-lg">{item.precio.toFixed(2)}€</span>
+                            {(item as {precio_media?: number}).precio_media && (
+                              <p className="text-xs text-[#A06029]/60">1/2: {(item as {precio_media?: number}).precio_media?.toFixed(2)}€</p>
+                            )}
                             {(item as {precio_terraza?: number}).precio_terraza && (
                               <p className="text-xs text-[#A06029]/60">{t.menu.terraceAbbr || "Tza"}: {(item as {precio_terraza?: number}).precio_terraza?.toFixed(2)}€</p>
                             )}

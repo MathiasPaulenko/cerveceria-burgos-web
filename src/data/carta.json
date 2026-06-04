@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "ultima_actualizacion": "02-06-2026",
+  "version": "2.0",
+  "ultima_actualizacion": "04-06-2026",
   "categorias": [
     {
       "id": "cervezas",
@@ -11,7 +11,7 @@
           "id": "tercio",
           "nombre": "Tercio",
           "descripcion": "Cerveza bien fría con tapa generosa",
-          "precio": 3.20,
+          "precio": 3.2,
           "tipo": "rubia",
           "alergenos": [],
           "disponible": true,
@@ -21,7 +21,7 @@
           "id": "doble",
           "nombre": "Doble",
           "descripcion": "Caña doble de cerveza",
-          "precio": 2.80,
+          "precio": 2.8,
           "tipo": "rubia",
           "alergenos": [],
           "disponible": true,
@@ -31,7 +31,7 @@
           "id": "copa",
           "nombre": "Copa",
           "descripcion": "Copa de cerveza especial",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "rubia",
           "alergenos": [],
           "disponible": true,
@@ -41,9 +41,11 @@
           "id": "estrella_galicia",
           "nombre": "Estrella Galicia",
           "descripcion": "Cerveza gallega premium",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "rubia",
-          "alergenos": ["gluten"],
+          "alergenos": [
+            "gluten"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -51,9 +53,11 @@
           "id": "1906",
           "nombre": "1906",
           "descripcion": "Cerveza tostada especial",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "tostada",
-          "alergenos": ["gluten"],
+          "alergenos": [
+            "gluten"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -61,9 +65,11 @@
           "id": "radler",
           "nombre": "Radler",
           "descripcion": "Cerveza con limón",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "radler",
-          "alergenos": ["gluten"],
+          "alergenos": [
+            "gluten"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -71,7 +77,7 @@
           "id": "sin_gluten",
           "nombre": "Cerveza Sin Gluten",
           "descripcion": "Opción sin gluten",
-          "precio": 3.80,
+          "precio": 3.8,
           "tipo": "sin_gluten",
           "alergenos": [],
           "disponible": true,
@@ -88,9 +94,11 @@
           "id": "tinto_casa",
           "nombre": "Vino Tinto de la Casa",
           "descripcion": "Copa de vino tinto seleccionado",
-          "precio": 3.00,
+          "precio": 3,
           "tipo": "tinto",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -98,9 +106,11 @@
           "id": "blanco_casa",
           "nombre": "Vino Blanco de la Casa",
           "descripcion": "Copa de vino blanco fresco",
-          "precio": 3.00,
+          "precio": 3,
           "tipo": "blanco",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -108,9 +118,11 @@
           "id": "verdejo",
           "nombre": "Verdejo",
           "descripcion": "Vino blanco verdejo",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "blanco",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -118,9 +130,11 @@
           "id": "rosado",
           "nombre": "Rosado",
           "descripcion": "Vino rosado",
-          "precio": 3.00,
+          "precio": 3,
           "tipo": "rosado",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         }
@@ -136,8 +150,8 @@
           "id": "mojito_tradicional",
           "nombre": "Mojito Tradicional",
           "descripcion": "Menta, lima, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -147,8 +161,8 @@
           "id": "mojito_fresa",
           "nombre": "Mojito de Fresa",
           "descripcion": "Menta, lima, fresas, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -158,8 +172,8 @@
           "id": "mojito_maracuya",
           "nombre": "Mojito de Maracuyá",
           "descripcion": "Menta, lima, maracuyá, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -169,8 +183,8 @@
           "id": "mojito_mango",
           "nombre": "Mojito de Mango",
           "descripcion": "Menta, lima, mango, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -180,8 +194,8 @@
           "id": "mojito_guayaba",
           "nombre": "Mojito de Guayaba",
           "descripcion": "Menta, lima, guayaba, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -191,8 +205,8 @@
           "id": "mojito_mandarina",
           "nombre": "Mojito de Mandarina",
           "descripcion": "Menta, lima, mandarina, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -202,8 +216,8 @@
           "id": "mojito_arandanos",
           "nombre": "Mojito de Arándanos",
           "descripcion": "Menta, lima, arándanos, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -213,8 +227,8 @@
           "id": "mojito_cherry",
           "nombre": "Mojito de Cherry",
           "descripcion": "Menta, lima, cerezas, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -224,8 +238,8 @@
           "id": "mojito_coco",
           "nombre": "Mojito de Coco",
           "descripcion": "Menta, lima, coco, ron y gaseosa",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -235,8 +249,8 @@
           "id": "mojito_pina",
           "nombre": "Mojito de Piña",
           "descripcion": "Menta, ron, lima, puré de piña y soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -246,8 +260,8 @@
           "id": "mojito_frutos_bosque",
           "nombre": "Mojito de Frutos del Bosque",
           "descripcion": "Menta, ron, lima, puré de frutos del bosque y soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -257,8 +271,8 @@
           "id": "mojito_melocoton",
           "nombre": "Mojito de Melocotón",
           "descripcion": "Menta fresca, limas, azúcar moreno, ron, puré de melocotón, cacera y melocotón fresco",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -268,8 +282,8 @@
           "id": "mojito_jagermeister",
           "nombre": "Mojito de Jagermeister",
           "descripcion": "Menta fresca, limas, azúcar moreno, Jagermeister y cacera",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -287,7 +301,7 @@
           "id": "margarita_tradicional",
           "nombre": "Margarita Tradicional",
           "descripcion": "Tequila, triple seco, lima y sirope de azúcar",
-          "precio": 8.50,
+          "precio": 8.5,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -297,7 +311,7 @@
           "id": "margarita_fresa",
           "nombre": "Margarita de Fresa",
           "descripcion": "Tequila, triple seco, lima, fresas y sirope de caña",
-          "precio": 8.50,
+          "precio": 8.5,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -307,7 +321,7 @@
           "id": "margarita_maracuya",
           "nombre": "Margarita de Maracuyá",
           "descripcion": "Tequila, triple seco, lima, sirope de caña y puré de maracuyá",
-          "precio": 9.00,
+          "precio": 9,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -317,7 +331,7 @@
           "id": "margarita_mango",
           "nombre": "Margarita de Mango y Vainilla",
           "descripcion": "Tequila, triple seco, sirope de mango, zumo de lima, puerros de mango y sirope de vainilla",
-          "precio": 9.00,
+          "precio": 9,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -327,7 +341,7 @@
           "id": "margarita_picante",
           "nombre": "Margarita de Mango Picante",
           "descripcion": "Tequila, sirope de mango picante, puré de mango, puré de guayaba y trajín",
-          "precio": 9.50,
+          "precio": 9.5,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -336,117 +350,1194 @@
       ]
     },
     {
-      "id": "tapas",
-      "nombre": "Tapas",
-      "icono": "Utensils",
-      "descripcion": "Con cada consumo - Elige entre varias opciones",
+      "id": "raciones",
+      "nombre": "Raciones",
+      "icono": "ChefHat",
+      "descripcion": "Disponible media racion en la mayoria de productos",
       "items": [
         {
-          "id": "tapa_del_dia",
-          "nombre": "Tapa del Día",
-          "descripcion": "Varía diariamente - consulta con el camarero",
-          "precio": 0,
-          "tipo": "variado",
+          "id": "ensalada_mixta",
+          "nombre": "Ensalada Mixta",
+          "descripcion": "",
+          "precio": 8.5,
+          "tipo": "comida",
           "alergenos": [],
           "disponible": true,
-          "destacado": true,
-          "nota": "Incluida con cada consumo"
+          "destacado": false,
+          "precio_media": 5.5
         },
         {
-          "id": "patatas_salsa_burgos",
-          "nombre": "Patatas con Salsa Burgos",
-          "descripcion": "Patatas fritas con salsa especial de la casa",
-          "precio": 5.50,
-          "tipo": "patatas",
-          "alergenos": ["mostaza"],
-          "disponible": true,
-          "destacado": true
-        },
-        {
-          "id": "oreja",
-          "nombre": "Oreja",
-          "descripcion": "Oreja de cerdo a la plancha",
-          "precio": 6.00,
-          "tipo": "carne",
+          "id": "ensalada_cesar",
+          "nombre": "Ensalada Cesar",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
           "alergenos": [],
           "disponible": true,
-          "destacado": true
+          "destacado": false,
+          "precio_media": 6.5
         },
         {
-          "id": "croquetas",
-          "nombre": "Croquetas",
-          "descripcion": "Croquetas caseras (jamón, pollo o bacalao)",
-          "precio": 6.50,
-          "tipo": "racion",
-          "alergenos": ["gluten", "huevo", "lactosa"],
+          "id": "ensalada_burrata",
+          "nombre": "Ensalada de Burrata",
+          "descripcion": "",
+          "precio": 12,
+          "tipo": "comida",
+          "alergenos": [
+            "lactosa"
+          ],
           "disponible": true,
           "destacado": false
         },
         {
-          "id": "tortilla",
-          "nombre": "Tortilla Española",
-          "descripcion": "Tortilla de patatas casera",
-          "precio": 5.00,
-          "tipo": "huevos",
-          "alergenos": ["huevo"],
+          "id": "croquetas_jamon",
+          "nombre": "Croquetas de Jamon",
+          "descripcion": "8 uds.",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5
+        },
+        {
+          "id": "croquetas_rabo",
+          "nombre": "Croquetas de Rabo de Vacuno",
+          "descripcion": "8 uds.",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "croquetas_espinaca",
+          "nombre": "Croquetas de Espinaca y Queso de Cabra",
+          "descripcion": "8 uds.",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5
+        },
+        {
+          "id": "croquetas_boletus",
+          "nombre": "Croquetas de Boletus",
+          "descripcion": "8 uds.",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "croquetas_chorizo",
+          "nombre": "Croquetas de Chorizo y Huevo",
+          "descripcion": "8 uds.",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5
+        },
+        {
+          "id": "croquetas_gambas",
+          "nombre": "Croquetas de Gambas al Ajillo",
+          "descripcion": "8 uds.",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa",
+            "crustaceos"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "croquetas_cochinillo",
+          "nombre": "Croquetas de Cochinillo",
+          "descripcion": "8 uds.",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "surtido_croquetas",
+          "nombre": "Surtido de Croquetas",
+          "descripcion": "2 de jamon, 2 chorizo y huevo, 2 de boletus, 2 de rabo de vacuno y 2 de gambas al ajillo",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa",
+            "crustaceos"
+          ],
           "disponible": true,
           "destacado": false
         },
         {
-          "id": "aros_cebolla",
-          "nombre": "Aros de Cebolla",
-          "descripcion": "Aros de cebolla crujientes",
-          "precio": 5.50,
-          "tipo": "vegetal",
-          "alergenos": ["gluten"],
+          "id": "patatas_bravas",
+          "nombre": "Patatas Bravas",
+          "descripcion": "",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "patatas_alioli",
+          "nombre": "Patatas Alioli",
+          "descripcion": "",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "patatas_burgos",
+          "nombre": "Patatas Burgos",
+          "descripcion": "Patatas con salsa del chef",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "patatas_mixtas",
+          "nombre": "Patatas Mixtas",
+          "descripcion": "Salsa brava y burgos",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "revuelto_gambas",
+          "nombre": "Revuelto de Gambas",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "revuelto_morcilla",
+          "nombre": "Revuelto de Morcilla",
+          "descripcion": "",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "morcilla_pimientos",
+          "nombre": "Morcilla de Burgos con Pimientos de Padron",
+          "descripcion": "",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "oreja_plancha",
+          "nombre": "Oreja a la Plancha",
+          "descripcion": "",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "alitas_fritas",
+          "nombre": "Alitas Fritas",
+          "descripcion": "",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "alitas_bbq",
+          "nombre": "Alitas con Salsa Barbacoa",
+          "descripcion": "",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "fingers_pollo",
+          "nombre": "Fingers de Pollo",
+          "descripcion": "Con salsa barbacoa",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "tiras_pollo_cajun",
+          "nombre": "Tiras de Pollo Cajun",
+          "descripcion": "Pollo marinado con rebozado cajun acompanado de salsa mostaza y miel",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "crocanti_gouda",
+          "nombre": "Crocanti de Queso Gouda",
+          "descripcion": "100% queso gouda con empanado de cereales acompanado de mermelada de arandanos",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "cheddar_bites",
+          "nombre": "Cheddar Bites con Jalapenos",
+          "descripcion": "Bolitas de queso cheddar con jalapenos acompanado de salsa barbacoa",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "bienmesabe",
+          "nombre": "Bienmesabe",
+          "descripcion": "Cazon adobado",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 7
+        },
+        {
+          "id": "calamares_romana",
+          "nombre": "Calamares a la Romana",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 7
+        },
+        {
+          "id": "chopitos",
+          "nombre": "Chopitos",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sepia_plancha",
+          "nombre": "Sepia a la Plancha",
+          "descripcion": "",
+          "precio": 16,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "bacalao_rebozado",
+          "nombre": "Bacalao Rebozado",
+          "descripcion": "",
+          "precio": 16,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "huevos_chistorra",
+          "nombre": "Huevos Rotos con Chistorra",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 8
+        },
+        {
+          "id": "huevos_morcilla",
+          "nombre": "Huevos Rotos con Morcilla",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 8
+        },
+        {
+          "id": "huevos_jamon",
+          "nombre": "Huevos Rotos con Jamon",
+          "descripcion": "",
+          "precio": 12,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 9
+        },
+        {
+          "id": "huevos_chistorra_cabra",
+          "nombre": "Huevos Rotos con Chistorra y Rulo de Queso de Cabra",
+          "descripcion": "",
+          "precio": 13,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 9.5
+        },
+        {
+          "id": "huevos_morcilla_cabra",
+          "nombre": "Huevos Rotos con Morcilla y Rulo de Queso de Cabra",
+          "descripcion": "",
+          "precio": 13,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 9.5
+        },
+        {
+          "id": "huevos_jamon_cabra",
+          "nombre": "Huevos Rotos con Jamon y Rulo de Queso de Cabra",
+          "descripcion": "",
+          "precio": 14,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 10.5
+        },
+        {
+          "id": "patatas_rancheras",
+          "nombre": "Patatas Rancheras",
+          "descripcion": "Patatas fritas con nuestra salsa ranchera a base de yogurt y cilantro, beicon crujiente, queso fundido y cebolla crispi",
+          "precio": 12,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "patatas_pulled_pork",
+          "nombre": "Patatas Pulled Pork Cheese",
+          "descripcion": "Patatas fritas con salsa ranchera, carne de cerdo deshilachada con salsa BBQ, queso gratinado y jalapenos",
+          "precio": 14,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "salchipapas",
+          "nombre": "Salchipapas",
+          "descripcion": "Con salsa ketchup y mayonesa",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "provoleta_beicon",
+          "nombre": "Provoleta con Beicon y Jalapenos",
+          "descripcion": "Queso provolone al horno con tomate natural, beicon a la plancha y jalapenos",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "provolone_horno",
+          "nombre": "Provolone al Horno",
+          "descripcion": "Queso provolone al horno con tomate natural",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "gambon_plancha",
+          "nombre": "Gambon a la Plancha",
+          "descripcion": "",
+          "precio": 14,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "tequenos",
+          "nombre": "Tequenos de Queso",
+          "descripcion": "",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "rulo_cabra",
+          "nombre": "Rulo de Cabra Rebozado",
+          "descripcion": "",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "gyozas",
+          "nombre": "Gyozas de Pollo y Verduras",
+          "descripcion": "",
+          "precio": 7.5,
+          "tipo": "comida",
+          "alergenos": [],
           "disponible": true,
           "destacado": false
         }
       ]
     },
     {
-      "id": "raciones",
-      "nombre": "Raciones",
+      "id": "carnes",
+      "nombre": "Carnes y Platos Especiales",
       "icono": "Beef",
       "items": [
         {
+          "id": "costillar_bbq",
+          "nombre": "Costillar de Cerdo en Salsa Barbacoa",
+          "descripcion": "Con patatas",
+          "precio": 19,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "carrillada",
+          "nombre": "Carrillada en su Jugo",
+          "descripcion": "Con patatas",
+          "precio": 13,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "chuleton",
+          "nombre": "Chuleton",
+          "descripcion": "900 gr",
+          "precio": 33,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
           "id": "picanha",
-          "nombre": "Picaña",
-          "descripcion": "Picaña de ternera cocinada a la perfección",
-          "precio": 18.00,
-          "tipo": "carne",
+          "nombre": "Picanha",
+          "descripcion": "500 gr",
+          "precio": 26,
+          "tipo": "comida",
           "alergenos": [],
           "disponible": true,
           "destacado": true
         },
         {
-          "id": "hamburguesa",
-          "nombre": "Hamburguesa",
-          "descripcion": "Hamburguesa de ternera con patatas",
-          "precio": 12.00,
-          "tipo": "carne",
-          "alergenos": ["gluten", "huevo"],
+          "id": "entrana",
+          "nombre": "Entrana",
+          "descripcion": "600 gr",
+          "precio": 26,
+          "tipo": "comida",
+          "alergenos": [],
           "disponible": true,
           "destacado": false
         },
         {
-          "id": "paella",
-          "nombre": "Paella",
-          "descripcion": "Paella de los sábados y domingos - consultar disponibilidad",
-          "precio": 10.00,
-          "tipo": "arroz",
-          "alergenos": ["moluscos", "crustaceos"],
+          "id": "entrecot",
+          "nombre": "Entrecot",
+          "descripcion": "",
+          "precio": 16,
+          "tipo": "comida",
+          "alergenos": [],
           "disponible": true,
-          "destacado": true,
-          "nota": "Solo fines de semana"
+          "destacado": false
+        },
+        {
+          "id": "tira_asado",
+          "nombre": "Tira de Asado",
+          "descripcion": "",
+          "precio": 18,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "chuleta_vaca",
+          "nombre": "Chuleta de Vaca",
+          "descripcion": "",
+          "precio": 19,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "cachopo",
+          "nombre": "Cachopo Asturiano Tradicional",
+          "descripcion": "",
+          "precio": 28,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "chivito",
+          "nombre": "Chivito Uruguayo",
+          "descripcion": "Plato de ternera con lechuga, tomate, cebolla, jamon cocido, beicon, queso, pimiento verde frito y huevo frito acompanado de patatas fritas y salsa chimichurri casera",
+          "precio": 18,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "milanesa",
+          "nombre": "Milanesa Napolitana",
+          "descripcion": "Escalope de ternera con salsa napolitana casera con lechuga, tomate, cebolla, jamon cocido, queso y huevo frito acompanado de patatas fritas",
+          "precio": 18,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "hamburguesas",
+      "nombre": "Hamburguesas",
+      "icono": "Sandwich",
+      "descripcion": "Todas con carne 200gr y patatas fritas",
+      "items": [
+        {
+          "id": "hamburguesa_normal",
+          "nombre": "Hamburguesa Normal",
+          "descripcion": "Rucula, tomate, cebolla y carne 200 gr con patatas fritas",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_completa",
+          "nombre": "Hamburguesa Completa",
+          "descripcion": "Rucula, tomate, cebolla, carne 200 gr, queso y beicon con patatas fritas",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_burgos",
+          "nombre": "Hamburguesa Burgos",
+          "descripcion": "Rucula, tomate, cebolla, carne 200 gr, queso, jamon york, beicon y huevo con patatas fritas",
+          "precio": 12.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pollo",
+          "nombre": "Hamburguesa de Escalope de Pollo",
+          "descripcion": "Rucula, tomate, cebolla, escalope de pollo, queso y beicon con patatas fritas",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pollo_burgos",
+          "nombre": "Hamburguesa de Escalope de Pollo Burgos",
+          "descripcion": "Rucula, tomate, cebolla, escalope de pollo, queso, jamon york, beicon, huevo y patatas fritas",
+          "precio": 12.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_cabrita",
+          "nombre": "Hamburguesa La Cabrita",
+          "descripcion": "Rucula, tomate, carne 200 gr, beicon, rulo de queso de cabra, cebolla caramelizada y patatas fritas",
+          "precio": 12.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pastrami",
+          "nombre": "Pastrami Burguer",
+          "descripcion": "Salsa ranchera, tomate, carne 200gr 100% vacuno, queso cheddar, pastrami, rucula y salsa sriracha",
+          "precio": 15,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pulled_pork",
+          "nombre": "Pulled Pork Purger",
+          "descripcion": "Salsa ranchera, tomate, carne 200gr 100% vacuno, queso cheddar, pepinillos, pulled pork",
+          "precio": 15,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_burrata",
+          "nombre": "Burrata Burguer",
+          "descripcion": "Mayonesa de albahaca, tomate, carne 200gr 100% vacuno, bacon, rucula, burrata fresca",
+          "precio": 15,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "extra_carne",
+          "nombre": "Extra de Carne",
+          "descripcion": "",
+          "precio": 3,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "platos_combinados",
+      "nombre": "Platos Combinados",
+      "icono": "Soup",
+      "items": [
+        {
+          "id": "combo_lomo_patatas",
+          "nombre": "Lomo a la Plancha con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_filete_ternera_patatas",
+          "nombre": "Filete de Ternera con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_pollo_patatas",
+          "nombre": "Filete de Pollo a la Plancha con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_pollo_patatas",
+          "nombre": "Escalope de Pollo con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_panceta_patatas",
+          "nombre": "Panceta con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_chorizo_patatas",
+          "nombre": "Chorizo Frito con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_calamares_patatas",
+          "nombre": "Calamares con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_ternera_patatas",
+          "nombre": "Escalope de Ternera con Patatas y Huevo",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_lomo_ensalada",
+          "nombre": "Lomo a la Plancha con Ensalada",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_filete_ternera_ensalada",
+          "nombre": "Filete de Ternera con Ensalada",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_pollo_ensalada",
+          "nombre": "Filete de Pollo a la Plancha con Ensalada",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_pollo_ensalada",
+          "nombre": "Escalope de Pollo con Ensalada",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_ternera_ensalada",
+          "nombre": "Escalope de Ternera con Ensalada",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_calamares_ensalada",
+          "nombre": "Calamares con Ensalada",
+          "descripcion": "",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "sandwich",
+      "nombre": "Sandwich",
+      "icono": "UtensilsCrossed",
+      "items": [
+        {
+          "id": "sandwich_mixto",
+          "nombre": "Sandwich Mixto",
+          "descripcion": "Jamon york y queso",
+          "precio": 2.9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_mixto_patatas",
+          "nombre": "Sandwich Mixto con Patatas Fritas",
+          "descripcion": "",
+          "precio": 4.2,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_mixto_huevo",
+          "nombre": "Sandwich Mixto con Huevo Frito",
+          "descripcion": "",
+          "precio": 3.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_mixto_huevo_patatas",
+          "nombre": "Sandwich Mixto con Huevo y Patatas Fritas",
+          "descripcion": "",
+          "precio": 4.8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_burgos",
+          "nombre": "Sandwich Burgos",
+          "descripcion": "Lechuga, tomate, jamon york, queso, beicon y huevo frito con patatas fritas",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_pollo",
+          "nombre": "Sandwich de Pollo",
+          "descripcion": "Lechuga, tomate, filete de pollo a la plancha, jamon york, queso, beicon y huevo frito con patatas fritas",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_vegetal",
+          "nombre": "Sandwich Vegetal",
+          "descripcion": "Lechuga, tomate, cebolla, atun, pimiento piquillo y huevo frito",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "bocadillos",
+      "nombre": "Bocadillos y Montados",
+      "icono": "Cookie",
+      "descripcion": "Precio Bocadillo / Montado",
+      "items": [
+        {
+          "id": "boc_chistorra",
+          "nombre": "Bocadillo de Chistorra",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_lomo",
+          "nombre": "Bocadillo de Lomo",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_beicon",
+          "nombre": "Bocadillo de Beicon",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_panceta",
+          "nombre": "Bocadillo de Panceta",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_ternera",
+          "nombre": "Bocadillo de Ternera",
+          "descripcion": "",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_morcilla",
+          "nombre": "Bocadillo de Morcilla de Burgos",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_escalope_pollo",
+          "nombre": "Bocadillo de Escalope de Pollo",
+          "descripcion": "",
+          "precio": 6,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_pollo_plancha",
+          "nombre": "Bocadillo de Pollo a la Plancha",
+          "descripcion": "",
+          "precio": 6,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_tortilla_francesa",
+          "nombre": "Bocadillo de Tortilla Francesa",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_tortilla_patatas",
+          "nombre": "Bocadillo de Tortilla de Patatas",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_oreja",
+          "nombre": "Bocadillo de Oreja",
+          "descripcion": "",
+          "precio": 6.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_jamon_curado",
+          "nombre": "Bocadillo de Jamon Curado",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_calamares",
+          "nombre": "Bocadillo de Calamares",
+          "descripcion": "",
+          "precio": 6,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3.2
+        },
+        {
+          "id": "boc_chorizo",
+          "nombre": "Bocadillo de Chorizo Frito",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_choripan",
+          "nombre": "Choripan",
+          "descripcion": "Bocadillo de chorizo criollo con chimichurri casero, mayonesa, lechuga y tomate",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_tamarito",
+          "nombre": "Tamarito",
+          "descripcion": "Bocadillo de escalope de pollo con lechuga, tomate y mayonesa",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_solomillo",
+          "nombre": "Solomillo con Queso Brie",
+          "descripcion": "",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "extra_ingredientes",
+          "nombre": "Ingredientes Extra",
+          "descripcion": "",
+          "precio": 0.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "extra_patatas",
+          "nombre": "Patatas Fritas Extra",
+          "descripcion": "",
+          "precio": 1.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "suplemento_terraza",
+          "nombre": "Suplemento en Terraza",
+          "descripcion": "",
+          "precio": 0.2,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
         }
       ]
     }
   ],
   "notas": [
     "Los precios pueden variar sin previo aviso",
-    "Consulte alérgenos con el personal",
-    "Tapas incluidas con cada consumo (varían según disponibilidad)",
-    "Terraza con precios específicos en algunos productos"
+    "Consulte alergenos con el personal",
+    "Algunos productos tienen suplemento en terraza",
+    "Ingredientes extra y patatas fritas extra disponibles"
   ]
 }

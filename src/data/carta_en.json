@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "ultima_actualizacion": "02-06-2026",
+  "version": "2.0",
+  "ultima_actualizacion": "04-06-2026",
   "categorias": [
     {
       "id": "cervezas",
@@ -11,7 +11,7 @@
           "id": "tercio",
           "nombre": "Tercio",
           "descripcion": "Ice-cold beer with a generous tapa",
-          "precio": 3.20,
+          "precio": 3.2,
           "tipo": "rubia",
           "alergenos": [],
           "disponible": true,
@@ -21,7 +21,7 @@
           "id": "doble",
           "nombre": "Doble",
           "descripcion": "Double draft beer",
-          "precio": 2.80,
+          "precio": 2.8,
           "tipo": "rubia",
           "alergenos": [],
           "disponible": true,
@@ -31,7 +31,7 @@
           "id": "copa",
           "nombre": "Copa",
           "descripcion": "Special beer glass",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "rubia",
           "alergenos": [],
           "disponible": true,
@@ -41,9 +41,11 @@
           "id": "estrella_galicia",
           "nombre": "Estrella Galicia",
           "descripcion": "Premium Galician beer",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "rubia",
-          "alergenos": ["gluten"],
+          "alergenos": [
+            "gluten"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -51,9 +53,11 @@
           "id": "1906",
           "nombre": "1906",
           "descripcion": "Special toasted beer",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "tostada",
-          "alergenos": ["gluten"],
+          "alergenos": [
+            "gluten"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -61,9 +65,11 @@
           "id": "radler",
           "nombre": "Radler",
           "descripcion": "Beer with lemon",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "radler",
-          "alergenos": ["gluten"],
+          "alergenos": [
+            "gluten"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -71,7 +77,7 @@
           "id": "sin_gluten",
           "nombre": "Gluten-Free Beer",
           "descripcion": "Gluten-free option",
-          "precio": 3.80,
+          "precio": 3.8,
           "tipo": "sin_gluten",
           "alergenos": [],
           "disponible": true,
@@ -88,9 +94,11 @@
           "id": "tinto_casa",
           "nombre": "House Red Wine",
           "descripcion": "Glass of selected red wine",
-          "precio": 3.00,
+          "precio": 3,
           "tipo": "tinto",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -98,9 +106,11 @@
           "id": "blanco_casa",
           "nombre": "House White Wine",
           "descripcion": "Glass of fresh white wine",
-          "precio": 3.00,
+          "precio": 3,
           "tipo": "blanco",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -108,9 +118,11 @@
           "id": "verdejo",
           "nombre": "Verdejo",
           "descripcion": "White verdejo wine",
-          "precio": 3.50,
+          "precio": 3.5,
           "tipo": "blanco",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         },
@@ -118,9 +130,11 @@
           "id": "rosado",
           "nombre": "Rosé",
           "descripcion": "Rosé wine",
-          "precio": 3.00,
+          "precio": 3,
           "tipo": "rosado",
-          "alergenos": ["sulfitos"],
+          "alergenos": [
+            "sulfitos"
+          ],
           "disponible": true,
           "destacado": false
         }
@@ -136,8 +150,8 @@
           "id": "mojito_tradicional",
           "nombre": "Traditional Mojito",
           "descripcion": "Mint, lime, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -147,8 +161,8 @@
           "id": "mojito_fresa",
           "nombre": "Strawberry Mojito",
           "descripcion": "Mint, lime, strawberries, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -158,8 +172,8 @@
           "id": "mojito_maracuya",
           "nombre": "Passion Fruit Mojito",
           "descripcion": "Mint, lime, passion fruit, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -169,8 +183,8 @@
           "id": "mojito_mango",
           "nombre": "Mango Mojito",
           "descripcion": "Mint, lime, mango, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -180,8 +194,8 @@
           "id": "mojito_guayaba",
           "nombre": "Guava Mojito",
           "descripcion": "Mint, lime, guava, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -191,8 +205,8 @@
           "id": "mojito_mandarina",
           "nombre": "Tangerine Mojito",
           "descripcion": "Mint, lime, tangerine, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -202,8 +216,8 @@
           "id": "mojito_arandanos",
           "nombre": "Blueberry Mojito",
           "descripcion": "Mint, lime, blueberries, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -213,8 +227,8 @@
           "id": "mojito_cherry",
           "nombre": "Cherry Mojito",
           "descripcion": "Mint, lime, cherries, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -224,8 +238,8 @@
           "id": "mojito_coco",
           "nombre": "Coconut Mojito",
           "descripcion": "Mint, lime, coconut, rum and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -235,8 +249,8 @@
           "id": "mojito_pina",
           "nombre": "Pineapple Mojito",
           "descripcion": "Mint, rum, lime, pineapple puree and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -246,8 +260,8 @@
           "id": "mojito_frutos_bosque",
           "nombre": "Forest Fruits Mojito",
           "descripcion": "Mint, rum, lime, forest fruit puree and soda",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -257,8 +271,8 @@
           "id": "mojito_melocoton",
           "nombre": "Peach Mojito",
           "descripcion": "Fresh mint, limes, brown sugar, rum, peach puree, peach liqueur and fresh peach",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -268,8 +282,8 @@
           "id": "mojito_jagermeister",
           "nombre": "Jagermeister Mojito",
           "descripcion": "Fresh mint, limes, brown sugar, Jagermeister and peach liqueur",
-          "precio": 9.00,
-          "precio_terraza": 9.20,
+          "precio": 9,
+          "precio_terraza": 9.2,
           "tipo": "ron",
           "alergenos": [],
           "disponible": true,
@@ -287,7 +301,7 @@
           "id": "margarita_tradicional",
           "nombre": "Traditional Margarita",
           "descripcion": "Tequila, triple sec, lime and sugar syrup",
-          "precio": 8.50,
+          "precio": 8.5,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -297,7 +311,7 @@
           "id": "margarita_fresa",
           "nombre": "Strawberry Margarita",
           "descripcion": "Tequila, triple sec, lime, strawberries and cane syrup",
-          "precio": 8.50,
+          "precio": 8.5,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -307,7 +321,7 @@
           "id": "margarita_maracuya",
           "nombre": "Passion Fruit Margarita",
           "descripcion": "Tequila, triple sec, lime, cane syrup and passion fruit puree",
-          "precio": 9.00,
+          "precio": 9,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -317,7 +331,7 @@
           "id": "margarita_mango",
           "nombre": "Mango & Vanilla Margarita",
           "descripcion": "Tequila, triple sec, mango syrup, lime juice, mango leeks and vanilla syrup",
-          "precio": 9.00,
+          "precio": 9,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -327,7 +341,7 @@
           "id": "margarita_picante",
           "nombre": "Spicy Mango Margarita",
           "descripcion": "Tequila, spicy mango syrup, mango puree, guava puree and tajín",
-          "precio": 9.50,
+          "precio": 9.5,
           "tipo": "tequila",
           "alergenos": [],
           "disponible": true,
@@ -336,109 +350,1186 @@
       ]
     },
     {
-      "id": "tapas",
-      "nombre": "Tapas",
-      "icono": "Utensils",
-      "descripcion": "Included with every drink - Choose from several options",
+      "id": "raciones",
+      "nombre": "Sharing Plates",
+      "icono": "ChefHat",
+      "descripcion": "Half portion available on most products",
       "items": [
         {
-          "id": "tapa_del_dia",
-          "nombre": "Tapa of the Day",
-          "descripcion": "Varies daily - ask your server",
-          "precio": 0,
-          "tipo": "variado",
+          "id": "ensalada_mixta",
+          "nombre": "Mixed Salad",
+          "descripcion": "",
+          "precio": 8.5,
+          "tipo": "comida",
           "alergenos": [],
           "disponible": true,
-          "destacado": true,
-          "nota": "Included with every drink"
+          "destacado": false,
+          "precio_media": 5.5
         },
         {
-          "id": "patatas_salsa_burgos",
-          "nombre": "Burgos Sauce Fries",
-          "descripcion": "Fries with special house sauce",
-          "precio": 5.50,
-          "tipo": "patatas",
-          "alergenos": ["mostaza"],
-          "disponible": true,
-          "destacado": true
-        },
-        {
-          "id": "oreja",
-          "nombre": "Pig's Ear",
-          "descripcion": "Grilled pig's ear",
-          "precio": 6.00,
-          "tipo": "carne",
+          "id": "ensalada_cesar",
+          "nombre": "Caesar Salad",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
           "alergenos": [],
           "disponible": true,
-          "destacado": true
+          "destacado": false,
+          "precio_media": 6.5
         },
         {
-          "id": "croquetas",
-          "nombre": "Croquettes",
-          "descripcion": "Homemade croquettes (ham, chicken or cod)",
-          "precio": 6.50,
-          "tipo": "racion",
-          "alergenos": ["gluten", "huevo", "lactosa"],
+          "id": "ensalada_burrata",
+          "nombre": "Burrata Salad",
+          "descripcion": "",
+          "precio": 12,
+          "tipo": "comida",
+          "alergenos": [
+            "lactosa"
+          ],
           "disponible": true,
           "destacado": false
         },
         {
-          "id": "tortilla",
-          "nombre": "Spanish Omelette",
-          "descripcion": "Homemade potato omelette",
-          "precio": 5.00,
-          "tipo": "huevos",
-          "alergenos": ["huevo"],
+          "id": "croquetas_jamon",
+          "nombre": "Ham Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5
+        },
+        {
+          "id": "croquetas_rabo",
+          "nombre": "Oxtail Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "croquetas_espinaca",
+          "nombre": "Spinach and Goat Cheese Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5
+        },
+        {
+          "id": "croquetas_boletus",
+          "nombre": "Boletus Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "croquetas_chorizo",
+          "nombre": "Chorizo and Egg Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5
+        },
+        {
+          "id": "croquetas_gambas",
+          "nombre": "Garlic Shrimp Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa",
+            "crustaceos"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "croquetas_cochinillo",
+          "nombre": "Suckling Pig Croquettes",
+          "descripcion": "8 uds.",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "surtido_croquetas",
+          "nombre": "Assorted Croquettes",
+          "descripcion": "2 de jamon, 2 chorizo y huevo, 2 de boletus, 2 de rabo de vacuno y 2 de gambas al ajillo",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "lactosa",
+            "crustaceos"
+          ],
           "disponible": true,
           "destacado": false
         },
         {
-          "id": "aros_cebolla",
-          "nombre": "Onion Rings",
-          "descripcion": "Crispy onion rings",
-          "precio": 5.50,
-          "tipo": "vegetal",
-          "alergenos": ["gluten"],
+          "id": "patatas_bravas",
+          "nombre": "Spicy Potatoes",
+          "descripcion": "",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "patatas_alioli",
+          "nombre": "Garlic Mayo Potatoes",
+          "descripcion": "",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "patatas_burgos",
+          "nombre": "Burgos Potatoes",
+          "descripcion": "Patatas con salsa del chef",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "patatas_mixtas",
+          "nombre": "Mixed Potatoes",
+          "descripcion": "Salsa brava y burgos",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 5.5
+        },
+        {
+          "id": "revuelto_gambas",
+          "nombre": "Shrimp Scramble",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "revuelto_morcilla",
+          "nombre": "Blood Sausage Scramble",
+          "descripcion": "",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "morcilla_pimientos",
+          "nombre": "Burgos Blood Sausage with Padron Peppers",
+          "descripcion": "",
+          "precio": 8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "oreja_plancha",
+          "nombre": "Grilled Pig Ear",
+          "descripcion": "",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "alitas_fritas",
+          "nombre": "Fried Chicken Wings",
+          "descripcion": "",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "alitas_bbq",
+          "nombre": "BBQ Chicken Wings",
+          "descripcion": "",
+          "precio": 9.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 6.5
+        },
+        {
+          "id": "fingers_pollo",
+          "nombre": "Chicken Fingers",
+          "descripcion": "Con salsa barbacoa",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "tiras_pollo_cajun",
+          "nombre": "Cajun Chicken Strips",
+          "descripcion": "Pollo marinado con rebozado cajun acompanado de salsa mostaza y miel",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "crocanti_gouda",
+          "nombre": "Crispy Gouda Cheese",
+          "descripcion": "100% queso gouda con empanado de cereales acompanado de mermelada de arandanos",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "cheddar_bites",
+          "nombre": "Cheddar Bites with Jalapenos",
+          "descripcion": "Bolitas de queso cheddar con jalapenos acompanado de salsa barbacoa",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "bienmesabe",
+          "nombre": "Bienmesabe",
+          "descripcion": "Cazon adobado",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 7
+        },
+        {
+          "id": "calamares_romana",
+          "nombre": "Roman Style Squid",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 7
+        },
+        {
+          "id": "chopitos",
+          "nombre": "Baby Squid",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sepia_plancha",
+          "nombre": "Grilled Cuttlefish",
+          "descripcion": "",
+          "precio": 16,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "bacalao_rebozado",
+          "nombre": "Battered Cod",
+          "descripcion": "",
+          "precio": 16,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "huevos_chistorra",
+          "nombre": "Broken Eggs with Chistorra",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 8
+        },
+        {
+          "id": "huevos_morcilla",
+          "nombre": "Broken Eggs with Blood Sausage",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 8
+        },
+        {
+          "id": "huevos_jamon",
+          "nombre": "Broken Eggs with Ham",
+          "descripcion": "",
+          "precio": 12,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 9
+        },
+        {
+          "id": "huevos_chistorra_cabra",
+          "nombre": "Broken Eggs with Chistorra and Goat Cheese Roll",
+          "descripcion": "",
+          "precio": 13,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 9.5
+        },
+        {
+          "id": "huevos_morcilla_cabra",
+          "nombre": "Broken Eggs with Blood Sausage and Goat Cheese Roll",
+          "descripcion": "",
+          "precio": 13,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 9.5
+        },
+        {
+          "id": "huevos_jamon_cabra",
+          "nombre": "Broken Eggs with Ham and Goat Cheese Roll",
+          "descripcion": "",
+          "precio": 14,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 10.5
+        },
+        {
+          "id": "patatas_rancheras",
+          "nombre": "Ranch Potatoes",
+          "descripcion": "Patatas fritas con nuestra salsa ranchera a base de yogurt y cilantro, beicon crujiente, queso fundido y cebolla crispi",
+          "precio": 12,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "patatas_pulled_pork",
+          "nombre": "Pulled Pork Cheese Potatoes",
+          "descripcion": "Patatas fritas con salsa ranchera, carne de cerdo deshilachada con salsa BBQ, queso gratinado y jalapenos",
+          "precio": 14,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "salchipapas",
+          "nombre": "Sausage and Fries",
+          "descripcion": "Con salsa ketchup y mayonesa",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "provoleta_beicon",
+          "nombre": "Provoleta with Bacon and Jalapenos",
+          "descripcion": "Queso provolone al horno con tomate natural, beicon a la plancha y jalapenos",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "provolone_horno",
+          "nombre": "Baked Provolone",
+          "descripcion": "Queso provolone al horno con tomate natural",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "gambon_plancha",
+          "nombre": "Grilled Prawn",
+          "descripcion": "",
+          "precio": 14,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "tequenos",
+          "nombre": "Cheese Tequenos",
+          "descripcion": "",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "rulo_cabra",
+          "nombre": "Breaded Goat Cheese Roll",
+          "descripcion": "",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "gyozas",
+          "nombre": "Chicken and Vegetable Gyozas",
+          "descripcion": "",
+          "precio": 7.5,
+          "tipo": "comida",
+          "alergenos": [],
           "disponible": true,
           "destacado": false
         }
       ]
     },
     {
-      "id": "raciones",
-      "nombre": "Raciones",
+      "id": "carnes",
+      "nombre": "Meats & Specials",
       "icono": "Beef",
       "items": [
         {
+          "id": "costillar_bbq",
+          "nombre": "Pork Ribs in BBQ Sauce",
+          "descripcion": "Con patatas",
+          "precio": 19,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "carrillada",
+          "nombre": "Braised Pork Cheeks in Juice",
+          "descripcion": "Con patatas",
+          "precio": 13,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "chuleton",
+          "nombre": "Bone-in Steak",
+          "descripcion": "900 gr",
+          "precio": 33,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
           "id": "picanha",
           "nombre": "Picanha",
-          "descripcion": "Beef picanha cooked to perfection",
-          "precio": 18.00,
-          "tipo": "carne",
+          "descripcion": "500 gr",
+          "precio": 26,
+          "tipo": "comida",
           "alergenos": [],
           "disponible": true,
           "destacado": true
         },
         {
-          "id": "hamburguesa",
-          "nombre": "Burger",
-          "descripcion": "Beef burger with fries",
-          "precio": 12.00,
-          "tipo": "carne",
-          "alergenos": ["gluten", "huevo"],
+          "id": "entrana",
+          "nombre": "Skirt Steak",
+          "descripcion": "600 gr",
+          "precio": 26,
+          "tipo": "comida",
+          "alergenos": [],
           "disponible": true,
           "destacado": false
         },
         {
-          "id": "paella",
-          "nombre": "Paella",
-          "descripcion": "Saturday and Sunday paella - check availability",
-          "precio": 10.00,
-          "tipo": "arroz",
-          "alergenos": ["moluscos", "crustaceos"],
+          "id": "entrecot",
+          "nombre": "Entrecote",
+          "descripcion": "",
+          "precio": 16,
+          "tipo": "comida",
+          "alergenos": [],
           "disponible": true,
-          "destacado": true,
-          "nota": "Weekends only"
+          "destacado": false
+        },
+        {
+          "id": "tira_asado",
+          "nombre": "Roast Cut",
+          "descripcion": "",
+          "precio": 18,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "chuleta_vaca",
+          "nombre": "Beef Chop",
+          "descripcion": "",
+          "precio": 19,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "cachopo",
+          "nombre": "Traditional Asturian Cachopo",
+          "descripcion": "",
+          "precio": 28,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "chivito",
+          "nombre": "Uruguayan Chivito",
+          "descripcion": "Plato de ternera con lechuga, tomate, cebolla, jamon cocido, beicon, queso, pimiento verde frito y huevo frito acompanado de patatas fritas y salsa chimichurri casera",
+          "precio": 18,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "milanesa",
+          "nombre": "Neapolitan Milanese",
+          "descripcion": "Escalope de ternera con salsa napolitana casera con lechuga, tomate, cebolla, jamon cocido, queso y huevo frito acompanado de patatas fritas",
+          "precio": 18,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "hamburguesas",
+      "nombre": "Burgers",
+      "icono": "Sandwich",
+      "descripcion": "Todas con carne 200gr y patatas fritas",
+      "items": [
+        {
+          "id": "hamburguesa_normal",
+          "nombre": "Standard Burger",
+          "descripcion": "Rucula, tomate, cebolla y carne 200 gr con patatas fritas",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_completa",
+          "nombre": "Complete Burger",
+          "descripcion": "Rucula, tomate, cebolla, carne 200 gr, queso y beicon con patatas fritas",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_burgos",
+          "nombre": "Burgos Burger",
+          "descripcion": "Rucula, tomate, cebolla, carne 200 gr, queso, jamon york, beicon y huevo con patatas fritas",
+          "precio": 12.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pollo",
+          "nombre": "Chicken Cutlet Burger",
+          "descripcion": "Rucula, tomate, cebolla, escalope de pollo, queso y beicon con patatas fritas",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pollo_burgos",
+          "nombre": "Burgos Chicken Cutlet Burger",
+          "descripcion": "Rucula, tomate, cebolla, escalope de pollo, queso, jamon york, beicon, huevo y patatas fritas",
+          "precio": 12.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_cabrita",
+          "nombre": "La Cabrita Burger",
+          "descripcion": "Rucula, tomate, carne 200 gr, beicon, rulo de queso de cabra, cebolla caramelizada y patatas fritas",
+          "precio": 12.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pastrami",
+          "nombre": "Pastrami Burger",
+          "descripcion": "Salsa ranchera, tomate, carne 200gr 100% vacuno, queso cheddar, pastrami, rucula y salsa sriracha",
+          "precio": 15,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_pulled_pork",
+          "nombre": "Pulled Pork Burger",
+          "descripcion": "Salsa ranchera, tomate, carne 200gr 100% vacuno, queso cheddar, pepinillos, pulled pork",
+          "precio": 15,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "hamburguesa_burrata",
+          "nombre": "Burrata Burger",
+          "descripcion": "Mayonesa de albahaca, tomate, carne 200gr 100% vacuno, bacon, rucula, burrata fresca",
+          "precio": 15,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "extra_carne",
+          "nombre": "Extra Meat",
+          "descripcion": "",
+          "precio": 3,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "platos_combinados",
+      "nombre": "Combo Plates",
+      "icono": "Soup",
+      "items": [
+        {
+          "id": "combo_lomo_patatas",
+          "nombre": "Grilled Pork Loin with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_filete_ternera_patatas",
+          "nombre": "Beef Fillet with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_pollo_patatas",
+          "nombre": "Grilled Chicken Fillet with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_pollo_patatas",
+          "nombre": "Chicken Cutlet with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_panceta_patatas",
+          "nombre": "Bacon with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_chorizo_patatas",
+          "nombre": "Fried Chorizo with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_calamares_patatas",
+          "nombre": "Squid with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_ternera_patatas",
+          "nombre": "Beef Cutlet with Potatoes and Egg",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_lomo_ensalada",
+          "nombre": "Grilled Pork Loin with Salad",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_filete_ternera_ensalada",
+          "nombre": "Beef Fillet with Salad",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_pollo_ensalada",
+          "nombre": "Grilled Chicken Fillet with Salad",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_pollo_ensalada",
+          "nombre": "Chicken Cutlet with Salad",
+          "descripcion": "",
+          "precio": 10,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_escalope_ternera_ensalada",
+          "nombre": "Beef Cutlet with Salad",
+          "descripcion": "",
+          "precio": 11,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "combo_calamares_ensalada",
+          "nombre": "Squid with Salad",
+          "descripcion": "",
+          "precio": 10.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "sandwich",
+      "nombre": "Sandwiches",
+      "icono": "UtensilsCrossed",
+      "items": [
+        {
+          "id": "sandwich_mixto",
+          "nombre": "Mixed Sandwich",
+          "descripcion": "Jamon york y queso",
+          "precio": 2.9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_mixto_patatas",
+          "nombre": "Mixed Sandwich with Fries",
+          "descripcion": "",
+          "precio": 4.2,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_mixto_huevo",
+          "nombre": "Mixed Sandwich with Fried Egg",
+          "descripcion": "",
+          "precio": 3.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_mixto_huevo_patatas",
+          "nombre": "Mixed Sandwich with Egg and Fries",
+          "descripcion": "",
+          "precio": 4.8,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_burgos",
+          "nombre": "Burgos Sandwich",
+          "descripcion": "Lechuga, tomate, jamon york, queso, beicon y huevo frito con patatas fritas",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_pollo",
+          "nombre": "Chicken Sandwich",
+          "descripcion": "Lechuga, tomate, filete de pollo a la plancha, jamon york, queso, beicon y huevo frito con patatas fritas",
+          "precio": 9,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "sandwich_vegetal",
+          "nombre": "Vegetable Sandwich",
+          "descripcion": "Lechuga, tomate, cebolla, atun, pimiento piquillo y huevo frito",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "bocadillos",
+      "nombre": "Sandwiches & Montados",
+      "icono": "Cookie",
+      "descripcion": "Precio Bocadillo / Montado",
+      "items": [
+        {
+          "id": "boc_chistorra",
+          "nombre": "Chistorra Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_lomo",
+          "nombre": "Pork Loin Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_beicon",
+          "nombre": "Bacon Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_panceta",
+          "nombre": "Belly Bacon Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_ternera",
+          "nombre": "Beef Sandwich",
+          "descripcion": "",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_morcilla",
+          "nombre": "Burgos Blood Sausage Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_escalope_pollo",
+          "nombre": "Chicken Cutlet Sandwich",
+          "descripcion": "",
+          "precio": 6,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_pollo_plancha",
+          "nombre": "Grilled Chicken Sandwich",
+          "descripcion": "",
+          "precio": 6,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_tortilla_francesa",
+          "nombre": "French Omelette Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_tortilla_patatas",
+          "nombre": "Spanish Omelette Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_oreja",
+          "nombre": "Pig Ear Sandwich",
+          "descripcion": "",
+          "precio": 6.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_jamon_curado",
+          "nombre": "Cured Ham Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_calamares",
+          "nombre": "Squid Sandwich",
+          "descripcion": "",
+          "precio": 6,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3.2
+        },
+        {
+          "id": "boc_chorizo",
+          "nombre": "Fried Chorizo Sandwich",
+          "descripcion": "",
+          "precio": 5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false,
+          "precio_media": 3
+        },
+        {
+          "id": "boc_choripan",
+          "nombre": "Choripan",
+          "descripcion": "Bocadillo de chorizo criollo con chimichurri casero, mayonesa, lechuga y tomate",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_tamarito",
+          "nombre": "Tamarito",
+          "descripcion": "Bocadillo de escalope de pollo con lechuga, tomate y mayonesa",
+          "precio": 7,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "boc_solomillo",
+          "nombre": "Sirloin with Brie Cheese",
+          "descripcion": "",
+          "precio": 8.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "extra_ingredientes",
+          "nombre": "Extra Ingredients",
+          "descripcion": "",
+          "precio": 0.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "extra_patatas",
+          "nombre": "Extra Fries",
+          "descripcion": "",
+          "precio": 1.5,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "suplemento_terraza",
+          "nombre": "Terrace Surcharge",
+          "descripcion": "",
+          "precio": 0.2,
+          "tipo": "comida",
+          "alergenos": [],
+          "disponible": true,
+          "destacado": false
         }
       ]
     }
@@ -446,7 +1537,7 @@
   "notas": [
     "Prices may change without notice",
     "Please ask staff about allergens",
-    "Tapas included with every drink (subject to availability)",
-    "Terrace has specific prices on some products"
+    "Some products have terrace surcharge",
+    "Extra ingredients and extra fries available"
   ]
 }
