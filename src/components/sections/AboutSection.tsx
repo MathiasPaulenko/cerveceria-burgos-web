@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { Clock, MapPin, Users } from "lucide-react";
+import { Star, Wheat, Heart } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
 
 export function AboutSection() {
   const { t } = useTranslation();
 
   const features = [
-    { icon: Clock, title: t.about.features?.schedule?.title || "Horario", description: t.about.features?.schedule?.description || "Lunes a Sábado: 06:00 - 00:00", subtext: t.about.features?.schedule?.subtext || "Cenas y copas" },
-    { icon: MapPin, title: t.about.features?.location?.title || "Ubicación", description: t.about.features?.location?.description || "Calle Eugenia de Montijo, 80", subtext: t.about.features?.location?.subtext || "28025 Madrid (Carabanchel)" },
-    { icon: Users, title: t.about.features?.terrace?.title || "Terraza", description: t.about.features?.terrace?.description || "Terraza exterior popular", subtext: t.about.features?.terrace?.subtext || "Llega con antelación los fines de semana" },
+    { icon: Star, title: "Desde 2015", description: "Más de 10 años dejando huella en Carabanchel", subtext: "Un punto de encuentro para vecinos y visitantes" },
+    { icon: Wheat, title: "Ingredientes frescos", description: "Recetas caseras y productos de calidad", subtext: "Tapas generosas y sabores de toda la vida" },
+    { icon: Heart, title: "Buen ambiente", description: "Un espacio acogedor para disfrutar con amigos", subtext: "Cerveza bien fría y momentos para recordar" },
   ];
 
   return (
