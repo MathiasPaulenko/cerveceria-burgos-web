@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useLayoutEffect } from "react";
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -77,6 +77,49 @@ const galleryImageData = [
 ];
 
 const ITEMS_PER_PAGE = 6;
+
+function GalleryImage({
+  src,
+  alt,
+  imageId,
+  loadedImages,
+  setLoadedImages,
+}: {
+  src: string;
+  alt: string;
+  imageId: number;
+  loadedImages: Set<number>;
+  setLoadedImages: React.Dispatch<React.SetStateAction<Set<number>>>;
+}) {
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useLayoutEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete) {
+      setLoadedImages((prev) => {
+        if (prev.has(imageId)) return prev;
+        return new Set(prev).add(imageId);
+      });
+    }
+  }, [src, imageId, setLoadedImages]);
+
+  return (
+    <img
+      ref={imgRef}
+      src={src}
+      alt={alt}
+      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${loadedImages.has(imageId) ? "opacity-100" : "opacity-0"}`}
+      loading="eager"
+      decoding="async"
+      onLoad={() =>
+        setLoadedImages((prev) => {
+          if (prev.has(imageId)) return prev;
+          return new Set(prev).add(imageId);
+        })
+      }
+    />
+  );
+}
 
 export function GallerySection() {
   const { t } = useTranslation();
@@ -176,18 +219,14 @@ export function GallerySection() {
                     {!loadedImages.has(image.id) && (
                       <div className="absolute inset-0 animate-pulse bg-[#e8e0cc]" />
                     )}
-                    <img
+                    <GalleryImage
                       src={image.src}
                       alt={image.alt}
-                      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${loadedImages.has(image.id) ? 'opacity-100' : 'opacity-0'}`}
-                      loading="lazy"
-                      decoding="async"
-                      onLoad={() => setLoadedImages(prev => new Set(prev).add(image.id))}
+                      imageId={image.id}
+                      loadedImages={loadedImages}
+                      setLoadedImages={setLoadedImages}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                      <h3 className="text-white font-semibold">{image.title}</h3>
-                      <p className="text-gray-300 text-sm">{image.alt}</p>
-                    </div>
+                    {/* Title overlay hidden for now */}
                   </div>
                 </div>
               </motion.button>
@@ -237,14 +276,11 @@ export function GallerySection() {
           onClick={() => setSelectedImage(null)}
           role="dialog"
           aria-modal="true"
-          aria-label={`Galería: ${selectedImage.title}`}
+          aria-label="Galería"
         >
           <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
             <img src={selectedImage.src} alt={selectedImage.alt} decoding="async" className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
-            <div className="mt-4 text-center">
-              <h3 className="text-white text-xl font-semibold">{selectedImage.title}</h3>
-              <p className="text-gray-400">{selectedImage.alt}</p>
-            </div>
+            {/* Lightbox title/description hidden for now */}
             {/* Close button */}
             <button
               ref={closeButtonRef}
