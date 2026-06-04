@@ -171,7 +171,7 @@ export const translations = {
         address: {
           title: "Dirección",
           lines: ["Calle Eugenia de Montijo, 80", "28025 Madrid (Carabanchel)"],
-          extra: "Metro: Eugenia de Montijo (L11) - 696m",
+          extra: "Metro: Eugenia de Montijo (L5) - 696m",
           link: "Cómo llegar",
         },
         schedule: {
@@ -448,7 +448,7 @@ export const translations = {
         address: {
           title: "Address",
           lines: ["Calle Eugenia de Montijo, 80", "28025 Madrid (Carabanchel)"],
-          extra: "Metro: Eugenia de Montijo (L11) - 696m",
+          extra: "Metro: Eugenia de Montijo (L5) - 696m",
           link: "Directions",
         },
         schedule: {
