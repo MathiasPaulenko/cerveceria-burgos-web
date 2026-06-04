@@ -8,11 +8,12 @@ import { useTranslation } from "@/i18n/useTranslation";
 export function AboutSection() {
   const { t } = useTranslation();
 
+  const featureCards = t.about.featureCards || [];
   const features = [
-    { icon: Star, title: "Desde 2015", description: "Más de 10 años dejando huella en Carabanchel", subtext: "Un punto de encuentro para vecinos y visitantes" },
-    { icon: Wheat, title: "Ingredientes frescos", description: "Recetas caseras y productos de calidad", subtext: "Tapas generosas y sabores de toda la vida" },
-    { icon: Heart, title: "Buen ambiente", description: "Un espacio acogedor para disfrutar con amigos", subtext: "Cerveza bien fría y momentos para recordar" },
-    { icon: Users, title: "Terraza popular", description: "Terraza exterior muy concurrida, abierta durante todo el año", subtext: "Llega con antelación los fines de semana" },
+    { icon: Star, title: featureCards[0]?.title || "Desde 2015", description: featureCards[0]?.description || "", subtext: featureCards[0]?.subtext || "" },
+    { icon: Wheat, title: featureCards[1]?.title || "Ingredientes frescos", description: featureCards[1]?.description || "", subtext: featureCards[1]?.subtext || "" },
+    { icon: Heart, title: featureCards[2]?.title || "Buen ambiente", description: featureCards[2]?.description || "", subtext: featureCards[2]?.subtext || "" },
+    { icon: Users, title: featureCards[3]?.title || "Terraza popular", description: featureCards[3]?.description || "", subtext: featureCards[3]?.subtext || "" },
   ];
 
   return (
@@ -63,20 +64,14 @@ export function AboutSection() {
                 whileHover={{ scale: 1.01 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <p className="text-[#151418] font-semibold mb-2">¿Por qué volver?</p>
+                <p className="text-[#151418] font-semibold mb-2">{t.about.whyReturn?.title || "¿Por qué volver?"}</p>
                 <ul className="space-y-2 text-[#A06029]">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#99120f] mt-1">•</span>
-                    <span>Cada día una tapa diferente con tu consumición: siempre hay una sorpresa para acompañar tu caña</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#99120f] mt-1">•</span>
-                    <span>Atención cercana y familiar, siempre con una sonrisa</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#99120f] mt-1">•</span>
-                    <span>Ideal para grupos, parejas o una caña rápida después del trabajo</span>
-                  </li>
+                  {(t.about.whyReturn?.bullets || []).map((bullet: string, i: number) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-[#99120f] mt-1">•</span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
                 </ul>
               </motion.div>
             </div>

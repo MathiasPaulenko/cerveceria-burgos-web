@@ -8,6 +8,7 @@ interface Props {
   lang: "es" | "en";
   onChange: (lang: "es" | "en") => void;
   className?: string;
+  ariaLabel?: string;
 }
 
 function SpainFlag({ className = "" }: { readonly className?: string }) {
@@ -36,7 +37,7 @@ const options = [
   { code: "en" as const, label: "English", Flag: UkFlag },
 ];
 
-export function LanguageToggle({ lang, onChange, className = "" }: Props) {
+export function LanguageToggle({ lang, onChange, className = "", ariaLabel }: Props) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -55,7 +56,7 @@ export function LanguageToggle({ lang, onChange, className = "" }: Props) {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#99120f]/10 hover:bg-[#99120f]/20 transition-colors text-[#99120f] font-medium text-sm"
-        aria-label="Cambiar idioma"
+        aria-label={ariaLabel || "Language"}
       >
         <active.Flag className="w-5 h-4 rounded-sm shadow-sm" />
         <span className="uppercase text-xs tracking-wide">{active.code}</span>

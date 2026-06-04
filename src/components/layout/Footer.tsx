@@ -36,8 +36,9 @@ export function Footer() {
               {t.footer.contactTitle}
             </h4>
             <p className="text-[#FBF5DD]/60 leading-relaxed mb-4">
-              Calle Eugenia de Montijo, 80<br />
-              28025 Madrid
+              {(t.footer.addressLines || ["Calle Eugenia de Montijo, 80", "28025 Madrid"]).map((line: string) => (
+                <span key={line}>{line}<br /></span>
+              ))}
             </p>
             <div className="flex items-center justify-center gap-3">
               <a href="https://instagram.com/cerveceriaburgos" target="_blank" rel="noopener noreferrer"
@@ -62,8 +63,8 @@ export function Footer() {
               {t.footer.hoursLabel}
             </h4>
             <p className="text-[#FBF5DD]/60 leading-relaxed">
-              <span className="text-[#FBF5DD]">Lun – Sáb</span><br />
-              06:00 – 00:00
+              <span className="text-[#FBF5DD]">{t.footer.hoursDays || "Lun – Sáb"}</span><br />
+              {t.footer.hoursTime || "06:00 – 00:00"}
             </p>
           </div>
 

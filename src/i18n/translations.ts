@@ -61,6 +61,20 @@ export const translations = {
         location: { title: "Ubicación", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
         terrace: { title: "Terraza", description: "Terraza exterior popular", subtext: "Llega con antelación los fines de semana" },
       },
+      featureCards: [
+        { icon: "Star", title: "Desde 2015", description: "Más de 10 años dejando huella en Carabanchel", subtext: "Un punto de encuentro para vecinos y visitantes" },
+        { icon: "Wheat", title: "Ingredientes frescos", description: "Recetas caseras y productos de calidad", subtext: "Tapas generosas y sabores de toda la vida" },
+        { icon: "Heart", title: "Buen ambiente", description: "Un espacio acogedor para disfrutar con amigos", subtext: "Cerveza bien fría y momentos para recordar" },
+        { icon: "Users", title: "Terraza popular", description: "Terraza exterior muy concurrida, abierta durante todo el año", subtext: "Llega con antelación los fines de semana" },
+      ],
+      whyReturn: {
+        title: "¿Por qué volver?",
+        bullets: [
+          "Cada día una tapa diferente con tu consumición: siempre hay una sorpresa para acompañar tu caña",
+          "Atención cercana y familiar, siempre con una sonrisa",
+          "Ideal para grupos, parejas o una caña rápida después del trabajo",
+        ],
+      },
     },
     gallery: {
       label: "Galería",
@@ -189,6 +203,9 @@ export const translations = {
       phoneLabel: "Teléfono",
       addressLabel: "Dirección",
       hoursLabel: "Horario",
+      addressLines: ["Calle Eugenia de Montijo, 80", "28025 Madrid"],
+      hoursDays: "Lun – Sáb",
+      hoursTime: "06:00 – 00:00",
     },
     scrollToTop: "Volver arriba",
     legal: {
@@ -237,6 +254,7 @@ export const translations = {
         necessary: "Cookies necesarias (siempre activas)",
         analytics: "Cookies analíticas (Google Analytics)",
         save: "Guardar preferencias",
+        on: "Activado",
       },
     },
     privacy: {
@@ -253,6 +271,7 @@ export const translations = {
       changesText: "Nos reservamos el derecho de actualizar esta política de privacidad. Cualquier cambio será publicado en esta página.",
       lastUpdated: "Última actualización: Junio 2026",
     },
+    languageToggle: "Cambiar idioma",
     notFound: {
       title: "Página no encontrada",
       subtitle: "Lo sentimos, no hemos podido encontrar la página que buscas.",
@@ -318,6 +337,20 @@ export const translations = {
         schedule: { title: "Hours", description: "Monday to Saturday: 06:00 - 00:00", subtext: "Dinner and drinks" },
         location: { title: "Location", description: "Calle Eugenia de Montijo, 80", subtext: "28025 Madrid (Carabanchel)" },
         terrace: { title: "Terrace", description: "Popular outdoor terrace", subtext: "Arrive early on weekends" },
+      },
+      featureCards: [
+        { icon: "Star", title: "Since 2015", description: "Over 10 years making our mark on Carabanchel", subtext: "A meeting point for locals and visitors" },
+        { icon: "Wheat", title: "Fresh ingredients", description: "Homemade recipes and quality products", subtext: "Generous tapas and timeless flavors" },
+        { icon: "Heart", title: "Great atmosphere", description: "A cozy space to enjoy with friends", subtext: "Ice-cold beer and moments to remember" },
+        { icon: "Users", title: "Popular terrace", description: "Busy outdoor terrace, open all year round", subtext: "Arrive early on weekends" },
+      ],
+      whyReturn: {
+        title: "Why come back?",
+        bullets: [
+          "Every day a different tapa with your drink: there's always a surprise to go with your beer",
+          "Close, family-style service, always with a smile",
+          "Perfect for groups, couples or a quick beer after work",
+        ],
       },
     },
     gallery: {
@@ -447,6 +480,9 @@ export const translations = {
       phoneLabel: "Phone",
       addressLabel: "Address",
       hoursLabel: "Hours",
+      addressLines: ["Calle Eugenia de Montijo, 80", "28025 Madrid"],
+      hoursDays: "Mon – Sat",
+      hoursTime: "06:00 – 00:00",
     },
     scrollToTop: "Back to top",
     legal: {
@@ -495,6 +531,7 @@ export const translations = {
         necessary: "Necessary cookies (always active)",
         analytics: "Analytics cookies (Google Analytics)",
         save: "Save preferences",
+        on: "On",
       },
     },
     privacy: {
@@ -511,6 +548,7 @@ export const translations = {
       changesText: "We reserve the right to update this privacy policy. Any changes will be posted on this page.",
       lastUpdated: "Last updated: June 2026",
     },
+    languageToggle: "Change language",
     notFound: {
       title: "Page not found",
       subtitle: "Sorry, we couldn't find the page you're looking for.",

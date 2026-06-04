@@ -79,6 +79,7 @@ export function Header() {
               lang={lang}
               onChange={setLanguage}
               className="hidden lg:flex"
+              ariaLabel={t.languageToggle || "Change language"}
             />
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 text-[#151418]">
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -110,7 +111,7 @@ export function Header() {
               })}
               <div className="flex items-center justify-between py-3 px-4 rounded-lg bg-[#99120f]/10">
                 <span className="font-medium text-[#99120f]">
-                  {lang === "es" ? "Idioma" : "Language"}
+                  {t.languageToggle || "Language"}
                 </span>
                 <LanguageToggle
                   lang={lang}
@@ -118,6 +119,7 @@ export function Header() {
                     setLanguage(newLang);
                     setIsMenuOpen(false);
                   }}
+                  ariaLabel={t.languageToggle || "Change language"}
                 />
               </div>
             </nav>

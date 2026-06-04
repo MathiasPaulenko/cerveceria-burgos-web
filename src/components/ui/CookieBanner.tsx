@@ -72,7 +72,7 @@ export function CookieBanner() {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between p-3 rounded-lg bg-[#FBF5DD]/5">
                     <span className="text-sm">{t.cookieBanner.preferences.necessary}</span>
-                    <span className="text-xs px-2 py-1 bg-[#FACB6E]/20 text-[#FACB6E] rounded-full">On</span>
+                    <span className="text-xs px-2 py-1 bg-[#FACB6E]/20 text-[#FACB6E] rounded-full">{t.cookieBanner.preferences.on || "On"}</span>
                   </div>
                   <div className="flex items-center justify-between p-3 rounded-lg bg-[#FBF5DD]/5">
                     <span className="text-sm">{t.cookieBanner.preferences.analytics}</span>
