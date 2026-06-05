@@ -105,7 +105,10 @@ export function CocktailSection() {
                           src={`/images/cocktails/${item.id}.webp`}
                           alt={item.nombre}
                           className="absolute inset-0 w-full h-full object-cover z-10"
+                          width={400}
+                          height={400}
                           loading="lazy"
+                          decoding="async"
                           onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
                         />
                         <Martini className="w-7 h-7 text-[#FACB6E]/60 z-0" />

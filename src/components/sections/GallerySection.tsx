@@ -109,7 +109,7 @@ function GalleryImage({
       src={src}
       alt={alt}
       className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${loadedImages.has(imageId) ? "opacity-100" : "opacity-0"}`}
-      loading="eager"
+      loading="lazy"
       decoding="async"
       onLoad={() =>
         setLoadedImages((prev) => {
@@ -276,7 +276,7 @@ export function GallerySection() {
           aria-label="Galería"
         >
           <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.src} alt={selectedImage.alt} decoding="async" className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
+            <img src={selectedImage.src} alt={selectedImage.alt} loading="eager" decoding="async" className="w-full h-auto max-h-[80vh] object-contain rounded-lg" />
             <button
               ref={closeButtonRef}
               onClick={() => setSelectedImage(null)}
