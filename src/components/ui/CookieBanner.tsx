@@ -111,17 +111,24 @@ export function CookieBanner() {
 function loadGtag() {
   if (typeof window === "undefined") return;
   const id = (window as unknown as Record<string, string>).__GA_ID__ || "G-44E9DNWD8P";
-  if ((window as unknown as { gtag?: unknown }).gtag) return;
+  console.log("[GA Debug] Loading gtag with ID:", id);
+  if ((window as unknown as { gtag?: unknown }).gtag) {
+    console.log("[GA Debug] gtag already loaded, skipping");
+    return;
+  }
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
   document.head.appendChild(script);
+  console.log("[GA Debug] External script injected:", script.src);
   const inline = document.createElement("script");
   inline.textContent = `
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '${id}', { anonymize_ip: true });
+    console.log("[GA Debug] gtag config executed for ${id}");
   `;
   document.head.appendChild(inline);
+  console.log("[GA Debug] Inline config script injected");
 }
