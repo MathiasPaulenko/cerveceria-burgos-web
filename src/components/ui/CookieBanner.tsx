@@ -12,13 +12,19 @@ export function CookieBanner() {
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie_consent");
-    if (!consent) setVisible(true);
-    else {
+    if (!consent) {
+      setVisible(true);
+      loadGtagWithConsent(false);
+    } else {
       try {
         const parsed = JSON.parse(consent);
-        setAnalytics(parsed.analytics === true);
-        if (parsed.analytics) loadGtag();
-      } catch { /* ignore */ }
+        const hasAnalytics = parsed.analytics === true;
+        setAnalytics(hasAnalytics);
+        loadGtagWithConsent(hasAnalytics);
+      } catch {
+        setVisible(true);
+        loadGtagWithConsent(false);
+      }
     }
   }, []);
 
@@ -26,7 +32,7 @@ export function CookieBanner() {
     localStorage.setItem("cookie_consent", JSON.stringify({ analytics: analyticsChoice, date: new Date().toISOString() }));
     setAnalytics(analyticsChoice);
     setVisible(false);
-    if (analyticsChoice) loadGtag();
+    updateConsent(analyticsChoice);
   };
 
   return (
@@ -108,27 +114,43 @@ export function CookieBanner() {
   );
 }
 
-function loadGtag() {
+function loadGtagWithConsent(analyticsGranted: boolean) {
   if (typeof window === "undefined") return;
   const id = (window as unknown as Record<string, string>).__GA_ID__ || "G-44E9DNWD8P";
-  console.log("[GA Debug] Loading gtag with ID:", id);
-  if ((window as unknown as { gtag?: unknown }).gtag) {
-    console.log("[GA Debug] gtag already loaded, skipping");
-    return;
+
+  if (!(window as unknown as { gtag?: unknown }).gtag) {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+    document.head.appendChild(script);
+
+    const inline = document.createElement("script");
+    inline.textContent = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+      });
+      gtag('js', new Date());
+      gtag('config', '${id}', { anonymize_ip: true });
+    `;
+    document.head.appendChild(inline);
   }
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
-  document.head.appendChild(script);
-  console.log("[GA Debug] External script injected:", script.src);
-  const inline = document.createElement("script");
-  inline.textContent = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${id}', { anonymize_ip: true });
-    console.log("[GA Debug] gtag config executed for ${id}");
-  `;
-  document.head.appendChild(inline);
-  console.log("[GA Debug] Inline config script injected");
+
+  if (analyticsGranted) {
+    updateConsent(true);
+  }
+}
+
+function updateConsent(analyticsGranted: boolean) {
+  if (typeof window === "undefined") return;
+  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+  if (!gtag) return;
+  gtag('consent', 'update', {
+    'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+  });
 }
