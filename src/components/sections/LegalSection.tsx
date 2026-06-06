@@ -26,6 +26,9 @@ export function LegalSection() {
           <h2 className="text-xl font-semibold text-[#151418] mt-8">{t.legal.liabilityTitle}</h2>
           <p>{t.legal.liabilityText}</p>
 
+          <h2 className="text-xl font-semibold text-[#151418] mt-8">{t.legal.pricingTitle}</h2>
+          <p>{t.legal.pricingText}</p>
+
           <h2 className="text-xl font-semibold text-[#151418] mt-8">{t.legal.lawTitle}</h2>
           <p>{t.legal.lawText}</p>
 
